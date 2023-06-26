@@ -1,0 +1,716 @@
+miniatures:
+  enable: true
+
+  menu:
+    title: "Miniaturas"
+    rows: 6
+    fill-empty-slots: true
+    material: ZOMBIE_HEAD
+    amount: 1
+    slot: 48
+    custom-model-data: 0
+    displayname: "&bMiniaturas"
+    lore:
+      - ""
+      - "&7Estas pequeñas criaturas te seguirán"
+      - "&7a donde quiera que vayas."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su miniatura actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  cosmetics:
+    astronaut:
+      enable: true
+      name: "&bAstronauta"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Tu propio astronauta personal."
+
+    tiki:
+      enable: true
+      name: "&bTiki"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Gran sonrisa, grandes ojos,"
+        - "&7gran cabeza."
+
+    devil:
+      enable: true
+      name: "&bDiablo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esos cuernos!"
+
+    ghost:
+      enable: true
+      name: "&bFantasma"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Boo!"
+
+    vampire:
+      enable: true
+      name: "&bVampiro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esos colmillos!"
+
+    witch:
+      enable: true
+      name: "&bBruja"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira ese sombrero!"
+
+    skeleton:
+      enable: true
+      name: "&bEsqueleto"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SKELETON_SKULL
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esos huesos!"
+
+    zombie:
+      enable: true
+      name: "&bZombie"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: ZOMBIE_HEAD
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Un pequeño zombie te seguirá."
+
+    spider:
+      enable: true
+      name: "&bAraña"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Un mordisco podría ser mortal."
+
+    enderman:
+      enable: true
+      name: "&bEnderman"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Él te teletransportará a su lado!"
+
+    brown-bear:
+      enable: true
+      name: "&bOso Pardo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Alimentalo con peces!"
+
+    koala-bear:
+      enable: true
+      name: "&bOso Koala"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres un abrazo?"
+
+    panda:
+      enable: true
+      name: "&bPanda"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esos ojos!"
+
+    monkey:
+      enable: true
+      name: "&bMono"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres un plátano?"
+
+    elephant:
+      enable: true
+      name: "&bElefante"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 28
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esa trompa!"
+
+    tiger:
+      enable: true
+      name: "&bTigre"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 29
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Mira esos colmillos!"
+
+    zebra:
+      enable: true
+      name: "&bCebra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 30
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres una raya?"
+
+    chicken:
+      enable: true
+      name: "&bPollo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 31
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Un pollo volador."
+
+    cow:
+      enable: true
+      name: "&bVaca"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 32
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Mooo..."
+
+    sheep:
+      enable: true
+      name: "&bSheep"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 33
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Baaaa..."
+
+    iron-golem:
+      enable: true
+      name: "&bGolem de Hierro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 34
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Primera vez que ves un"
+        - "&7golem de hierro bebé?"
+
+    bunny:
+      enable: true
+      name: "&bConejo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 37
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Es el conejo de pascua?"
+    fox:
+      enable: true
+      name: "&bZorro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 38
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Qué hace el zorro?"
+
+    parrot:
+      enable: true
+      name: "&bLoro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 39
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Qué dice el loro?"
+
+    ladybug:
+      enable: true
+      name: "&bLadybug"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 40
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Cuántos puntos tiene?"
+
+    snail:
+      enable: true
+      name: "&bCaracol"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 41
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Vaya, un caracol."
+
+    turtle:
+      enable: true
+      name: "&bTortuga"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 42
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡No te muerdas los dedos!"
+
+    dolphin:
+      enable: true
+      name: "&bDelfín"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 43
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Te gusta nadar?"
+
+    shark:
+      enable: true
+      name: "&bTiburón"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 10
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Cuidado con los dientes!"
+
+    snowman:
+      enable: true
+      name: "&bMuñeco de Nieve"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 11
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Qué hace un muñeco de nieve"
+        - "&7en verano?"
+
+    santa-claus:
+      enable: true
+      name: "&bPapá Noel"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 12
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Jo, jo, jo!"
+
+    stitch:
+      enable: true
+      name: "&bStitch"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 13
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Todos aman a Stitch!"
+
+    mario:
+      enable: true
+      name: "&bMario"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 14
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7It's meeee, Marioooooo!"
+
+    yoshi:
+      enable: true
+      name: "&bYoshi"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 15
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Es un dinosaurio?"
+
+    toad:
+      enable: true
+      name: "&bToad"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 16
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Es del reino champiñón."
+
+    doge:
+      enable: true
+      name: "&bDoge"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 19
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7WOW."
+
+    dwarf:
+      enable: true
+      name: "&bEnano"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 20
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Hola, soy un enano!"
+
+    donald-duck:
+      enable: true
+      name: "&bPato Donald"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 21
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Quack quack!"
+
+    ronald:
+      enable: true
+      name: "&bRonald"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 22
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres una hamburguesa?"
+
+# Do not edit this!
+config-version: 1

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.238.11.189
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1687575248614
+  login: 1687574993323
+money: '0'
+last-account-name: Flaming
+lastlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 595.1863416245307
+  y: 146.52373821488393
+  z: 54.88469735263266
+  yaw: 112.65805053710938
+  pitch: 57.123207092285156
+logoutlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: -1193.7321839973056
+  y: 111.62081742654708
+  z: 2916.1732546589815
+  yaw: 104.58201599121094
+  pitch: 48.39701843261719

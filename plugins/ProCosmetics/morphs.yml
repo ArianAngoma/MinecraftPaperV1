@@ -1,0 +1,645 @@
+morphs:
+  enable: true
+
+  menu:
+    title: "Transformaciones"
+    rows: 6
+    fill-empty-slots: true
+    material: LEATHER
+    amount: 1
+    slot: 52
+    custom-model-data: 0
+    displayname: "&bTransformaciones"
+    lore:
+      - ""
+      - "&7¿Alguna vez quisiste ser un"
+      - "&7animal? ¡Ahora puedes!"
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su transformación actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+    toggle-self-view:
+      material: SADDLE
+      amount: 1
+      slot: 49
+      custom-model-data: 0
+      displayname: "&eAlternar vista"
+      lore:
+        - ""
+        - "&7Haga clic aquí para alternar la vista"
+        - "&7de su transformación."
+
+  settings:
+    flyable: true
+
+    self-view:
+      enable: true
+      default-enabled: false
+      show-name-tag: true
+
+  cosmetics:
+    bat:
+      enable: true
+      name: "&bMurciélago"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: BAT_SPAWN_EGG
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Vuela por el aire como un murciélago."
+        - ""
+        - "&bDoble toque barra espaciadora &7para volar en un corto período de tiempo."
+        - "&bHaga clic izquierdo &7para hacer un fuerte chirrido."
+        - "&bSigilo &7para dejar caer caca."
+
+    enderman:
+      enable: true
+      name: "&bEnderman"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: ENDER_PEARL
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Ya no hay necesidad de enderpearls."
+        - ""
+        - "&bDoble toque barra espaciadora &7para teletransportarse"
+        - "&7a la ubicación de su cursor."
+
+    witch:
+      enable: true
+      name: "&bBruja"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: POTION
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Alguna vez quisiste ser una bruja?"
+        - "&7¡Ahora puedes!"
+        - "&7¡Lanza pociones a tus enemigos!"
+        - ""
+        - "&bHaga clic izquierdo §7para lanzar una poción de velocidad."
+        - "&bSigilo mientras hace clic con el botón izquierdo &7para lanzar una"
+        - "&7poción de ceguera."
+
+    wither:
+      enable: true
+      name: "&bWither"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: WITHER_SKELETON_SKULL
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Transformate en el wither"
+        - "&7más poderoso de todos los tiempos!"
+        - ""
+        - "&bHaga clic izquierdo &7para lanzar una calavera de wither."
+
+    elder-guardian:
+      enable: true
+      name: "&bGuardián anciano"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: PRISMARINE_SHARD
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tú gobiernas el mundo!"
+        - ""
+        - "&bHaga clic izquierdo &7para cargar un láser."
+
+    cave-spider:
+      enable: true
+      name: "&bAraña de cueva"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: SPIDER_EYE
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Una sola mordida es suficiente para matar a un hombre."
+        - ""
+        - "&bHaga clic izquierdo sobre &7alguien para envenenarlo."
+
+    spider:
+      enable: true
+      name: "&bAraña"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: COBWEB
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Algunos tienen miedo de las arañas."
+        - ""
+        - "&bHaga clic izquierdo &7para lanzar una telaraña."
+
+    creeper:
+      enable: true
+      name: "&bCreeper"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: CREEPER_HEAD
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Transformate en un creeper y explota!"
+        - ""
+        - "&bMantenga sigilo &7para cargar su explosión."
+
+    zombie:
+      enable: true
+      name: "&bZombie"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: ZOMBIE_HEAD
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Transformate en un zombie aterrador!"
+        - ""
+        - "&bHaga clic izquierdo &7para convocar a un bebé zombie."
+
+    skeleton:
+      enable: true
+      name: "&bEsqueleto"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      ability: true
+      material: ARROW
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Transformate en un esqueleto aterrador!"
+        - ""
+        - "&bToca sigilo &7para crear una explosión de huesos."
+
+    blaze:
+      enable: true
+      name: "&bBlaze"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: BLAZE_POWDER
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Transfórmate en un fuego ardiente!"
+        - ""
+        - "&bMantenga sigilo &7para volor a la dirección"
+        - "&7que estás mirando."
+
+    pigman:
+      enable: true
+      name: "&bHombre cerdo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: GOLDEN_SWORD
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Si me golpeas, te golpearé!"
+        - ""
+        - "&bHaga clic izquierdo &7para hacer un terrorífico grito."
+
+    magma-cube:
+      enable: true
+      name: "&bCubo de magma"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: NETHERRACK
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡No me toques o te quemaré!"
+        - ""
+        - "&bMantenga sigilo &7para saltar."
+        - "&7Mira hacia arriba para saltar más alto."
+
+    slime:
+      enable: true
+      name: "&bSlime"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: SLIME_BLOCK
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Saltar como un slime"
+        - "&7puede ser muy divertido."
+        - ""
+        - "&bHaga clic izquierdo &7para lanzar un slime."
+        - "&bMantenga sigilo &7para saltar."
+
+    olaf:
+      enable: true
+      name: "&bOlaf"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: SNOWBALL
+      amount: 1
+      slot: 28
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Todo el mundo ama a Olaf!"
+        - ""
+        - "&bHaga clic izquierdo &7para lanzar una bola de nieve."
+
+    chicken:
+      enable: true
+      name: "&bPollo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: FEATHER
+      amount: 1
+      slot: 29
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&¡Pop, ah un huevo!"
+        - ""
+        - "&bHaga clic izquierdo &7para cacarear."
+        - "&bToca sigilo &7para reventar un huevo."
+
+    pig:
+      enable: true
+      name: "&bCerdo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: PORKCHOP
+      amount: 1
+      slot: 30
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Corre hacia otros para golpearlos."
+        - ""
+        - "&bHaga clic izquierdo &7para oink."
+
+    cow:
+      enable: true
+      name: "&bVaca"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      ability: true
+      material: LEATHER
+      amount: 1
+      slot: 31
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Moo a tus amigos."
+        - ""
+        - "&bHaga clic izquierdo &7para moo."
+
+    sheep:
+      enable: true
+      name: "&bOveja"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: WHITE_WOOL
+      amount: 1
+      slot: 32
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Cambie de color para camuflarse."
+        - ""
+        - "&bToca sigilo &7para cambiar de color."
+
+    cat:
+      enable: true
+      name: "&bGato"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: TROPICAL_FISH
+      amount: 1
+      slot: 33
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Finalmente puedes dormir en paz!"
+        - ""
+        - "&bHaga clic izquierdo &7para maullar."
+
+    dog:
+      enable: true
+      name: "&bPerro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: BONE
+      amount: 1
+      slot: 34
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Voff, voff!"
+        - ""
+        - "&bHaga clic izquierdo &7para ladrar."
+
+    bunny:
+      enable: true
+      name: "&bConejo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      ability: true
+      rarity: LEGENDARY
+      material: EGG
+      amount: 1
+      slot: 37
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Salta como un conejo!"
+        - ""
+        - "&bMantenga sigilo &7para saltar."
+
+    mushroom-cow:
+      enable: true
+      name: "&bVaca de hongos"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: RED_MUSHROOM
+      amount: 1
+      slot: 38
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Transforma en una vaca de hongos."
+        - ""
+        - "&bHaga clic izquierdo &7para moo."
+
+    donkey:
+      enable: true
+      name: "&bBurro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      ability: true
+      material: LEAD
+      amount: 1
+      slot: 39
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Conviertete en el burro más rápido del mundo."
+        - ""
+        - "&bHaga clic izquierdo &7para rebuznar."
+
+    villager:
+      enable: true
+      name: "&bAldeano"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: EMERALD
+      amount: 1
+      slot: 40
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Transformate en el mejor comerciante."
+        - ""
+        - "&bHaga clic izquierdo &7para comerciar."
+        - "&bHaga clic derecho &7para cancelar el comercio."
+
+    iron-golem:
+      enable: true
+      name: "&bGolem de hierro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: IRON_BLOCK
+      amount: 1
+      slot: 41
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Protege a los aldeanos!"
+        - ""
+        - "&bHaga clic izquierdo &7para golpear."
+
+    squid:
+      enable: true
+      name: "&bCalamar"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: INK_SAC
+      amount: 1
+      slot: 42
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Es mas divertido ser un calamar!"
+        - ""
+        - "&bHaga clic izquierdo &7para rociar tinta."
+        - "&bMantenga sigilo &7para nadar."
+
+    block:
+      enable: true
+      name: "&bBloque"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      ability: true
+      material: EMERALD_BLOCK
+      amount: 1
+      slot: 43
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Transformate en un bloque."
+        - ""
+        - "&bHaga clic derecho en &7un bloque para transformarse en él."
+
+# Do not edit this!
+config-version: 1

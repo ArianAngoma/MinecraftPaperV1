@@ -1,0 +1,290 @@
+emotes:
+  enable: true
+
+  menu:
+    title: "Emoticones"
+    rows: 4
+    fill-empty-slots: true
+    material: PLAYER_HEAD
+    amount: 1
+    slot: 32
+    custom-model-data: 0
+    displayname: "&bEmoticones"
+    lore:
+      - ""
+      - "&7Muestra a todos lo feliz"
+      - "&7que eres."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su efecto actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  cosmetics:
+    happy:
+      enable: true
+      name: "&bFeliz"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Muestra a todos lo feliz"
+        - "&7que eres."
+
+    cheeky:
+      enable: true
+      name: "&bDescarado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Qué estás tramando?"
+
+    cool:
+      enable: true
+      name: "&bCool"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Eres el más genial!"
+
+    wink:
+      enable: true
+      name: "&bGuiño"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Guiño, guiño!"
+
+    in-love:
+      enable: true
+      name: "&bApasionado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Mariposas en el estómago?"
+
+    surprised:
+      enable: true
+      name: "&bSorprendido"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Oh, vaya!"
+
+    dizzy:
+      enable: true
+      name: "&bMareado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Tal vez las montañas rusas no sean lo tuyo?"
+
+    sleepy:
+      enable: true
+      name: "&bSomnoliento"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Zzz..."
+
+    sad:
+      enable: true
+      name: "&bTriste"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Qué te pasa?"
+
+    deal-with-it:
+      enable: true
+      name: "&bLidiar con eso"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Tienes un problema?"
+
+    rage:
+      enable: true
+      name: "&bRabia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Estás furioso!"
+
+    rip:
+      enable: true
+      name: "&bRIP"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Descansa en paz."
+
+    spicy:
+      enable: true
+      name: "&bPicante"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Estás que ardes!"
+
+    sun-tan:
+      enable: true
+      name: "&bBronceado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Te has quemado!"
+
+# Do not edit this!
+config-version: 1

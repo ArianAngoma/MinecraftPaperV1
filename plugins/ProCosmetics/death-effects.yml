@@ -1,0 +1,302 @@
+death-effects:
+  enable: true
+
+  menu:
+    title: "Efectos de muerte"
+    rows: 4
+    fill-empty-slots: true
+    material: SKELETON_SKULL
+    amount: 1
+    slot: 14
+    custom-model-data: 0
+    displayname: "&bEfectos de muerte"
+    lore:
+      - ""
+      - "&7Sus muertes ahora dejarán partículas"
+      - "&7a medida que se elevan por el aire."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su efecto actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  settings:
+    # This option allows you to turn death effects into kill effects. Please note you will have to correct the description texts by yourself.
+    kill-effects: false
+
+  cosmetics:
+    bloody-death:
+      enable: true
+      name: "&bMuerte sangrienta"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: REDSTONE
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de sangre"
+        - "&7a medida que te desangras."
+
+    candy-cane-remains:
+      enable: true
+      name: "&bRestos de bastón de caramelo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SUGAR
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de bastón de caramelo"
+        - "&7a medida que te desangras."
+
+    confetti-death:
+      enable: true
+      name: "&bConfeti"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: MELON_SEEDS
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de confeti"
+        - "&7a medida que te desangras."
+
+    enchanted-death:
+      enable: true
+      name: "&bMuerte encantada"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BOOK
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de partículas"
+        - "&7a medida que te desangras."
+
+    fall-of-the-frost-lord:
+      enable: true
+      name: "&bCaída del Señor de la Escarcha"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SNOWBALL
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Acaba de llegar el invierno?"
+        - "&7¡No, es solo tu muerte!"
+
+    flame-death:
+      enable: true
+      name: "&bMuerte de la llama"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BLAZE_POWDER
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de llamas"
+        - "&7a medida que te desangras."
+
+    last-love:
+      enable: true
+      name: "&bÚltimo amor"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: POPPY
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de corazones"
+        - "&7a medida que te desangras."
+
+    lightning-death:
+      enable: true
+      name: "&bMuerte por rayos"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: POPPY
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Querías ser un dios, ¿verdad?"
+
+    lava-death:
+      enable: true
+      name: "&bMuerte de lava"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: LAVA_BUCKET
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de lava"
+
+    magical-death:
+      enable: true
+      name: "&bMuerte mágica"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PURPLE_DYE
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de partículas"
+
+    musical-death:
+      enable: true
+      name: "&bMuerte musical"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: NOTE_BLOCK
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Muestra tu amor por la música"
+
+    shadow-death:
+      enable: true
+      name: "&bMuerte de sombra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: COAL
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de sombras"
+        - "&7a medida que te desangras."
+
+    sparkly-death:
+      enable: true
+      name: "&bMuerte brillante"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: FIREWORK_ROCKET
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Muere de una manera brillante"
+
+    wet-death:
+      enable: true
+      name: "&bMuerte mojada"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: WATER_BUCKET
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de agua"
+        - "&7a medida que te desangras."
+
+# Do not edit this!
+config-version: 1

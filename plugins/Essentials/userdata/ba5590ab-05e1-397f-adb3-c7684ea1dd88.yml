@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 201.240.25.219
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1687464714217
+  login: 1687462781301
+money: '0'
+last-account-name: Arnywy
+lastlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 498.1517510920871
+  y: 62.11341641046012
+  z: 362.4529722207947
+  yaw: -49.79138946533203
+  pitch: 0.7500119209289551
+logoutlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 368.5796259178032
+  y: 72.0
+  z: 330.62209652117883
+  yaw: 84.73583984375
+  pitch: 47.99995803833008

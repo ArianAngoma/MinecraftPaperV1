@@ -1,0 +1,1183 @@
+balloons:
+  enable: true
+
+  menu:
+    title: "Globos"
+    rows: 6
+    fill-empty-slots: true
+    material: LEAD
+    amount: 1
+    slot: 16
+    custom-model-data: 0
+    displayname: "&bGlobos"
+    lore:
+      - ""
+      - "&7Los globos son objetos coleccionables que"
+      - "&7puedes hacer flotar sobre tu cabeza"
+      - "&7mientras recorres el mundo."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su globo actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  cosmetics:
+    calf:
+      enable: true
+      name: "&bGlobo de ternera"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: COW
+      baby: true
+      material: MILK_BUCKET
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Leche gratis para todos!"
+
+    kitten:
+      enable: true
+      name: "&bGlobo de gatito"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: OCELOT
+      baby: true
+      material: COD
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Un lindo gatito revolotea alrededor"
+
+    mini-pig:
+      enable: true
+      name: "&bMini-Globo de cerdo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: PIG
+      baby: true
+      material: COOKED_PORKCHOP
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quién no quiere un cerdo"
+        - "&7volando sobre su cabeza?"
+
+    mushroom-cow:
+      enable: true
+      name: "&bGlobo de vaca con champiñones"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: MUSHROOM_COW
+      baby: true
+      material: RED_MUSHROOM
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Un hongo viviente!"
+
+    puppy:
+      enable: true
+      name: "&bGlobo de cachorro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: WOLF
+      baby: true
+      material: BONE
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tu mejor amigo!"
+
+    rabbit:
+      enable: true
+      name: "&bGlobo de conejo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: RABBIT
+      baby: true
+      material: CARROT
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Un conejo saltarín!"
+
+    tiny-villager:
+      enable: true
+      name: "&bGlobo de aldeano"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: VILLAGER
+      baby: true
+      material: EMERALD
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tu propio mercado volador!"
+
+    zombie:
+      enable: true
+      name: "&bGlobo de zombi"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ZOMBIE
+      baby: true
+      material: ROTTEN_FLESH
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Carne podrida de la cabeza a los pies."
+
+    guardian:
+      enable: true
+      name: "&bGlobo de guardián"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: GUARDIAN
+      baby: false
+      material: PRISMARINE_SHARD
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Ten cuidado que te abofetearán"
+
+    disco:
+      enable: true
+      name: "&bGlobo de discoteca"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      material: BLUE_STAINED_GLASS
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Por qué tener un globo cuando"
+        - "&7puedes tener una discoteca?"
+
+    egg:
+      enable: true
+      name: "&bGlobo de huevo de dragón"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      material: DRAGON_EGG
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡No dejes que el dragón del ender"
+        - "&7se escape!"
+
+    emerald:
+      enable: true
+      name: "&bGlobo de bloque de esmeralda"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      material: EMERALD_BLOCK
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7No todo el mundo puede tener"
+        - "&7un bloque de esmeralda."
+
+    explosive:
+      enable: true
+      name: "&bGlobo de TNT"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      material: TNT
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Esto puede ser peligroso..."
+
+    pumpkin:
+      enable: true
+      name: "&bGlobo de calabaza"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      material: PUMPKIN
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Feliz Halloween!"
+
+    beachball:
+      enable: true
+      name: "&bGlobo de pelota de playa"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "5a5ab05ea254c32e3c48f3fdcf9fd9d77d3cba04e6b5ec2e68b3cbdcfac3fd"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 28
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Los recuerdos de verano duran para siempre."
+
+    soccerball:
+      enable: true
+      name: "&bGlobo de pelota de fútbol"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "8e4a70b7bbcd7a8c322d522520491a27ea6b83d60ecf961d2b4efbbf9f605d"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 29
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Gol!"
+
+    sun:
+      enable: true
+      name: "&bGlobo de sol"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "b89042082bb7a7618b784ee7605a134c58834e21e374c888937161057f6c7"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 30
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Eres mi sol!"
+
+    bee:
+      enable: true
+      name: "&bGlobo de abeja"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "1874787e36159e4d74db5e25baba987b665dcc890be9f262bb0cbcf5d01b82b6"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 31
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Que no te pique!"
+
+    bunny:
+      enable: true
+      name: "&bGlobo de conejo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "e8a4fb25afbc6b7aec15abe872fcead1e5b33c1ab12525141d77bfd298fc32d9"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 32
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Felices Pascuas!"
+
+    cake:
+      enable: true
+      name: "&bGlobo de pastel"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "6171dd2e378c2b13d90ce6c2441bd28276604dd9a5ed7478d1fef842bb7fd52a"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 33
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Feliz cumpleaños!"
+
+    burger:
+      enable: true
+      name: "&bGlobo de hamburguesa"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "4e1b585abdd6477f594bcfcef84771aa2d42ab85dd4c22a4cc40c27360508c8"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 34
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Me encantan las hamburguesas!"
+
+    earth:
+      enable: true
+      name: "&bGlobo de la tierra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "c69196b330c6b8962f23ad5627fb6ecce472eaf5c9d44f791f6709c7d0f4dece"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 37
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El mundo es tuyo!"
+
+    present:
+      enable: true
+      name: "&bGlobo de regalo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "512e9451cdb196b78195a8f0a4b9c1c0a04f5827887927b6a82aad39cab2f430"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 38
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Feliz Navidad!"
+
+    ghost:
+      enable: true
+      name: "&bGlobo de fantasma"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "68d2183640218ab330ac56d2aab7e29a9790a545f691619e38578ea4a69ae0b6"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 39
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Boo!"
+
+    mouse:
+      enable: true
+      name: "&bGlobo de ratón"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "876fed16c8514c063432d4471aa232475688ab4df8608613d2b663b3e6f1515a"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 40
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Squeak!"
+
+    pigeon:
+      enable: true
+      name: "&bGlobo de paloma"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      entity: ARMOR_STAND
+      baby: false
+      texture: "b7ea4c017e3456cf09a5c263f34d3cc5f41577b74d60f6f8196c60e07f8c5a96"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 41
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Alimentalo con unas semillas!"
+
+    rubiks-cube:
+      enable: true
+      name: "&bGlobo de cubo de rubik"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "9f6fc6e9881dab8dcb02c411e086c141028bdcc804e9ced25dba2b04f4b4f166"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 42
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Resuelve el cubo!"
+
+    pokeball:
+      enable: true
+      name: "&bGlobo de pokeball"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "d43d4b7ac24a1d650ddf73bd140f49fc12d2736fc14a8dc25c0f3f29d85f8f"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 43
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Atrapa a todos!"
+
+    discord:
+      enable: true
+      name: "&bGlobo de discord"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "7873c12bffb5251a0b88d5ae75c7247cb39a75ff1a81cbe4c8a39b311ddeda"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 10
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Únete a nuestro servidor de Discord!"
+
+    facebook:
+      enable: true
+      name: "&bGlobo de facebook"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "88a7d9f6dc9c24334e92dbbd1171c7098d383ec4da95768e68c9b9a8ecc6b8aa"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 11
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Déjame agregarte como amigo!"
+
+    instagram:
+      enable: true
+      name: "&bGlobo de instagram"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "25b3f2cfa0739c4e828316f39f90b05bc1f4ed27b1e35888511f558d4675"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 12
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tomémonos una selfie!"
+
+    netflix:
+      enable: true
+      name: "&bGlobo de netflix"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "463ad8cbf68a842c341c9ccc3433b443f03f77b0de2648bcc93c4c47a806d"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 13
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Vamos a ver una película!"
+
+    twitch:
+      enable: true
+      name: "&bGlobo de twitch"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "46be65f44cd21014c8cddd0158bf75227adcb1fd179f4c1acd158c88871a13f"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 14
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Presume que eres un streamer famoso!"
+
+    twitter:
+      enable: true
+      name: "&bGlobo de twitter"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "cc745a06f537aea80505559149ea16bd4a84d4491f12226818c3881c08e860fc"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 15
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tweetea que estás jugando en nuestro servidor!"
+
+    youtube:
+      enable: true
+      name: "&bGlobo de youtube"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      entity: ARMOR_STAND
+      baby: false
+      texture: "fb95209d36c5aa1bf6c6f307f09b16d9058844ac560340c88f8394682ef57a0a"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 16
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Presume que eres un youtuber famoso!"
+
+    police-car:
+      enable: true
+      name: "&bGlobo de policía"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "df10ade3a30c8f582f8acd7f344e1348c570e0f438ca3f5c33e2c9a93be78f0c"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 19
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Sirena, sirena!"
+
+    truck:
+      enable: true
+      name: "&bGlobo de camión"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "d8d1add0b6acb6995cf9709f2dc5b0e3c104c47c81c37c54821bb77a9f86c7"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 20
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Un camión volador!"
+
+    money-bag:
+      enable: true
+      name: "&bGlobo de dinero"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "e36e94f6c34a35465fce4a90f2e25976389eb9709a12273574ff70fd4daa6852"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 21
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Dinero, dinero!"
+
+
+    pride:
+      enable: true
+      name: "&bGlobo de orgullo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "21c8c586b4b9761d8b78f16eb573583374e52f1a287357674e31fd2a8382"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 22
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Estamos orgullosos de ti!"
+
+    united-states-of-america:
+      enable: true
+      name: "&bEstados Unidos"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "4cac9774da1217248532ce147f7831f67a12fdcca1cf0cb4b3848de6bc94b4"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 23
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    canada:
+      enable: true
+      name: "&bCanadá"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "f241a697f6dfb1c57cda327baa6732a7828c398be4ebfdbd166c232bcae2b"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 24
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    united-kingdom:
+      enable: true
+      name: "&bReino Unido"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "a9edcdd7b06173d7d221c7274c86cba35730170788bb6a1db09cc6810435b92c"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 25
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    france:
+      enable: true
+      name: "&bFrancia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "51269a067ee37e63635ca1e723b676f139dc2dbddff96bbfef99d8b35c996bc"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 28
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    spain:
+      enable: true
+      name: "&bEspaña"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "32bd4521983309e0ad76c1ee29874287957ec3d96f8d889324da8c887e485ea8"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 29
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    portugal:
+      enable: true
+      name: "&bPortugal"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "ebd51f4693af174e6fe1979233d23a40bb987398e3891665fafd2ba567b5a53a"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 30
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    germany:
+      enable: true
+      name: "&bAlemania"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "5e7899b4806858697e283f084d9173fe487886453774626b24bd8cfecc77b3f"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 31
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    belgium:
+      enable: true
+      name: "&bBélgica"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "c8e0e0de705d366ba59506b3fb1a04fd3d51aff90e5cfb4ebbea66ea5976c0ff"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 32
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    poland:
+      enable: true
+      name: "&bPolonia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "921b2af8d2322282fce4a1aa4f257a52b68e27eb334f4a181fd976bae6d8eb"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 33
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    italy:
+      enable: true
+      name: "&bItalia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "85ce89223fa42fe06ad65d8d44ca412ae899c831309d68924dfe0d142fdbeea4"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 34
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    norway:
+      enable: true
+      name: "&bNoruega"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "fda048bc153b38467e76a3347f38396860a8bc68603931e91f7af58bec57383d"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 37
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    sweden:
+      enable: true
+      name: "&bSuecia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "7d86242b0d97ece9994660f3974d72df7b887f630a4530dadc5b1ab7c2134aec"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 38
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    denmark:
+      enable: true
+      name: "&bDinamarca"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "10c23055c392606f7e531daa2676ebe2e348988810c15f15dc5b3733998232"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 39
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    finland:
+      enable: true
+      name: "&bFinlandia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "59f2349729a7ec8d4b1478adfe5ca8af96479e983fbad238ccbd81409b4ed"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 40
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    turkey:
+      enable: true
+      name: "&bTurquía"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "9852b9aba3482348514c1034d0affe73545c9de679ae4647f99562b5e5f47d09"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 41
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    greece:
+      enable: true
+      name: "&bGrecia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "1514de6dd2b7682b1d3ebcd10291ae1f021e3012b5c8beffeb75b1819eb4259d"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 42
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    china:
+      enable: true
+      name: "&bChina"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "7f9bc035cdc80f1ab5e1198f29f3ad3fdd2b42d9a69aeb64de990681800b98dc"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 43
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+    japan:
+      enable: true
+      name: "&bJapón"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      entity: ARMOR_STAND
+      baby: false
+      texture: "d640ae466162a47d3ee33c4076df1cab96f11860f07edb1f0832c525a9e33323"
+      material: PLAYER_HEAD
+      amount: 1
+      slot: 10
+      page: 3
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muestra a los demás que eres de este país!"
+
+# Do not edit this!
+config-version: 1

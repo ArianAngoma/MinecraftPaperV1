@@ -1,0 +1,51 @@
+Fisherman:
+  fullname: Pescador
+  shortname: Pesca
+  FullDescription:
+  - "Earns money from fishing."
+  ChatColour: AQUA
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 100
+  income-progression-equation: baseincome
+  points-progression-equation: basepoints
+  experience-progression-equation: 0
+  rejoinCooldown: 600
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Capturador"
+      Objectives:
+      - Fish;cod;2
+      - Fish;salmon;2
+      - Fish;tropical_fish;2
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Catch fish and get money
+      - Get 100 for this!
+  Gui:
+    Item: fishing_rod
+  Fish:
+    cod:
+      income: 15.0
+      points: 15.0
+      experience: 15.0
+    salmon:
+      income: 20.0
+      points: 20.0
+      experience: 25.0
+    tropical_fish:
+      income: 25.0
+      points: 25.0
+      experience: 25.0
+    pufferfish:
+      income: 25.0
+      points: 25.0
+      experience: 25.0
+  Kill:
+    Player:
+      income: 7.5
+      points: 7.5
+      experience: 7.5

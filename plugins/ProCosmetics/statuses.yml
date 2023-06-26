@@ -1,0 +1,199 @@
+statuses:
+  enable: true
+
+  menu:
+    title: "Estados"
+    rows: 3
+    fill-empty-slots: true
+    material: NAME_TAG
+    amount: 1
+    slot: 40
+    custom-model-data: 0
+    displayname: "&bEstados"
+    lore:
+      - ""
+      - "&7Establezca un estado para que"
+      - "&7otros jugadores sepan lo que"
+      - "&7está haciendo."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su estado actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+    toggle-self-view:
+      material: BOOK
+      amount: 1
+      slot: 22
+      custom-model-data: 0
+      displayname: "&eAlternar vista propia"
+      lore:
+        - ""
+        - "&7¡Haga clic para alternar su"
+        - "&7vista propia de su estado!"
+
+  settings:
+    # This feature allows you to set if the status tag should be above or below a player's name-tag.
+    status-above-player-name-tag: false
+    self-view:
+      enable: true
+      default-enabled: false
+
+  cosmetics:
+    just-chilling:
+      enable: true
+      name: "&aSimplemente escalofriante"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      tag-text: "&aSimplemente escalofriante"
+      material: NAME_TAG
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Hazle saber a alguien que te estás relajando."
+
+    looking-to-chat:
+      enable: true
+      name: "&bBuscando chatear"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      tag-text: "&bBuscando chatear"
+      material: NAME_TAG
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Hazle saber a alguien que quieres"
+        - "&7chatear con ellos."
+
+    looking-to-team-up:
+      enable: true
+      name: "&eBuscando formar equipo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      tag-text: "&eBuscando formar equipo"
+      material: NAME_TAG
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Hazle saber a alguien que quieres"
+        - "&7formar equipo con ellos."
+
+    afk:
+      enable: true
+      name: "&6AFK"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      tag-text: "&6AFK"
+      material: NAME_TAG
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Hazle saber a alguien que estás AFK."
+
+    do-not-disturb:
+      enable: true
+      name: "&cNo molestar"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      tag-text: "&cNo molestar"
+      material: NAME_TAG
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Hazle saber a alguien que no quieres"
+        - "&7ser molestado."
+
+    ping:
+      enable: true
+      name: "&aPing"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      tag-text: "&a%ping% ms"
+      material: NAME_TAG
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja que otros sepan cuál es tu ping."
+
+    coins:
+      enable: true
+      name: "&eDinero"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      tag-text: "&eS/. %coins%"
+      material: NAME_TAG
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja que otros sepan cuánto dinero tienes."
+
+# Do not edit this!
+config-version: 1

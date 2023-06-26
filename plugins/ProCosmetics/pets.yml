@@ -1,0 +1,310 @@
+pets:
+  enable: true
+
+  menu:
+    title: "Mascotas"
+    rows: 4
+    fill-empty-slots: true
+    material: BONE
+    amount: 1
+    slot: 46
+    custom-model-data: 0
+    displayname: "&bMascotas"
+    lore:
+      - ""
+      - "&7La vida en un servidor es mejor"
+      - "&7con una mascota."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su mascota actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+    name-tag:
+      material: NAME_TAG
+      amount: 1
+      slot: 31
+      custom-model-data: 0
+      displayname: "&eEtiqueta de nombre"
+      lore:
+        - ""
+        - "&7Cambie el nombre de su mascota actual"
+        - "&7por &eS/. %nametag_cost%."
+
+  settings:
+    default-name-tag: "&7%cosmetic% de &b%player%'"
+    change-name-tag:
+      enable: true
+      maximum-characters: 15
+      cost: 500
+
+    # This feature makes the entity toss items in different directions.
+    tossing-items: true
+
+  cosmetics:
+    piggy:
+      enable: true
+      name: "&bCerdito"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PORKCHOP
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Oink oink!"
+
+    calf:
+      enable: true
+      name: "&bTernero"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: MILK_BUCKET
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Muuu!"
+
+    puppy:
+      enable: true
+      name: "&bCachorro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BONE
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Voff..."
+
+    kitten:
+      enable: true
+      name: "&bGatito"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: COD
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Miau..."
+
+    colorful-lamb:
+      enable: true
+      name: "&bOveja Colorida"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: WHITE_WOOL
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Beeeh!"
+
+    easter-bunny:
+      enable: true
+      name: "&bConejo de Pascua"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: CARROT
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Huevos de Pascua!"
+
+    mushroom-calf:
+      enable: true
+      name: "&bTernero de hongos"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: RED_MUSHROOM
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Crece hongos en su espalda."
+
+    santa-claus:
+      enable: true
+      name: "&bSanta Claus"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: REDSTONE
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Feliz Navidad!"
+
+    elf:
+      enable: true
+      name: "&bElfo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: EMERALD
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Soy el ayudante de Santa Claus."
+
+    body-guard:
+      enable: true
+      name: "&bGuardaespaldas"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: POPPY
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Protegeré tu vida!"
+
+    cave-spider:
+      enable: true
+      name: "&bAraña de cueva"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SPIDER_EYE
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Cuidado con su veneno!"
+
+    silverfish:
+      enable: true
+      name: "&bPez plateado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: STONE_BUTTON
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Pueda que sea pequeño, pero es muy molesto."
+
+    villager:
+      enable: true
+      name: "&bAldeano"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: EMERALD
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Hola!"
+
+    zombie-villager:
+      enable: true
+      name: "&bAldeano Zombi"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: ROTTEN_FLESH
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Grrrr!"
+
+# Do not edit this!
+config-version: 1

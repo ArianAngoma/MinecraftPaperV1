@@ -1,0 +1,49 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1687743336480
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1687757142254
+  login: 1687757115256
+  kits:
+    tools: 1687573970481
+money: '0'
+last-account-name: YuquitaFrita
+logoutlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: -1794.2067038349944
+  y: 64.0
+  z: 3174.502329598831
+  yaw: 151.34153747558594
+  pitch: 21.318695068359375
+lastlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: -1817.970016023909
+  y: 75.48947989554465
+  z: 2962.269684575292
+  yaw: 2.382575035095215
+  pitch: -27.300212860107422
+homes:
+  casita:
+    world: e03b44f3-7987-446e-8f28-437681a189ae
+    world-name: world
+    x: 172.86135725047384
+    y: 72.0
+    z: 930.1735861794043
+    yaw: 161.35498046875
+    pitch: 16.801361083984375

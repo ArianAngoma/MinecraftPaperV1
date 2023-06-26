@@ -1,0 +1,88 @@
+messages:
+  chat:
+    cosmetic:
+      arrow-effects:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+      balloons:
+        equip: "&7Generaste &e%cosmetic%&7."
+        unequip: "&7Anulaste &e%cosmetic%&7."
+      banners:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+      death-effects:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+      emotes:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+      gadgets:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+      miniatures:
+        equip: "&7Generaste &e%cosmetic%&7."
+        unequip: "&7Anulaste &e%cosmetic%&7."
+      morphs:
+        equip: "&7Te transformaste en &e%cosmetic%&7."
+        unequip: "&7Te destransformaste de &e%cosmetic%&7."
+      mounts:
+        equip: "&7Generaste &e%cosmetic%&7."
+        unequip: "&7Anulaste &e%cosmetic%&7."
+      music:
+        equip: "&7Generaste &e%cosmetic%&7."
+        unequip: "&7Anulaste &e%cosmetic%&7."
+      particle-effects:
+        equip: "&7Convocó &e%cosmetic%&7."
+        unequip: "&7Desinvocaste &e%cosmetic%&7."
+      pets:
+        equip: "&7Generaste &e%cosmetic%&7."
+        unequip: "&7Anulaste &e%cosmetic%&7."
+      statuses:
+        equip: "&7Equipaste &e%cosmetic%&7."
+        unequip: "&7Desequipaste &e%cosmetic%&7."
+
+    treasure-chest:
+      rewards:
+        money: "&b%player% &7ha encontrado &eS/. %money%!"
+        ammo: ""
+        arrow-effects: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic%&7!"
+        balloons: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Globo&7!"
+        banners: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Banner&7!"
+        death-effects: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic%&7!"
+        emotes: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Emote&7!"
+        gadgets: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Artilugio&7!"
+        miniatures: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Miniatura&7!"
+        morphs: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Transformación&7!"
+        mounts: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Montura&7!"
+        music: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Música&7!"
+        particle-effects: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Efecto de partículas&7!"
+        pets: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Mascota&7!"
+        statuses: "&b%player% &7ha encontrado %rarity_color%%rarity% &e%cosmetic% Estado&7!"
+      already-in-use: "&7Esta estación ya está en uso."
+
+    anti-lag:
+      unequip: "&c¡Sus cosméticos no han sido equipados para evitar el retraso del servidor!"
+      cosmetics-disabled: "&cNo puede usar cosméticos en este momento. ¡Inténtalo de nuevo más tarde!"
+
+    world-guard:
+      entered-blacklisted-region: "&c¡Entraste en una región donde algunos cosméticos no están permitidos!"
+      equip-denied-blacklisted-region: "&c¡No puedes equipar ese cosmético en esta región!"
+
+    remove-item: "&c¡Elimine su artículo actual de la ranura %slot%th para poder usar este artilugio!"
+    must-stand-on-ground: "&cDebes pararte en el suelo para usar este cosmético."
+    cosmetics-not-allowed: "&cLos cosméticos no están permitidos en este mundo."
+    not-your-mount: "&c¡Esta no es tu montura!"
+    not-enough-space: "&cNo hay suficiente espacio para usar este cosmético aquí."
+    not-enough-money: "&c¡No tienes suficientes monedas!"
+    not-permission: "&c¡No tienes permiso para hacer esto!"
+    music-box-nearby: "&cEstás demasiado cerca de otra Music Box. Aléjate."
+
+  actionbar:
+    gadget:
+      cooldown: "%gadget% &f%cooldown_bar% &f%cooldown_seconds%s"
+      recharged: "&e%gadget% &7ahora esta recargado!"
+    morph:
+      recharged: "&e¡Ahora puedes usar la habilidad nuevamente!"
+
+# Do not edit this!
+config-version: 1

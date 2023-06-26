@@ -1,0 +1,607 @@
+particle-effects:
+  enable: true
+
+  menu:
+    title: "Partículas"
+    rows: 6
+    fill-empty-slots: true
+    material: NETHER_STAR
+    amount: 1
+    slot: 10
+    custom-model-data: 0
+    displayname: "&bEfectos de partículas"
+    lore:
+      - ""
+      - "&7¡Muestra tu estilo con los efectos"
+      - "&7de partículas!"
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su efecto actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  settings:
+    hold-sneak-to-pause: false
+
+  cosmetics:
+    shadow-walk:
+      enable: true
+      name: "&bCaminata de sombra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: COAL
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Caminarás como una sombra!"
+
+    emerald-twirl:
+      enable: true
+      name: "&bGiro de esmeralda"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: EMERALD
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Los detalles verdes giran a tu alrededor!"
+
+    rain-cloud:
+      enable: true
+      name: "&bNube de lluvia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: LAPIS_LAZULI
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Una nube de lluvia te sigue!"
+
+    blood-helix:
+      enable: true
+      name: "&bHélice de sangre"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: REDSTONE
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7La sangre ronda a los"
+        - "&7jugadores legendarios."
+
+    enchanted:
+      enable: true
+      name: "&bEncantado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BOOK
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Eres un mago!"
+
+    music:
+      enable: true
+      name: "&bMúsica"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: NOTE_BLOCK
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Cállate y baila!"
+
+    party-time:
+      enable: true
+      name: "&bHora de la fiesta"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PURPLE_DYE
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quién quiere una fiesta?"
+
+    in-love:
+      enable: true
+      name: "&bEnamorado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: POPPY
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El amor está en el aire!"
+
+    crushed-candy-cane:
+      enable: true
+      name: "&bCaramelo triturado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SUGAR
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Un bastón de caramelo triturado"
+        - "&7gira a tu alrededor!"
+
+    frost-lord:
+      enable: true
+      name: "&bSeñor de la escarcha"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: SNOWBALL
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Trae de vuelta el invierno!"
+
+    legendary-aura:
+      enable: true
+      name: "&bAura legendaria"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: ENDER_EYE
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Los jugadores legendarios"
+        - "&7tienen un aura legendaria!"
+
+    demon-twist:
+      enable: true
+      name: "&bGiro demoníaco"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: CHARCOAL
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Tan retorcido como un demonio!"
+
+    yin-and-yang:
+      enable: true
+      name: "&bYin y Yang"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: MELON_SEEDS
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El equilibrio es la clave!"
+
+    flame-rings:
+      enable: true
+      name: "&bAnillos de fuego"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: ORANGE_DYE
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Los anillos de fuego giran"
+        - "&7alrededor de ti."
+
+    tornado:
+      enable: true
+      name: "&bTornado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: COBWEB
+      amount: 1
+      slot: 28
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Invoca un tornado a tu alrededor."
+
+    flame-of-magic:
+      enable: true
+      name: "&bLlama de magia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: BLAZE_ROD
+      amount: 1
+      slot: 29
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Estoy maldito?"
+
+    angel-wings:
+      enable: true
+      name: "&bAlas de ángel"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: LIGHT_GRAY_DYE
+      amount: 1
+      slot: 30
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres ser un ángel?"
+
+    vampire-wings:
+      enable: true
+      name: "&bAlas de vampiro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: FIREWORK_STAR
+      amount: 1
+      slot: 31
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quieres ser un vampiro?"
+
+    protective-shield:
+      enable: true
+      name: "&bEscudo protector"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: CYAN_DYE
+      amount: 1
+      slot: 32
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Este escudo te protegerá de"
+        - "&7los ataques enemigos."
+
+    black-hole:
+      enable: true
+      name: "&bAgujero negro"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: COAL_BLOCK
+      amount: 1
+      slot: 33
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Invoca un agujero negro debajo"
+        - "&7de tus pies."
+
+    flame-flairy:
+      enable: true
+      name: "&bLlama escamosa"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: BLAZE_POWDER
+      amount: 1
+      slot: 34
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Siempre te seguirá."
+
+    flame-of-the-demons:
+      enable: true
+      name: "&bFuego de los demonios"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: BLAZE_POWDER
+      amount: 1
+      slot: 37
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Estas llamas provienen de los"
+        - "&7demonios."
+
+    aura-of-flame:
+      enable: true
+      name: "&bAura de fuego"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: GOLD_NUGGET
+      amount: 1
+      slot: 38
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Un misterioso aura de fuego"
+        - "&7te rodea."
+
+    big-heart:
+      enable: true
+      name: "&bGran corazón"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: POPPY
+      amount: 1
+      slot: 39
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7El amor es la fuerza más poderosa"
+        - "&7del mundo."
+
+    star:
+      enable: true
+      name: "&bEstrella"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: NETHER_STAR
+      amount: 1
+      slot: 40
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja que la estrella te guíe."
+
+    umbrella:
+      enable: true
+      name: "&bParaguas"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: HOPPER
+      amount: 1
+      slot: 41
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Por si llueve."
+
+    colorful-trail:
+      enable: true
+      name: "&bRastro colorido"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: MAGENTA_DYE
+      amount: 1
+      slot: 42
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja un rastro de colores."
+
+    snow-cloud:
+      enable: true
+      name: "&bNube de nieve"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SNOW
+      amount: 1
+      slot: 43
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Está empezando a parecer Navidad!"
+
+    rainbow-wings:
+      enable: true
+      name: "&bAlas arcoíris"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: YELLOW_DYE
+      amount: 1
+      slot: 10
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Vuela como un arcoíris."
+
+    confetti:
+      enable: true
+      name: "&bConfeti"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: BLAZE_ROD
+      amount: 1
+      slot: 11
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Celebra!"
+
+    snowflake:
+      enable: true
+      name: "&bCopo de nieve"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: NETHER_STAR
+      amount: 1
+      slot: 12
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Espera, ¿es invierno?"
+
+    christmas-tree:
+      enable: true
+      name: "&bÁrbol de Navidad"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: LEGENDARY
+      material: SPRUCE_SAPLING
+      amount: 1
+      slot: 13
+      page: 2
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Feliz Navidad!"
+
+# Do not edit this!
+config-version: 1

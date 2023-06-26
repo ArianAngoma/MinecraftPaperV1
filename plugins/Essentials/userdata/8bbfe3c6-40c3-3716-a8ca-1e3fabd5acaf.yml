@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.236.179.136
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1687488336116
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1687488830414
+  login: 1687488327994
+money: '0'
+last-account-name: Ainnoot
+logoutlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: -1087.76401970229
+  y: 105.0
+  z: 2978.907745874262
+  yaw: -169.1188507080078
+  pitch: 17.849668502807617
+lastlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 370.8374846083593
+  y: 72.0
+  z: 330.7778879539625
+  yaw: 13.3382568359375
+  pitch: 17.69979476928711

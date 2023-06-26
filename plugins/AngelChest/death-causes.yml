@@ -1,0 +1,100 @@
+# You can change the name for the death causes displayed in the hologram.
+
+AREA_EFFECT_CLOUD: nube de efecto de área
+ARROW: flecha
+AXOLOTL: ajolote
+BAT: murciélago
+BEE: abeja
+BLAZE: blaze
+BLOCK_EXPLOSION: explosión
+CAVE_SPIDER: araña de cueva
+CONTACT: contacto
+CRAMMING: hacinamiento
+CREEPER: creeper
+CUSTOM: personalizado
+DRAGON_BREATH: aliento de dragón
+DRAGON_FIREBALL: bola de fuego de dragón
+DROWNED: ahogado
+DROWNING: ahogamiento
+DRYOUT: secado
+ELDER_GUARDIAN: guardián anciano
+ENDER_CRYSTAL: cristal de ender
+ENDER_DRAGON: dragón de ender
+ENDERMAN: enderman
+ENDERMITE: endermite
+ENTITY_EXPLOSION: explosión
+EVOKER: evocador
+EVOKER_FANGS: colmillos de evocador
+FALL: caída
+FALLING_BLOCK: bloque cayendo
+FIRE: fuego
+FIRE_TICK: fuego
+FIREBALL: bola de fuego
+FLY_INTO_WALL: volar contra pared
+FOX: zorro
+FREEZE: congelación
+GHAST: ghast
+GIANT: gigante
+GOAT: cabra
+GUARDIAN: guardián
+HOGLIN: hoglin
+HOT_FLOOR: piso caliente
+HUSK: husk
+ILLUSIONER: ilusionista
+IRON_GOLEM: golem de hierro
+LAVA: lava
+LIGHTNING: rayo
+LLAMA: llama
+LLAMA_SPIT: escupitajo de llama
+MAGIC: magia
+MAGMA_CUBE: magma cube
+MELTING: derretimiento
+MINECART_TNT: tnt
+PANDA: panda
+PHANTOM: fantasma
+PIGLIN: piglin
+PIGLIN_BRUTE: piglin bruto
+PILLAGER: saqueador
+POISON: veneno
+POLAR_BEAR: oso polar
+PRIMED_TNT: tnt
+PUFFERFISH: pez globo
+RAVAGER: devastador
+SHULKER: shulker
+SHULKER_BULLET: bala de shulker
+SILVERFISH: silverfish
+SKELETON: skeleton
+SKELETON_HORSE: skeleton horse
+SLIME: slime
+SMALL_FIREBALL: bola de fuego pequeña
+SNOWBALL: bola de nieve
+SPECTRAL_ARROW: flecha espectral
+SPIDER: araña
+SPLASH_POTION: poción
+STARVATION: inanición
+STRAY: stray
+STRIDER: strider
+SUFFOCATION: asfixia
+SUICIDE: suicidio
+THORNS: espinas
+TRADER_LLAMA: llama comercial
+TRIDENT: tridente
+VEX: vex
+VINDICATOR: reivindicador
+VOID: void
+WITCH: bruja
+WITHER: wither
+WITHER_SKELETON: esqueleto marchito
+WOLF: lobo
+ZOGLIN: zogline
+ZOMBIE: zombi
+ZOMBIE_HORSE: caballo zombi
+ZOMBIE_VILLAGER: aldeano zombie
+ZOMBIFIED_PIGLIN: piglin zombificado
+UNKNOWN: unknown
+
+# The following death causes should NEVER appear, because they are replaced with more specific ones (e.g. arrow instead of projectile)
+ENTITY_ATTACK: ataque de entidad
+ENTITY_SWEEP_ATTACK: ataque de barrido de entidades
+PLAYER: jugador
+PROJECTILE: proyectil

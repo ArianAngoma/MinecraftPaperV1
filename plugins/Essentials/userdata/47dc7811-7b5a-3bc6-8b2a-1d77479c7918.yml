@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 179.6.168.237
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1687412566517
+  login: 1687411415651
+money: '0'
+last-account-name: sebastianuwu
+lastlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 361.9420735950777
+  y: 86.41798528057295
+  z: 196.68381261428686
+  yaw: 136.9500274658203
+  pitch: 34.95000457763672
+logoutlocation:
+  world: e03b44f3-7987-446e-8f28-437681a189ae
+  world-name: world
+  x: 203.81772360761585
+  y: 72.62174524461525
+  z: 975.7776105036806
+  yaw: 9.7509765625
+  pitch: 49.349937438964844

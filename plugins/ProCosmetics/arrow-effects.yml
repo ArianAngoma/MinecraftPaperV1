@@ -1,0 +1,298 @@
+arrow-effects:
+  enable: true
+
+  menu:
+    title: "Efectos de flecha"
+    rows: 4
+    fill-empty-slots: true
+    material: ARROW
+    amount: 1
+    slot: 12
+    custom-model-data: 0
+    displayname: "&bEfectos de flecha"
+    lore:
+      - ""
+      - "&7Tus flechas ahora dejarán partículas"
+      - "&7a medida que se elevan por el aire."
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haga clic derecho para desequipar su efecto actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  cosmetics:
+    bloody-arrows:
+      enable: true
+      name: "&bFlechas sangrientas"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: REDSTONE
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Las flechas empapadas en sangre"
+        - "&7podrían traer a tus enemigos"
+        - "&7una muerte más dolorosa!"
+
+    candy-cane-arrows:
+      enable: true
+      name: "&bFlechas de bastón de caramelo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SUGAR
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Has tenido suficiente de dulces?"
+        - "&7Démosle un poco a tu enemigo."
+
+    confetti-arrows:
+      enable: true
+      name: "&bFlechas de confeti"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: MELON_SEEDS
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡No se pueden detener esos maravillosos colores "
+        - "&7flotando en el aire!"
+
+    enchanted-arrows:
+      enable: true
+      name: "&bFlechas encantadas"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BOOK
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Estas flechas son de"
+        - "&7un arquero con talento!"
+
+    flame-arrows:
+      enable: true
+      name: "&bFlechas de llama"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: BLAZE_POWDER
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Sorprende a alguien con una flecha"
+        - "&7ardiendo en el corazón."
+
+    frost-lord-arrows:
+      enable: true
+      name: "&bFlechas del Señor de la Escarcha"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: SNOWBALL
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Trae una ráfaga de invierno"
+        - "&7en el viento de su paso."
+
+    green-arrows:
+      enable: true
+      name: "&bFlechas verdes"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: EMERALD
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Rojo significa parar. ¿Verde es igual a adelante?"
+
+    lava-arrows:
+      enable: true
+      name: "&bFlechas de lava"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: LAVA_BUCKET
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Qué calor!"
+
+    love-arrows:
+      enable: true
+      name: "&bFlechas de amor"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: POPPY
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Reparte amor entre"
+        - "&7tus enemigos!"
+
+    magical-arrows:
+      enable: true
+      name: "&bFlechas mágicas"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: PURPLE_DYE
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Quizás tú eres el mago aquí?"
+
+    music-arrows:
+      enable: true
+      name: "&bFlechas de música"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: NOTE_BLOCK
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Vibraciones elevadas por los aires."
+
+    rain-arrows:
+      enable: true
+      name: "&bFlechas de lluvia"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: WATER_BUCKET
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Flechas que bendicen la lluvia"
+        - "&7en África."
+
+    shadow-arrows:
+      enable: true
+      name: "&bFlechas de sombra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: COAL
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Deja que tu sombra siga la flecha."
+
+    sparkly-arrows:
+      enable: true
+      name: "&bFlechas brillantes"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: COMMON
+      material: FIREWORK_ROCKET
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Una flecha como un fuego artificial."
+
+# Do not edit this!
+config-version: 1

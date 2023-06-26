@@ -1,0 +1,334 @@
+mounts:
+  enable: true
+
+  menu:
+    title: "Monturas"
+    rows: 5
+    fill-empty-slots: true
+    material: IRON_HORSE_ARMOR
+    amount: 1
+    slot: 34
+    custom-model-data: 0
+    displayname: "&bMonturas"
+    lore:
+      - ""
+      - "&7¿Para qué caminar cuando puedes"
+      - "&7invocar monturas elegantes para ayudarte?"
+      - ""
+      - "&3Usted es dueño &b%current%&7/&b%maximum%&3!"
+      - ""
+      - "&7¡Haga clic izquierdo para abrir el menú!"
+      - "&7¡Haz clic derecho para desequipar tu montura actual!"
+
+  items:
+    go-back:
+      enable: true
+      material: RED_BED
+      amount: 1
+      slot: 4
+      custom-model-data: 0
+      displayname: "&aVolver"
+      lore: [ ]
+
+    previous-page:
+      material: ARROW
+      amount: 1
+      slot: 45
+      custom-model-data: 0
+      displayname: "&aPágina anterior"
+      lore: [ ]
+
+    next-page:
+      material: ARROW
+      amount: 1
+      slot: 53
+      custom-model-data: 0
+      displayname: "&aSiguiente página"
+      lore: [ ]
+
+  settings:
+    default-name-tag: "&7%cosmetic% de &b%player%"
+    # This feature makes some entities toss items in different directions.
+    tossing-items: true
+    # This feature makes some entities spawn blocks underneath them.
+    block-trail: true
+    # This feature forces the player to ride the mount when it spawns.
+    ride-on-spawn: false
+    # This feature despawns the mount once a player stops riding it.
+    despawn-on-dismount: false
+
+  cosmetics:
+    infernal-horror:
+      enable: true
+      name: "&bHorror infernal"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: BONE
+      amount: 1
+      slot: 10
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Este caballo espeluznante es de los muertos vivientes!"
+
+    glacial-steed:
+      enable: true
+      name: "&bCorcel glacial"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PACKED_ICE
+      amount: 1
+      slot: 11
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿El caballo más frío de todos?"
+
+    lovely-sheep:
+      enable: true
+      name: "&bOveja encantadora"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: PINK_STAINED_GLASS
+      amount: 1
+      slot: 12
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El mundo necesita más amor!"
+
+    frosty-snowman:
+      enable: true
+      name: "&bMuñeco de nieve helado"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SNOWBALL
+      amount: 1
+      slot: 13
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Soy yo, Olaf!"
+
+    slime:
+      enable: true
+      name: "&bSlime"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SLIME_BLOCK
+      amount: 1
+      slot: 14
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El slime más grande de todos!"
+
+    molten-snake:
+      enable: true
+      name: "&bSerpiente fundida"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: NETHERRACK
+      amount: 1
+      slot: 15
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡La serpiente más caliente de todas!"
+
+    ethereal-dragon:
+      enable: true
+      name: "&bDragón etéreo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: DRAGON_EGG
+      amount: 1
+      slot: 16
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Es un dragón! ¡Es un huevo! ¡Es un dragón huevo!"
+
+    hype-train:
+      enable: true
+      name: "&bTren de hype"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: MINECART
+      amount: 1
+      slot: 19
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Sube a bordo del tren de hype!"
+
+    pirate-ship:
+      enable: true
+      name: "&bBarco pirata"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: OAK_BOAT
+      amount: 1
+      slot: 20
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Arrhh!"
+
+    baby-reindeer:
+      enable: true
+      name: "&bReno bebé"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SNOW_BLOCK
+      amount: 1
+      slot: 21
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El reno más lindo de todos!"
+
+    cave-spider:
+      enable: true
+      name: "&bAraña de cueva"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: SPIDER_EYE
+      amount: 1
+      slot: 22
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¿Es tu primera vez en una cueva?"
+
+    clumsy-mule:
+      enable: true
+      name: "&bMula torpe"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: CHEST
+      amount: 1
+      slot: 23
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Lleve un montón de paquetes con usted."
+
+    decrepit-warhorse:
+      enable: true
+      name: "&bDecrépito caballo de guerra"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: ROTTEN_FLESH
+      amount: 1
+      slot: 24
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Esta bestia ha sobrevivido en muchas guerras!"
+
+    rudolf:
+      enable: true
+      name: "&bRodolfo"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: DEAD_BUSH
+      amount: 1
+      slot: 25
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7Rodolfo, el reno de la nariz roja."
+
+    unicorn:
+      enable: true
+      name: "&bUnicornio"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: BLAZE_ROD
+      amount: 1
+      slot: 28
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡El unicornio más mágico de todos!"
+
+    crazy-chicken:
+      enable: true
+      name: "&bPollo loco"
+      can-be-found: true
+      purchasable: true
+      cost: 2000
+      rarity: RARE
+      material: EGG
+      amount: 1
+      slot: 29
+      page: 1
+      custom-model-data: 0
+      displayname: "%name%"
+      lore:
+        - ""
+        - "&7¡Este pollo está loco!"
+
+# Do not edit this!
+config-version: 1
