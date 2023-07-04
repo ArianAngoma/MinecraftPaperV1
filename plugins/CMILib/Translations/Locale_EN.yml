@@ -1,11 +1,11 @@
 
-# Full color code support and some variables
+# The phrases support full color (hex) code, and some variables.
 
-# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Keep in mind that some variables will not work for certain lines.
 
-# Just keep them where there are now and everything will be ok :)
+# Just keep them where there are now and everything will be okay :)
 
-# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# Some lines can have global variables set. For the player who will be affected. For example /heal Zrips then Zrips data will be used as variable
 
 # [serverName] to show server name
 
@@ -29,7 +29,7 @@
 
 # [suffix] to show target player suffix if possible
 
-# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# Sender is console or player who performs the command. For example Zrips performs /heal Zhax then Zrips data will be used
 
 # [senderName] to show Sender player name
 
@@ -51,7 +51,7 @@
 
 # [senderSuffix] to show Sender player suffix if possible
 
-# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# Source is player which is being used for extra info. For example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
 
 # [sourceName] to show source player name
 
@@ -75,21 +75,21 @@
 
 # ***********************************************
 
-# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# Some lines support the option to send them to custom places, like action bar, title, sub-title, or even create JSON/clickable messages
 
-# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If the line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
 
-# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If the line starts with !actionbar! then player will get action bar message defined after this variable
 
-# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If the line starts with !actionbar:[seconds]! then player will get action bar message for a defined amount of time
 
-# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If the line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
 
-# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If the line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case it is used after !broadcast! then everyone who is online will get this custom text message
 
-# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If the line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
 
-# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# If the line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
 
 # To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
 
@@ -255,127 +255,6 @@ info:
   valueToLong: '&eValue is too high. Max: [max]'
   valueToShort: '&eValue is too low. Min: [min]'
   pickIcon: '&8Pick icon'
-  # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
-  Same: '&cCan''t open your own inventory for editing!'
-  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
-    &e[oldName]&c. Current: &e[currentName]'
-  Searching: '&eSearching for player data, please wait, this can take some time to
-    finish!'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
-  PurgeNotEnabled: '&cPurge function is not enabled in config file!'
-  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
-    is set to true!'
-  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
-  NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
-  Cooldowns: '&eThis command is on cooldown for another &6[time]'
-  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
-  CooldownOneTime: '&eThis command can only be used once!'
-  WarmUp:
-    canceled: '&eCommand was cancelled due to your movement'
-    counter: '!actionbar!&6--> Wait &e[time] &6seconds <--'
-    DontMove: '!title!&6Don''t move!!subtitle!&7Wait &c[time] &7seconds'
-    Boss:
-      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
-      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] Spawner'
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
-  Elevator:
-    created: '&eCreated elevator sign'
-  CantPlaceSpawner: '&eCan''t place spawner so close to another spawner (&6[range]&e)'
-  ChunksLoading: '&eWorld chunk data is still being loaded. Please wait a bit and
-    try again.'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
-    use them!'
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
-    key for this task. Inform server administration about this'
-  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
-    over this line to see the maximum amount of items allowed.'
-  BlackList: '&e[material] [amount] &6Max: [max]'
-  wrongPortal: '&cYou are in incorrect area of effect'
-  ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
-  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
-  flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
-  specializedItemFail: '&cCan''t determine specialized item requirement by value:
-    &7[value]'
-  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
-  sunSpeedingTitle: '&7[hour]'
-  skippingNight: '!title!&7Skipping entire night'
-  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
-  bookDate: '&7Written at &f[date]'
-  maintenance: '&7Maintenance mode'
-  mapLimit: '&cCant go beyond 30 000 000 blocks'
-  startedEditingPainting: '&eYou started editing painting. Click any other block to
-    cancel.'
-  canceledEditingPainting: '&eYou canceled painting editing mode'
-  changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
-  noSpam: '!title!&cNo spamming!'
-  noCmdSpam: '!title!&cNo command spamming!'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
-  # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
-  book:
-    exploit: '&cYou cant create book with more than [amount] pages'
-  combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
-      Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
-    bossBarPvp: '&cCombat mode [autoTimeLeft]'
-    bossBarPve: '&2Combat mode [autoTimeLeft]'
-  noSchedule: '&cSchedule by this name is not found'
-  totem:
-    cooldown: '&eTotem cooldown: [time]'
-    warmup: '&eTotem effect: [time]'
-    cantConsume: '&eTotem usage was denied due to its cooldown time'
-  InventorySave:
-    info: '&8Info: &8[playerDisplayName]'
-    saved: '&e[time] &eInventory saved with id: &e[id]'
-    NoSavedInv: '&eThis player doesn''t have any saved inventories'
-    NoEntries: '&4File exists, but no inventories were found!'
-    CantFind: '&eCan''t find inventory with this id'
-    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------'
-    List: '&eid: &6[id]&e. &6[time]'
-    KillerSymbol: '&c ☠'
-    Click: '&eClick to check ([id]) saved inventory'
-    IdDontExist: '&4This save Id doesn''t exist!'
-    Deleted: '&eSaved inventory was successfully deleted!'
-    Restored: '&eYou have restored &e[sourcename] &einventory for &e[targetname] &euser.'
-    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory
-      on &e[time]'
-    LoadForSelf: '&eLoad this inventory for your self'
-    LoadForOwner: '&eLoad this inventory for owner'
-    NextInventory: '&eNext inventory'
-    PreviousInventory: '&ePrevious inventory'
-    Editable: '&eEdit mode enabled'
-    NonEditable: '&eEdit mode disabled'
-  vanishSymbolOn: '&8[&7H&8]&r'
-  vanishSymbolOff: ''
-  afkSymbolOn: '&8[&7Afk&8]&r'
-  afkSymbolOff: ''
-  beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
-  pvp:
-    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
-  pve:
-    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
-  InvEmpty:
-    armor: '&eYour armor slots should be empty!'
-    hand: '&eYour hand should be empty!'
-    maininv: '&eYour main inventory should be empty!'
-    maininvslots: '&eYour main inventory should have atleast &6[count] &eempty slots!'
-    inv: '&eYour inventory should be empty!'
-    offhand: '&eYour offhand should be empty!'
-    quickbar: '&eYour quick bar should be empty!'
-    quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
-    subinv: '&eYour sub inventory should be empty!'
-    subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   DamageCause:
     block_explosion: Explosion
     contact: Block Damage
@@ -820,8 +699,6 @@ econ:
   charged: '!actionbar!&fCharged: &6[amount]'
   notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
   tooMuchMoney: '&cYou have too much money'
-  disabled: '&cCan''t use this command while economy support is disabled'
-  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
 Selection:
   SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
   PrimaryPoint: '&ePlaced &6Primary &eSelection Point [point]'
@@ -845,68 +722,6 @@ Location:
   - world-&2World
   - world_the_end-&2World The End
 Locations: '&7Locations: '
-warp:
-  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
-afk:
-  'off': '&7Playing'
-  MayNotRespond: '&ePlayer is AFK and may not respond'
-  MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
-    through discord'
-BossBar:
-  hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
-Potion:
-  Effects: '&8Potion effects'
-  List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
-  NoPotions: '&eNone'
-Information:
-  Title: '&8Players information'
-  Health: '&eHealth: &6[Health]/[maxHealth]'
-  Hunger: '&eHunger: &6[Hunger]'
-  Saturation: '&eSaturation: &6[Saturation]'
-  Exp: '&eExp: &6[Exp]'
-  NotEnoughExp: '&eNot enough exp: &6[Exp]'
-  NotEnoughExpNeed: '&eNot enough exp: &6[Exp]/[need]'
-  tooMuchExp: '&eToo much exp: &6[Exp]/[need]'
-  NotEnoughVotes: '&eNot enough votes: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
-  BadGameMode: '&cYou can''t do this in your current game mode'
-  BadArea: '&cYou can''t perform this action in this area'
-  GameMode: '&eGameMode: &6[GameMode]'
-  Flying: '&eFlying: &6[Flying]'
-  Uuid: '&6[uuid]'
-  FirstConnection: '&eFirst connection: &6[time]'
-  Lastseen: '&eLast seen: &6[time]'
-  Onlinesince: '&eOnline since: &6[time]'
-  Money: '&eBalance: &6[money]'
-  Group: '&eGroup: &6[group]'
-Elytra:
-  Speed: '&eSpeed: &6[speed]&ekm/h'
-  SpeedBoost: ' &a+ '
-  SpeedSuperBoost: ' &2+ '
-  CanUse: '&cCan''t equip elytra without permission!'
-  CantGlide: '&cCan''t use elytra here!'
-  Charging: '&eCharging &f[percentage]&e%'
-NetherPortal:
-  ToHigh: '&cPortal is to big, max height is &6[max]&c!'
-  ToWide: '&cPortal is to wide, max width is &6[max]&c!'
-  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
-  Disabled: '&cPortal creation disabled!'
-Ender:
-  Title: '&7Open ender chest'
-Chat:
-  localPrefix: ''
-  shoutPrefix: '&c[S]&r'
-  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
-  # Use \n to add new line
-  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  link: '&l&4[&7LINK&4]'
-  item: '&7[%cmi_iteminhand_realname%[amount]&7]'
-  itemAmount: ' x[amount]'
-  itemEmpty: '&7[Mighty fist]'
 command:
   help:
     output:

@@ -999,11 +999,11 @@ ItemList:
   CRIMSON_PRESSURE_PLATE: Plaque de pression carmin
   CRIMSON_ROOTS: Racines carmin
   CRIMSON_SIGN: Panneau carmin
+  CRIMSON_WALL_SIGN: Panneau carmin mural
   CRIMSON_SLAB: Dalle carmin
   CRIMSON_STAIRS: Escalier carmin
   CRIMSON_STEM: Tige carmin
   CRIMSON_TRAPDOOR: Trappe carmin
-  CRIMSON_WALL_SIGN: Panneau carmin mural
   CRYING_OBSIDIAN: Obsidienne pleureuse
   GILDED_BLACKSTONE: Roche noire dorée
   HOGLIN_SPAWN_EGG: Oeuf d'apparition d'Hoglin
@@ -1069,11 +1069,11 @@ ItemList:
   WARPED_PRESSURE_PLATE: Plaque de pression biscornu
   WARPED_ROOTS: Racines biscornues
   WARPED_SIGN: Panneau biscornu
+  WARPED_WALL_SIGN: Panneau biscornu mural
   WARPED_SLAB: Dalle biscornue
   WARPED_STAIRS: Escalier biscornu
   WARPED_STEM: Tige biscornue
   WARPED_TRAPDOOR: Trappe biscornue
-  WARPED_WALL_SIGN: Panneau biscornu mural
   WARPED_WART_BLOCK: Bloc de verrues biscornues
   WEEPING_VINES: Lianes pleureuses
   WEEPING_VINES_PLANT: Lianes pleureuses
@@ -1255,10 +1255,10 @@ ItemList:
   MANGROVE_PROPAGULE: Propagule de palétuvier
   MANGROVE_ROOTS: Racines de palétuvier
   MANGROVE_SIGN: Pancarte en palétuvierr
+  MANGROVE_WALL_SIGN: Pancarte en palétuvier murale
   MANGROVE_SLAB: Dalle en palétuvier
   MANGROVE_STAIRS: Escalier en palétuvier
   MANGROVE_TRAPDOOR: Trappe en palétuvier
-  MANGROVE_WALL_SIGN: Pancarte en palétuvier murale
   MANGROVE_WOOD: Bois de palétuvier
   MUD: Boue
   MUDDY_MANGROVE_ROOTS: Racines de palétuvier boueuses

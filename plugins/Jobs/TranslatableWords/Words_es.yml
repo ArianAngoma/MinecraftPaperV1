@@ -999,11 +999,11 @@ ItemList:
   CRIMSON_PRESSURE_PLATE: Placa de presión carmesí
   CRIMSON_ROOTS: Raíces carmesí
   CRIMSON_SIGN: Letrero carmesí
+  CRIMSON_WALL_SIGN: Letrero carmesí sobre pared
   CRIMSON_SLAB: Losa carmesí
   CRIMSON_STAIRS: Escarleras carmesí
   CRIMSON_STEM: Tallo carmesí
   CRIMSON_TRAPDOOR: Trampilla carmesí
-  CRIMSON_WALL_SIGN: Letrero carmesí sobre pared
   CRYING_OBSIDIAN: Obsidiana llorosa
   GILDED_BLACKSTONE: Piedra negra áurea
   HOGLIN_SPAWN_EGG: Generador de Hoglin
@@ -1069,11 +1069,11 @@ ItemList:
   WARPED_PRESSURE_PLATE: Placa de presión distorsionada
   WARPED_ROOTS: Raíces distorsionadas
   WARPED_SIGN: Letrero distorsionado
+  WARPED_WALL_SIGN: Letrero distorsionado sobre pared
   WARPED_SLAB: Losa distorsionada
   WARPED_STAIRS: Escaleras distorsionadas
   WARPED_STEM: Tallo distorsionado
   WARPED_TRAPDOOR: Trampilla distorsionada
-  WARPED_WALL_SIGN: Letrero distorsionado sobre pared
   WARPED_WART_BLOCK: Bloque de verrugas distorsionadas
   WEEPING_VINES: Lianas lloronas
   WEEPING_VINES_PLANT: Planta de Lianas lloronas
@@ -1255,10 +1255,10 @@ ItemList:
   MANGROVE_PROPAGULE: Mangrove propagule
   MANGROVE_ROOTS: Mangrove roots
   MANGROVE_SIGN: Mangrove sign
+  MANGROVE_WALL_SIGN: Mangrove wall sign
   MANGROVE_SLAB: Mangrove slab
   MANGROVE_STAIRS: Mangrove stairs
   MANGROVE_TRAPDOOR: Mangrove trapdoor
-  MANGROVE_WALL_SIGN: Mangrove wall sign
   MANGROVE_WOOD: Mangrove wood
   MUD: Mud
   MUDDY_MANGROVE_ROOTS: Muddy mangrove roots

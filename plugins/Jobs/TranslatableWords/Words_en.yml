@@ -999,11 +999,11 @@ ItemList:
   CRIMSON_PRESSURE_PLATE: Crimson Pressure Plate
   CRIMSON_ROOTS: Crimson Roots
   CRIMSON_SIGN: Crimson Sign
+  CRIMSON_WALL_SIGN: Crimson Wall Sign
   CRIMSON_SLAB: Crimson Slab
   CRIMSON_STAIRS: Crimson Stairs
   CRIMSON_STEM: Crimson Stem
   CRIMSON_TRAPDOOR: Crimson Trapdoor
-  CRIMSON_WALL_SIGN: Crimson Wall Sign
   CRYING_OBSIDIAN: Crying Obsidian
   GILDED_BLACKSTONE: Gilded Blackstone
   HOGLIN_SPAWN_EGG: Hoglin Spawn Egg
@@ -1069,11 +1069,11 @@ ItemList:
   WARPED_PRESSURE_PLATE: Warped Pressure Plate
   WARPED_ROOTS: Warped Roots
   WARPED_SIGN: Warped Sign
+  WARPED_WALL_SIGN: Warped Wall Sign
   WARPED_SLAB: Warped Slab
   WARPED_STAIRS: Warped Stairs
   WARPED_STEM: Warped Stem
   WARPED_TRAPDOOR: Warped Trapdoor
-  WARPED_WALL_SIGN: Warped Wall Sign
   WARPED_WART_BLOCK: Warped Wart Block
   WEEPING_VINES: Weeping Vines
   WEEPING_VINES_PLANT: Weeping Vines Plant
@@ -1255,10 +1255,10 @@ ItemList:
   MANGROVE_PROPAGULE: Mangrove propagule
   MANGROVE_ROOTS: Mangrove roots
   MANGROVE_SIGN: Mangrove sign
+  MANGROVE_WALL_SIGN: Mangrove wall sign
   MANGROVE_SLAB: Mangrove slab
   MANGROVE_STAIRS: Mangrove stairs
   MANGROVE_TRAPDOOR: Mangrove trapdoor
-  MANGROVE_WALL_SIGN: Mangrove wall sign
   MANGROVE_WOOD: Mangrove wood
   MUD: Mud
   MUDDY_MANGROVE_ROOTS: Muddy mangrove roots

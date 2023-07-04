@@ -20,7 +20,7 @@ settings:
   netty-threads: 4
   attribute:
     maxHealth:
-      max: 2048.0
+      max: 100000000
     movementSpeed:
       max: 2048.0
     attackDamage:
@@ -168,6 +168,8 @@ world-settings:
     max-tick-time:
       tile: 50
       entity: 50
+    verbose: false
+  worldeditregentempworld:
     verbose: false
 players:
   disable-saving: false
