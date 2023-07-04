@@ -47,7 +47,7 @@ Settings:
   # # Maximum amount of tries before BetterRTP gives up and sends a NotSafeMessage #
   MaxAttempts: 32
   RtpOnFirstJoin: # Will execute as console to override delays
-    Enabled: true # Make the player rtp when joining the server for the first time
+    Enabled: false # Make the player rtp when joining the server for the first time
     World: world # World to first rtp in
     SetAsRespawn: true # Save this first rtp as players new spawn point
   Cooldown:

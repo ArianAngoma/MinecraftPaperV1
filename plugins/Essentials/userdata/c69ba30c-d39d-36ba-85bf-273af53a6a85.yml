@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688451797716
+  logout: 1688454261535
   login: 1688451863165
 money: '0'
 last-account-name: XxHyunnyxX
@@ -31,8 +31,8 @@ lastlocation:
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -218.1019029066487
-  y: 85.46375088243201
-  z: -1895.278128451372
-  yaw: -136.62713623046875
-  pitch: 3.9001235961914062
+  x: -220.50443566501926
+  y: 95.23258819066099
+  z: -1906.821117718773
+  yaw: -114.85617065429688
+  pitch: 51.75020980834961

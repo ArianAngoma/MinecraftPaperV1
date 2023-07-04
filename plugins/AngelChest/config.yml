@@ -109,7 +109,7 @@
 # giving players the angelchest.group.<groupname> permission. See
 # groups.example.yml for more information.
 # Default is 600 seconds = 10 minutes
-angelchest-duration: 300
+angelchest-duration: 600
 
 # If players have their chests protected (angelchest.protect permission),
 # you can define a duration in seconds to automatically unlock the chests.
@@ -769,7 +769,7 @@ hologram-offset-per-line: 0.25
 # When set to true, players can fast-loot the AngelChest using rightclick (or shift-rightclick, see option below)
 # When set to false, players cannot fast-loot and always get the GUI displayed when opening a chest
 # When set to "force", players will always fast-loot chests and will never see the GUI.
-allow-fastlooting: false
+allow-fastlooting: "force"
 
 # When true, players can open the AngelChest GUI using shift-rightclick and fast-loot the chest via rightclick
 # When false, players can open the AngelChest GUI using rightclick and fast-loot the chest via shift-rightclick

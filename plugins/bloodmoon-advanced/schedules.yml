@@ -1,0 +1,9 @@
+schedules:
+  world:
+    days: 5
+    chance: 100.0
+    broadcast: true
+    days-left-message: '&fen &e%days-left% &fdías habrá una posible luna de sangre!'
+    tonight-message: '&fHay un &e%chance%% &fposibilidad de que ¡Esta noche sea una luna de sangre!'
+    random-days: true
+    repeating: true

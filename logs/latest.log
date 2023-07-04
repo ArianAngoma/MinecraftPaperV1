@@ -1,554 +1,484 @@
-[00:56:44] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[00:56:46] [ServerMain/INFO]: Loaded 7 recipes
-[00:56:47] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[00:56:47] [Server thread/INFO]: Loading properties
-[00:56:47] [Server thread/INFO]: This server is running Paper version git-Paper-49 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: e8bec64)
-[00:56:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:56:48] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:56:49] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[14:49:19] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:49:22] [ServerMain/INFO]: Loaded 7 recipes
+[14:49:23] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[14:49:23] [Server thread/INFO]: Loading properties
+[14:49:23] [Server thread/INFO]: This server is running Paper version git-Paper-49 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: e8bec64)
+[14:49:23] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:49:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:49:24] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[00:56:49] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
-[00:56:49] [Server thread/INFO]: Default game type: SURVIVAL
-[00:56:49] [Server thread/INFO]: Generating keypair
-[00:56:49] [Server thread/INFO]: Starting Minecraft server on *:25565
-[00:56:49] [Server thread/INFO]: Using default channel type
-[00:56:49] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[00:56:49] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[00:56:51] [Server thread/INFO]: [AngelChest] Hooked into WorldGuard 7.0.9-beta1+2249-223b80c
-[00:56:51] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.98
-[00:56:52] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[00:56:52] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.15+6463-5ca4dff
-[00:56:53] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5b92cbdc]
-[00:56:53] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9-beta1+2249-223b80c
-[00:56:53] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.3
-[00:56:53] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.3.2-18ded834
-[00:56:53] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[00:56:53] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR3.1.8
-[00:56:53] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.0
-[00:56:53] [Server thread/INFO]: [CMILib] Loading server plugin CMILib v1.3.1.1
-[00:56:53] [Server thread/INFO]: [EliteMobs] Loading server plugin EliteMobs v8.5.4
-[00:56:53] [Server thread/INFO]: [EliteMobs] WorldGuard detected.
-[00:56:53] [Server thread/INFO]: [EliteMobs] Enabling flags:
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemob-spawning
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemob-only-spawning
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-antiexploit
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-dungeon
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-events
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-minimum-level
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-maximum-level
-[00:56:53] [Server thread/INFO]: [EliteMobs] - elitemobs-explosion-regen
-[00:56:53] [Server thread/INFO]: [XConomy] Loading server plugin XConomy v2.22.1
-[00:56:53] [Server thread/INFO]: [SternalBoard] Loading server plugin SternalBoard v2.2.0
-[00:56:53] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v14.2.12
-[00:56:53] [Server thread/INFO]: [ShopGUIPlus] Loading server plugin ShopGUIPlus v1.87.0
-[00:56:53] [Server thread/INFO]: [ProtectionStones] Loading server plugin ProtectionStones v2.10.3
-[00:56:53] [Server thread/INFO]: [ProCosmetics] Loading server plugin ProCosmetics v13.9.2
-[00:56:53] [Server thread/INFO]: [PinataParty] Loading server plugin PinataParty v2.60.3
-[00:56:53] [Server thread/INFO]: [Jobs] Loading server plugin Jobs v5.2.0.0
-[00:56:53] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.10
-[00:56:53] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v9.14.2
-[00:56:53] [Server thread/INFO]: [AngelChest] Successfully registered WorldGuard flags.
-[00:56:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:56:53] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.98
-[00:56:54] [Server thread/INFO]:         __    
-[00:56:54] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.98
-[00:56:54] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[00:56:54] [Server thread/INFO]: 
-[00:56:54] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[00:56:54] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MYSQL]
-[00:56:55] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
-[00:56:55] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
-[00:56:56] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
-[00:56:56] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[00:56:56] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[00:56:56] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3486ms)
-[00:56:56] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[00:56:57] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[00:56:57] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[00:56:57] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[00:56:57] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[00:56:57] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.15+6463-5ca4dff
-[00:56:57] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[00:56:57] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[00:56:57] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
-[00:56:59] [Server thread/INFO]: [XConomy] Enabling XConomy v2.22.1
-[00:56:59] [Server thread/INFO]: [XConomy] UUID-Mode: Default
-[00:56:59] [Server thread/INFO]: [XConomy] Language: SPANISH
-[00:56:59] [Server thread/INFO]: [XConomy] Modo de guardado - MySQL
-[00:57:00] [Server thread/INFO]: [XConomy] Conectado con MySQL
-[00:57:00] [Server thread/INFO]: [XConomy] XConomy está habilitado
-[00:57:00] [Server thread/INFO]: [XConomy] Encontrado PlaceholderAPI
-[00:57:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy [2.22.1]
-[00:57:00] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
-[00:57:00] [Server thread/INFO]: [XConomy] ===== YiC =====
-[00:57:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[00:57:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[00:57:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[00:57:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[00:57:00] [Server thread/INFO]: Preparing level "world"
-[00:57:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[00:57:02] [Server thread/INFO]: Time elapsed: 956 ms
-[00:57:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[00:57:02] [Server thread/INFO]: Time elapsed: 224 ms
-[00:57:02] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9-beta1+2249-223b80c
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[00:57:03] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[00:57:03] [Server thread/INFO]: [WorldGuard] Loading region data...
-[00:57:04] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.3
-[00:57:04] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[00:57:04] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.3.2-18ded834
-[00:57:05] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
-[00:57:05] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality
-[00:57:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mythic [5.0.0]
-[00:57:09] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
-[00:57:09] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
-[00:57:09] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
-[00:57:09] [Server thread/INFO]: [MythicMobs] Base directory D:\MinecraftPaper\plugins\MythicMobs\SavedData
-[00:57:09] [Server thread/INFO]: [MythicMobs] Module directory D:\MinecraftPaper\plugins\MythicMobs\SavedData\worlds
-[00:57:11] [Server thread/INFO]: [MythicMobs] Loading Packs...
-[00:57:11] [Server thread/INFO]: [MythicMobs] Loading Items...
-[00:57:11] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
-[00:57:11] [Server thread/INFO]: [MythicMobs] Loading Skills...
-[00:57:12] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
-[00:57:12] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
-[00:57:12] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 24 mobs.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 183 skills.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
-[00:57:12] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
-[00:57:12] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
-[00:57:12] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs Premium v5.3.2 ( build 18ded834 ) has been successfully loaded!
-[00:57:12] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.8
-[00:57:12] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.
-[00:57:12] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: MythicMobs
-[00:57:12] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0
-[00:57:12] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[00:57:13] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[00:57:13] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[00:57:13] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[00:57:13] [Server thread/INFO]: [Essentials] Using locale es
-[00:57:13] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[00:57:13] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[00:57:13] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[00:57:13] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[00:57:13] [Server thread/INFO]: [CMILib] Enabling CMILib v1.3.1.1
-[00:57:15] [Server thread/INFO]: Server version: v1_20_R1 - 1.20.1 - paper
-[00:57:15] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil [1.3.1.1]
-[00:57:15] [Server thread/INFO]: PlaceholderAPI hooked.
-[00:57:15] [Server thread/INFO]: Updated (EN) language file. Took 84ms
-[00:57:15] [Server thread/INFO]: [EliteMobs] Enabling EliteMobs v8.5.4
-[00:57:15] [Server thread/INFO]:  _____ _     _____ _____ ________  ______________  _____
-[00:57:15] [Server thread/INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
-[00:57:15] [Server thread/INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
-[00:57:15] [Server thread/INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
-[00:57:15] [Server thread/INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
-[00:57:15] [Server thread/INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
-[00:57:15] [Server thread/INFO]: By MagmaGuy - v. 8.5.4
-[00:57:15] [Server thread/ERROR]: [EliteMobs] Server version "v1_20_R1" is unsupported! Please check for updates!
-[00:57:15] [Server thread/INFO]: [EliteMobs] Other boss mob plugins have been detected, high compatibility mode will be used!
-[00:57:17] [Server thread/INFO]: [EliteMobs] WorldGuard compatibility is enabled!
-[00:57:17] [Server thread/INFO]: [(EliteMobs] Vault detected.
-[00:57:17] [Server thread/INFO]: [EliteMobs] Opened database successfully
-[00:57:18] [Server thread/INFO]: [EliteMobs] Adding new database column DisplayName
-[00:57:18] [Server thread/INFO]: [EliteMobs] Adding new database column Currency
-[00:57:18] [Server thread/INFO]: [EliteMobs] Adding new database column GuildPrestigeLevel
-[00:57:19] [Server thread/INFO]: [EliteMobs] Adding new database column GuildMaxLevel
-[00:57:20] [Server thread/INFO]: [EliteMobs] Adding new database column GuildActiveLevel
-[00:57:20] [Server thread/INFO]: [EliteMobs] Adding new database column QuestStatus
-[00:57:21] [Server thread/INFO]: [EliteMobs] Adding new database column Score
-[00:57:21] [Server thread/INFO]: [EliteMobs] Adding new database column Kills
-[00:57:22] [Server thread/INFO]: [EliteMobs] Adding new database column HighestLevelKilled
-[00:57:22] [Server thread/INFO]: [EliteMobs] Adding new database column Deaths
-[00:57:23] [Server thread/INFO]: [EliteMobs] Adding new database column QuestsCompleted
-[00:57:23] [Server thread/INFO]: [EliteMobs] Adding new database column PlayerQuestCooldowns
-[00:57:24] [Server thread/INFO]: [EliteMobs] Adding new database column BackTeleportLocation
-[00:57:24] [Server thread/INFO]: [EliteMobs] Adding new database column UseBookMenus
-[00:57:24] [Server thread/INFO]: [EliteMobs] Adding new database column DismissEMStatusScreenMessage
-[00:57:24] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: elitemobs [8.5.4]
-[00:57:26] [Server thread/WARN]: [EliteMobs] File  D:\MinecraftPaper\.\em_primis_wormhole does not exist!
-[00:57:27] [Server thread/INFO]: [EliteMobs] World em_adventurers_guild is not yet loaded! Entities that should spawn there have been queued.
-[00:57:27] [Server thread/WARN]: [EliteMobs] Some NPCs/bosses don't have their world installed! If you need help setting things up, you can go to https://discord.gg/9f5QSka !
-[00:57:27] [Server thread/INFO]: [EliteMobs] World your_world_here is not yet loaded! Entities that should spawn there have been queued.
-[00:57:27] [Server thread/INFO]: [SternalBoard] Enabling SternalBoard v2.2.0
-[00:57:27] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.12
-[00:57:28] [Server thread/INFO]: [SkinsRestorer] Detected Minecraft v1_20_R1, using MappingSpigotSkinRefresher.
-[00:57:28] [Server thread/INFO]: [SkinsRestorer] Connected to MySQL!
-[00:57:29] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
-[00:57:29] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[00:57:29] [Server thread/INFO]: [ShopGUIPlus] Enabling ShopGUIPlus v1.87.0
-[00:57:29] [Server thread/INFO]: [ProtectionStones] Enabling ProtectionStones v2.10.3
-[00:57:29] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.GreetingFlagHandler
-[00:57:29] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.FarewellFlagHandler
-[00:57:30] [Server thread/INFO]: [ProtectionStones] PlaceholderAPI support enabled!
-[00:57:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: protectionstones [2.10.3]
-[00:57:30] [Server thread/INFO]: [ProtectionStones] LuckPerms support enabled!
-[00:57:30] [Server thread/INFO]: [ProtectionStones] Protection Stone Blocks:
-[00:57:30] [Server thread/INFO]: [ProtectionStones] - EMERALD_ORE (64)
-[00:57:30] [Server thread/INFO]: [ProtectionStones] Building region cache...
-[00:57:30] [Server thread/INFO]: [ProtectionStones] Building UUID cache... (if slow change async-load-uuid-cache in the config to true)
-[00:57:30] [Server thread/INFO]: [ProtectionStones] Checking if PS regions have been updated to UUIDs...
-[00:57:30] [Server thread/INFO]: [ProtectionStones] §fProtectionStones has successfully started!
-[00:57:30] [Server thread/INFO]: [ProCosmetics] Enabling ProCosmetics v13.9.2
-[00:57:30] [Server thread/INFO]: [ProCosmetics] Initializing...
-[00:57:30] [Server thread/INFO]: [ProCosmetics] Initializing configs...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing menus...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing cosmetics...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing arrow effects...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing balloons...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing banners...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing death effects...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing emotes...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing gadgets...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing miniatures...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing morphs...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing mounts...
-[00:57:31] [Server thread/INFO]: [ProCosmetics] Initializing music...
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Initializing particle effects...
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Initializing pets...
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Initializing statuses...
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Initializing treasures...
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Hooking into PlaceholderAPI...
-[00:57:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: procosmetics [1.0.0]
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Connecting to the database...
-[00:57:33] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[00:57:33] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Successfully connected to the database!
-[00:57:33] [Server thread/INFO]: [ProCosmetics] Hooking into Essentials...
-[00:57:35] [Server thread/INFO]: [ProCosmetics] Initialized! Took 4100ms.
-[00:57:35] [Server thread/INFO]: [PinataParty] Enabling PinataParty v2.60.3
-[00:57:35] [Server thread/INFO]: [PinataParty] Registering hooks...
-[00:57:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pinataparty [2.60.3]
-[00:57:35] [Server thread/INFO]: [PinataParty] Hooked into PlaceholderAPI
-[00:57:35] [Server thread/INFO]: [PinataParty] Votifier not found! Not enabling the voting system! Download and install it from https://www.spigotmc.org/resources/13449/
-[00:57:35] [Server thread/INFO]: [PinataParty] Hooked into Vault
-[00:57:35] [Server thread/INFO]: [PinataParty] Registering commands...
-[00:57:35] [Server thread/INFO]: [PinataParty] Registering listeners...
-[00:57:35] [Server thread/INFO]: [PinataParty] Loading data...
-[00:57:35] [Server thread/INFO]: [PinataParty] Starting tasks...
-[00:57:35] [Server thread/INFO]: [PinataParty] Starting metrics...
-[00:57:35] [Server thread/INFO]: [PinataParty] Plugin registered to 1820939 | 940378444
-[00:57:35] [Server thread/INFO]: [PinataParty] Done and enabled in 64.34ms
-[00:57:35] [Server thread/INFO]: [Jobs] Enabling Jobs v5.2.0.0
-[00:57:35] [Server thread/INFO]: ------------- Jobs -------------
-[00:57:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: jobsr [5.2.0.0]
-[00:57:35] [Server thread/INFO]: PlaceholderAPI hooked.
-[00:57:35] [Server thread/INFO]: Connected to database (MySQL)
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Novice has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Apprentice has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Initiate has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Journeyman has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Adept has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Master has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Grandmaster has an invalid Name property. Skipping!
-[00:57:35] [Server thread/ERROR]: [Jobs] Title Legendary has an invalid Name property. Skipping!
-[00:57:35] [Server thread/INFO]: Loaded 69 protected blocks timers
-[00:57:36] [Server thread/INFO]: Loaded 1403 custom item names
-[00:57:36] [Server thread/INFO]: Loaded 81 custom entity names
-[00:57:36] [Server thread/INFO]: Loaded 2 custom MythicMobs names
-[00:57:36] [Server thread/INFO]: Loaded 38 custom enchant names
-[00:57:36] [Server thread/INFO]: Loaded 21 custom enchant names
-[00:57:36] [Server thread/INFO]: Loaded 16 custom color names
-[00:57:36] [Server thread/INFO]: Loaded 4 shop items
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Leniador
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Cavador
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Cervecero
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Encantador
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Constructor
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Pescador
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Granjero
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Minero
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Explorador
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Armero
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Crafter
-[00:57:36] [Server thread/INFO]: Loaded 1 quests for Cazador
-[00:57:36] [Server thread/INFO]: Loaded 12 jobs
-[00:57:36] [Server thread/INFO]: Loaded 0 boosted items
-[00:57:36] [Server thread/INFO]: Loaded 2 furnace for reassigning.
-[00:57:36] [Server thread/INFO]: Loaded 1 brewing for reassigning.
-[00:57:36] [Jobs-DatabaseSaveTask/INFO]: Started database save task.
-[00:57:36] [Jobs-BufferedPaymentThread/INFO]: Started buffered payment thread.
-[00:57:36] [Server thread/INFO]: Preloaded 10 players data in 0.02
-[00:57:36] [Server thread/INFO]: WorldGuard detected.
-[00:57:36] [Server thread/INFO]: MythicMobs 5.x detected.
-[00:57:36] [Server thread/INFO]: [Jobs] MythicMobs was found - Enabling capabilities.
-[00:57:36] [Server thread/INFO]: Loading explorer data
-[00:57:36] [Server thread/INFO]: Loaded explorer data (1938) in 51 ms
-[00:57:36] [Server thread/INFO]: Plugin has been enabled successfully.
-[00:57:36] [Server thread/INFO]: ------------------------------------
-[00:57:36] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.10
-[00:57:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: betterrtp [3.6.10]
-[00:57:36] [Server thread/INFO]: [AngelChest] Enabling AngelChest v9.14.2
-[00:57:37] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
-[00:57:37] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
-[00:57:37] [Server thread/INFO]: [AngelChest] No graveyards.yml found, disabling Graveyards feature
-[00:57:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: angelchest [GENERIC]
-[00:57:37] [Server thread/INFO]: [AngelChest] Successfully hooked into Vault and the EconomyProvider, enabling economy functions.
-[00:57:37] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
-[00:57:38] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[00:57:38] [Server thread/INFO]: Running delayed init tasks
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 11 - Essentials/INFO]: [Essentials] Obteniendo información de versión...
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] [Importing models]
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature.bbmodel.
-[00:57:38] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[00:57:38] [Server thread/INFO]: [Jobs] Successfully linked with Vault. (XConomy)
-[00:57:38] [Craft Scheduler Thread - 30 - Vault/INFO]: [Vault] Checking for Updates ... 
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] ================================[ ShopGUI+ 1.87.0 ]================================
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus]  
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Vault economy registered.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Vault economy enabled.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Using Vault as default economy provider.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Permissions support enabled.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] No external spawner plugins registered, using built-in spawners support.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded 10 main menu items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'farming' with 18 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'miscellaneous' with 9 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'armor' with 24 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'ores' with 8 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'blocks' with 37 items.
-[00:57:38] [Craft Scheduler Thread - 30 - Vault/INFO]: [Vault] No new version available
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'drops' with 18 items.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_double.bbmodel.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'tools' with 15 items.
-[00:57:38] [Craft Scheduler Thread - 22 - PinataParty/INFO]: [PinataParty] v2.60.4 is available! You are running v2.60.3!
-[00:57:38] [Craft Scheduler Thread - 22 - PinataParty/INFO]: [PinataParty] Download it here: https://www.spigotmc.org/resources/59318/
-[00:57:38] [Craft Scheduler Thread - 4 - XConomy/INFO]: [XConomy] Es la version mas nueva
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'dyes' with 16 items.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_ring.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_still.bbmodel.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'food' with 19 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded 9 shops with total of 164 items.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded 0 permission-based price modifiers.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion.bbmodel.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] Loaded 7 sounds.
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus]  
-[00:57:38] [Server thread/INFO]: [ShopGUIPlus] ====================================================================================
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion_small.bbmodel.
-[00:57:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.5]
-[00:57:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: playerlist [3.0.3]
-[00:57:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault [1.8.1]
-[00:57:38] [Server thread/INFO]: 3 placeholder hook(s) registered!
-[00:57:38] [Server thread/INFO]: Done (50.734s)! For help, type "help"
-[00:57:38] [Server thread/INFO]: Timings Reset
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_shine_vfx.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing Ezekiel.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 13 - EliteMobs/INFO]: [EliteMobs] Latest public release is 8.5.4
-[00:57:38] [Craft Scheduler Thread - 13 - EliteMobs/INFO]: [EliteMobs] Your version is 8.5.4
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/WARN]: [ModelEngine] [A] --Error: The cube cube in bone sword_blade has no faces. This might be caused by all faces having UV size of 0. Excluding cube from bone.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_large.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_small.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 13 - EliteMobs/INFO]: [EliteMobs] You are running the latest version!
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     |------------------|
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     Current version: 14.2.12
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer]     This is the latest version!
-[00:57:38] [Craft Scheduler Thread - 17 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_pool.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull_2ndphase.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_still.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_terror.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Importing warden_heart.bbmodel.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] [Generating assets]
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:38] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_double.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_ring.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_still.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion_small.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_shine_vfx.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating ezekiel.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_large.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_small.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_pool.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull_2ndphase.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_still.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_terror.
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:39] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Generating warden_heart.
-[00:57:40] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] 
-[00:57:40] [Craft Scheduler Thread - 10 - ModelEngine/INFO]: [ModelEngine] [A] Resource pack zipped.
-[00:58:58] [User Authenticator #0/INFO]: UUID of player YuquitaFrita is 17805d73-a8f7-332d-a013-2a293f23df9a
-[00:58:58] [Server thread/INFO]: YuquitaFrita joined the game
-[00:58:58] [Server thread/INFO]: YuquitaFrita[/127.0.0.1:60916] logged in with entity id 63 at ([world]-247.652683745965, 96.0, -1874.699999988079)
-[00:58:59] [Server thread/WARN]: [Essentials] Permissions lag notice with (LuckPermsHandler). Response took 42.346900ms. Summary: Getting group for YuquitaFrita
-[00:59:00] [Craft Scheduler Thread - 60 - EliteMobs/INFO]: [EliteMobs] No player entry detected, generating new entry!
-[00:59:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5158ms or 103 ticks behind
-[00:59:34] [Server thread/INFO]: YuquitaFrita issued server command: /em language spanish.yml
-[00:59:34] [Server thread/INFO]: [EliteMobs] Starting EliteMobs shutdown sequence...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Regenerating exploded blocks...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Cancelling tasks...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Closing wormholes...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Spinning Regional Bosses down...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Wiping Elite entities clean...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing events...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing valid worlds...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing zone based worlds...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing config regional elites...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing custom enchantments...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing custom items...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing Minidungeons...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Unregistering placeholders...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Unregistering handlers...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Clearing Treasure Chests...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Untracking quests...
-[00:59:34] [Server thread/INFO]: [EliteMobs] Saving EliteMobs databases...
-[00:59:34] [Server thread/INFO]: [EliteMobs] All done! Good night.
-[00:59:34] [Server thread/INFO]: [EliteMobs] WorldGuard detected.
-[00:59:34] [Server thread/INFO]: [EliteMobs] Enabling flags:
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-spawning already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-only-spawning already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-antiexploit already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-dungeon already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-events already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-minimum-level already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-maximum-level already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-explosion-regen already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:34] [Server thread/INFO]:  _____ _     _____ _____ ________  ______________  _____
-[00:59:34] [Server thread/INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
-[00:59:34] [Server thread/INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
-[00:59:34] [Server thread/INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
-[00:59:34] [Server thread/INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
-[00:59:34] [Server thread/INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
-[00:59:34] [Server thread/INFO]: By MagmaGuy - v. 8.5.4
-[00:59:34] [Server thread/ERROR]: [EliteMobs] Server version "v1_20_R1" is unsupported! Please check for updates!
-[00:59:34] [Server thread/INFO]: [EliteMobs] Other boss mob plugins have been detected, high compatibility mode will be used!
-[00:59:36] [Server thread/INFO]: [EliteMobs] WorldGuard compatibility is enabled!
-[00:59:36] [Server thread/INFO]: [(EliteMobs] Vault detected.
-[00:59:36] [Server thread/INFO]: [EliteMobs] Opened database successfully
-[00:59:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: elitemobs [8.5.4]
-[00:59:38] [Server thread/WARN]: [EliteMobs] File  D:\MinecraftPaper\.\em_primis_wormhole does not exist!
-[00:59:39] [Craft Scheduler Thread - 10 - EliteMobs/INFO]: [EliteMobs] User 17805d73-a8f7-332d-a013-2a293f23df9a data successfully read!
-[00:59:39] [Craft Scheduler Thread - 38 - EliteMobs/INFO]: [EliteMobs] Latest public release is 8.5.4
-[00:59:39] [Craft Scheduler Thread - 38 - EliteMobs/INFO]: [EliteMobs] Your version is 8.5.4
-[00:59:39] [Craft Scheduler Thread - 38 - EliteMobs/INFO]: [EliteMobs] You are running the latest version!
-[00:59:52] [Server thread/INFO]: YuquitaFrita issued server command: /em reload
-[00:59:52] [Server thread/INFO]: [EliteMobs] Starting EliteMobs shutdown sequence...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Regenerating exploded blocks...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Cancelling tasks...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Closing wormholes...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Spinning Regional Bosses down...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Wiping Elite entities clean...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing events...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing valid worlds...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing zone based worlds...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing config regional elites...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing custom enchantments...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing custom items...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing Minidungeons...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Unregistering placeholders...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Unregistering handlers...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Clearing Treasure Chests...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Untracking quests...
-[00:59:52] [Server thread/INFO]: [EliteMobs] Saving EliteMobs databases...
-[00:59:52] [Server thread/INFO]: [EliteMobs] All done! Good night.
-[00:59:52] [Server thread/INFO]: [EliteMobs] WorldGuard detected.
-[00:59:52] [Server thread/INFO]: [EliteMobs] Enabling flags:
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-spawning already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-only-spawning already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-antiexploit already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-dungeon already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-events already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-minimum-level already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-maximum-level already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/WARN]: [EliteMobs] Warning: flag elitemob-explosion-regen already exists! This is normal if you've just now reloaded EliteMobs.
-[00:59:52] [Server thread/INFO]:  _____ _     _____ _____ ________  ______________  _____
-[00:59:52] [Server thread/INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
-[00:59:52] [Server thread/INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
-[00:59:52] [Server thread/INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
-[00:59:52] [Server thread/INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
-[00:59:52] [Server thread/INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
-[00:59:52] [Server thread/INFO]: By MagmaGuy - v. 8.5.4
-[00:59:52] [Server thread/ERROR]: [EliteMobs] Server version "v1_20_R1" is unsupported! Please check for updates!
-[00:59:52] [Server thread/INFO]: [EliteMobs] Other boss mob plugins have been detected, high compatibility mode will be used!
-[00:59:55] [Server thread/INFO]: [EliteMobs] WorldGuard compatibility is enabled!
-[00:59:55] [Server thread/INFO]: [(EliteMobs] Vault detected.
-[00:59:55] [Server thread/INFO]: [EliteMobs] Opened database successfully
-[00:59:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: elitemobs [8.5.4]
-[00:59:57] [Server thread/WARN]: [EliteMobs] File  D:\MinecraftPaper\.\em_primis_wormhole does not exist!
-[00:59:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6092ms or 121 ticks behind
-[00:59:58] [Craft Scheduler Thread - 68 - EliteMobs/INFO]: [EliteMobs] User 17805d73-a8f7-332d-a013-2a293f23df9a data successfully read!
-[00:59:59] [Craft Scheduler Thread - 6 - EliteMobs/INFO]: [EliteMobs] Latest public release is 8.5.4
-[00:59:59] [Craft Scheduler Thread - 6 - EliteMobs/INFO]: [EliteMobs] Your version is 8.5.4
-[00:59:59] [Craft Scheduler Thread - 6 - EliteMobs/INFO]: [EliteMobs] You are running the latest version!
-[01:01:38] [User Authenticator #1/INFO]: UUID of player XxHyunnyxX is c69ba30c-d39d-36ba-85bf-273af53a6a85
-[01:01:38] [Server thread/INFO]: XxHyunnyxX joined the game
-[01:01:38] [Server thread/INFO]: XxHyunnyxX[/190.191.53.48:52827] logged in with entity id 496 at ([world]-244.69999998807907, 85.99703867873187, -1902.4334198541337)
-[01:01:39] [Craft Scheduler Thread - 83 - EliteMobs/INFO]: [EliteMobs] No player entry detected, generating new entry!
-[01:03:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R1! Trying to find NMS support
-[01:03:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
-[01:03:51] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
-[01:04:58] [Server thread/INFO]: [EliteMobs] Event zombie_totem.yml has been queued!
-[01:04:58] [Server thread/INFO]: La Abominación del Dr. Craftenmine ha sido vista!
-[01:10:58] [Server thread/INFO]: [EliteMobs] Event armor_goblin.yml has been queued!
-[01:10:58] [Server thread/INFO]: [EliteMobs] Model em_goblin_armor was not found! Make sure you install the model correctly if you have it. This entry will be skipped!
-[01:10:58] [Server thread/INFO]: ¡Un Goblin Con Armadura ha sido avistado!
-[01:16:58] [Server thread/INFO]: [EliteMobs] Event treasure_goblin.yml has been queued!
-[01:16:58] [Server thread/INFO]: [EliteMobs] Model em_goblin_treasure was not found! Make sure you install the model correctly if you have it. This entry will be skipped!
-[01:16:58] [Server thread/INFO]: ¡Un Goblin del Tesoro ha sido avistado!
-[01:20:56] [Server thread/INFO]: Named entity EntityZombie['「1」 Tótem Zombi'/859, uuid='93ffe7c1-3ef1-4e94-aa09-493022954966', l='ServerLevel[world]', x=-324.24, y=86.28, z=-1816.78, cpos=[-21, -114], tl=19158, v=true] died: 「1」 Tótem Zombi burned to death
-[01:21:56] [Server thread/INFO]: YuquitaFrita issued server command: /ps give 64
-[01:22:06] [Server thread/INFO]: YuquitaFrita issued server command: /ps give 64 YuquitaFrita
-[01:22:58] [Server thread/INFO]: [EliteMobs] Event weapons_goblin.yml has been queued!
-[01:22:58] [Server thread/INFO]: [EliteMobs] Model em_goblin_weapon was not found! Make sure you install the model correctly if you have it. This entry will be skipped!
-[01:22:58] [Server thread/INFO]: Un Goblin Armado ha sido avistado!
-[01:23:17] [Server thread/INFO]: XxHyunnyxX lost connection: Disconnected
-[01:23:17] [Server thread/INFO]: XxHyunnyxX left the game
-[01:23:33] [WorldGuard Region I/O/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[14:49:24] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[14:49:24] [Server thread/INFO]: Default game type: SURVIVAL
+[14:49:24] [Server thread/INFO]: Generating keypair
+[14:49:25] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:49:25] [Server thread/INFO]: Using default channel type
+[14:49:25] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[14:49:25] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:49:26] [Server thread/INFO]: [AngelChest] Hooked into WorldGuard 7.0.9-beta1+2249-223b80c
+[14:49:26] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.98
+[14:49:27] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[14:49:27] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.15+6463-5ca4dff
+[14:49:29] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@20377ba5]
+[14:49:29] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9-beta1+2249-223b80c
+[14:49:29] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.3
+[14:49:29] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.0
+[14:49:29] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.3.2-18ded834
+[14:49:29] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[14:49:29] [Server thread/INFO]: [CMILib] Loading server plugin CMILib v1.3.1.1
+[14:49:29] [Server thread/INFO]: [XConomy] Loading server plugin XConomy v2.22.1
+[14:49:29] [Server thread/INFO]: [SternalBoard] Loading server plugin SternalBoard v2.2.0
+[14:49:29] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v14.2.12
+[14:49:29] [Server thread/INFO]: [ShopGUIPlus] Loading server plugin ShopGUIPlus v1.87.0
+[14:49:29] [Server thread/INFO]: [ProtectionStones] Loading server plugin ProtectionStones v2.10.3
+[14:49:29] [Server thread/INFO]: [ProCosmetics] Loading server plugin ProCosmetics v13.9.2
+[14:49:29] [Server thread/INFO]: [PinataParty] Loading server plugin PinataParty v2.60.3
+[14:49:29] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR3.1.8
+[14:49:29] [Server thread/INFO]: [Jobs] Loading server plugin Jobs v5.2.0.0
+[14:49:29] [Server thread/INFO]: [bloodmoon-advanced] Loading server plugin bloodmoon-advanced v4.5.7
+[14:49:29] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.10
+[14:49:29] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v9.14.2
+[14:49:29] [Server thread/INFO]: [AngelChest] Successfully registered WorldGuard flags.
+[14:49:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:49:29] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.98
+[14:49:30] [Server thread/INFO]:         __    
+[14:49:30] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.98
+[14:49:30] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[14:49:30] [Server thread/INFO]: 
+[14:49:30] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[14:49:31] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MYSQL]
+[14:49:31] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
+[14:49:31] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
+[14:49:32] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
+[14:49:32] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[14:49:33] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[14:49:33] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3788ms)
+[14:49:33] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[14:49:33] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[14:49:33] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[14:49:33] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[14:49:33] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[14:49:33] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.15+6463-5ca4dff
+[14:49:33] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[14:49:33] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[14:49:34] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
+[14:49:37] [Server thread/INFO]: [XConomy] Enabling XConomy v2.22.1
+[14:49:37] [Server thread/INFO]: [XConomy] UUID-Mode: Default
+[14:49:37] [Server thread/INFO]: [XConomy] Language: SPANISH
+[14:49:37] [Server thread/INFO]: [XConomy] Modo de guardado - MySQL
+[14:49:37] [Server thread/INFO]: [XConomy] Conectado con MySQL
+[14:49:37] [Server thread/INFO]: [XConomy] XConomy está habilitado
+[14:49:37] [Server thread/INFO]: [XConomy] Encontrado PlaceholderAPI
+[14:49:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy [2.22.1]
+[14:49:37] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
+[14:49:37] [Server thread/INFO]: [XConomy] ===== YiC =====
+[14:49:37] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:49:37] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:49:37] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:49:37] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:49:37] [Server thread/INFO]: Preparing level "world"
+[14:49:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:49:39] [Server thread/INFO]: Time elapsed: 417 ms
+[14:49:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:49:39] [Server thread/INFO]: Time elapsed: 80 ms
+[14:49:39] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9-beta1+2249-223b80c
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[14:49:40] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[14:49:40] [Server thread/INFO]: [WorldGuard] Loading region data...
+[14:49:40] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.3
+[14:49:41] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[14:49:41] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0
+[14:49:41] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[14:49:41] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[14:49:41] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[14:49:42] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[14:49:42] [Server thread/INFO]: [Essentials] Using locale es
+[14:49:42] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[14:49:42] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[14:49:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[14:49:42] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[14:49:42] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.3.2-18ded834
+[14:49:42] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
+[14:49:42] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality
+[14:49:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mythic [5.0.0]
+[14:49:47] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[14:49:47] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
+[14:49:47] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[14:49:47] [Server thread/INFO]: [MythicMobs] Base directory D:\MinecraftPaper\plugins\MythicMobs\SavedData
+[14:49:47] [Server thread/INFO]: [MythicMobs] Module directory D:\MinecraftPaper\plugins\MythicMobs\SavedData\worlds
+[14:49:51] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[14:49:51] [Server thread/INFO]: [MythicMobs] Loading Items...
+[14:49:51] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[14:49:51] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[14:49:52] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[14:49:52] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[14:49:52] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 24 mobs.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 183 skills.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 mythic items.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[14:49:52] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[14:49:52] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[14:49:52] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs Premium v5.3.2 ( build 18ded834 ) has been successfully loaded!
+[14:49:52] [Server thread/INFO]: [CMILib] Enabling CMILib v1.3.1.1
+[14:49:54] [Server thread/INFO]: Server version: v1_20_R1 - 1.20.1 - paper
+[14:49:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil [1.3.1.1]
+[14:49:55] [Server thread/INFO]: PlaceholderAPI hooked.
+[14:49:55] [Server thread/INFO]: Updated (EN) language file. Took 95ms
+[14:49:55] [Server thread/INFO]: [SternalBoard] Enabling SternalBoard v2.2.0
+[14:49:55] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.12
+[14:49:55] [Server thread/INFO]: [SkinsRestorer] Detected Minecraft v1_20_R1, using MappingSpigotSkinRefresher.
+[14:49:56] [Server thread/INFO]: [SkinsRestorer] Connected to MySQL!
+[14:49:56] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
+[14:49:56] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[14:49:56] [Server thread/INFO]: [ShopGUIPlus] Enabling ShopGUIPlus v1.87.0
+[14:49:57] [Server thread/INFO]: [ProtectionStones] Enabling ProtectionStones v2.10.3
+[14:49:57] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.GreetingFlagHandler
+[14:49:57] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.FarewellFlagHandler
+[14:49:57] [Server thread/INFO]: [ProtectionStones] PlaceholderAPI support enabled!
+[14:49:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: protectionstones [2.10.3]
+[14:49:57] [Server thread/INFO]: [ProtectionStones] LuckPerms support enabled!
+[14:49:57] [Server thread/INFO]: [ProtectionStones] Protection Stone Blocks:
+[14:49:57] [Server thread/INFO]: [ProtectionStones] - EMERALD_ORE (64)
+[14:49:58] [Server thread/INFO]: [ProtectionStones] Building region cache...
+[14:49:58] [Server thread/INFO]: [ProtectionStones] Building UUID cache... (if slow change async-load-uuid-cache in the config to true)
+[14:49:58] [Server thread/INFO]: [ProtectionStones] Checking if PS regions have been updated to UUIDs...
+[14:49:58] [Server thread/INFO]: [ProtectionStones] §fProtectionStones has successfully started!
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Enabling ProCosmetics v13.9.2
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing configs...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing menus...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing cosmetics...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing arrow effects...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing balloons...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing banners...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing death effects...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing emotes...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing gadgets...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing miniatures...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing morphs...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing mounts...
+[14:49:58] [Server thread/INFO]: [ProCosmetics] Initializing music...
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Initializing particle effects...
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Initializing pets...
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Initializing statuses...
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Initializing treasures...
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Hooking into PlaceholderAPI...
+[14:50:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: procosmetics [1.0.0]
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Connecting to the database...
+[14:50:01] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[14:50:01] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Successfully connected to the database!
+[14:50:01] [Server thread/INFO]: [ProCosmetics] Hooking into Essentials...
+[14:50:02] [Server thread/INFO]: [ProCosmetics] Initialized! Took 4492ms.
+[14:50:02] [Server thread/INFO]: [PinataParty] Enabling PinataParty v2.60.3
+[14:50:02] [Server thread/INFO]: [PinataParty] Registering hooks...
+[14:50:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pinataparty [2.60.3]
+[14:50:02] [Server thread/INFO]: [PinataParty] Hooked into PlaceholderAPI
+[14:50:02] [Server thread/INFO]: [PinataParty] Votifier not found! Not enabling the voting system! Download and install it from https://www.spigotmc.org/resources/13449/
+[14:50:02] [Server thread/INFO]: [PinataParty] Hooked into Vault
+[14:50:02] [Server thread/INFO]: [PinataParty] Registering commands...
+[14:50:02] [Server thread/INFO]: [PinataParty] Registering listeners...
+[14:50:02] [Server thread/INFO]: [PinataParty] Loading data...
+[14:50:02] [Server thread/INFO]: [PinataParty] Starting tasks...
+[14:50:02] [Server thread/INFO]: [PinataParty] Starting metrics...
+[14:50:02] [Server thread/INFO]: [PinataParty] Plugin registered to 1820939 | 940378444
+[14:50:02] [Server thread/INFO]: [PinataParty] Done and enabled in 52.37ms
+[14:50:02] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.8
+[14:50:02] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.
+[14:50:02] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: MythicMobs
+[14:50:02] [Server thread/INFO]: [Jobs] Enabling Jobs v5.2.0.0
+[14:50:02] [Server thread/INFO]: ------------- Jobs -------------
+[14:50:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: jobsr [5.2.0.0]
+[14:50:02] [Server thread/INFO]: PlaceholderAPI hooked.
+[14:50:03] [Server thread/INFO]: Connected to database (MySQL)
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Novice has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Apprentice has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Initiate has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Journeyman has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Adept has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Master has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Grandmaster has an invalid Name property. Skipping!
+[14:50:03] [Server thread/ERROR]: [Jobs] Title Legendary has an invalid Name property. Skipping!
+[14:50:03] [Server thread/INFO]: Loaded 69 protected blocks timers
+[14:50:03] [Server thread/INFO]: Loaded 1403 custom item names
+[14:50:03] [Server thread/INFO]: Loaded 81 custom entity names
+[14:50:03] [Server thread/INFO]: Loaded 2 custom MythicMobs names
+[14:50:03] [Server thread/INFO]: Loaded 38 custom enchant names
+[14:50:03] [Server thread/INFO]: Loaded 21 custom enchant names
+[14:50:03] [Server thread/INFO]: Loaded 16 custom color names
+[14:50:03] [Server thread/INFO]: Loaded 4 shop items
+[14:50:03] [Server thread/INFO]: Loaded 1 quests for Explorador
+[14:50:03] [Server thread/INFO]: Loaded 1 quests for Granjero
+[14:50:03] [Server thread/INFO]: Loaded 1 quests for Cazador
+[14:50:03] [Server thread/INFO]: Loaded 1 quests for Cavador
+[14:50:03] [Server thread/INFO]: Loaded 1 quests for Encantador
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Leniador
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Armero
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Minero
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Cervecero
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Pescador
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Constructor
+[14:50:04] [Server thread/INFO]: Loaded 1 quests for Crafter
+[14:50:04] [Server thread/INFO]: Loaded 12 jobs
+[14:50:04] [Server thread/INFO]: Loaded 0 boosted items
+[14:50:04] [Server thread/INFO]: Loaded 2 furnace for reassigning.
+[14:50:04] [Server thread/INFO]: Loaded 1 brewing for reassigning.
+[14:50:04] [Jobs-DatabaseSaveTask/INFO]: Started database save task.
+[14:50:04] [Jobs-BufferedPaymentThread/INFO]: Started buffered payment thread.
+[14:50:04] [Server thread/INFO]: Preloaded 10 players data in 0.05
+[14:50:04] [Server thread/INFO]: WorldGuard detected.
+[14:50:04] [Server thread/INFO]: MythicMobs 5.x detected.
+[14:50:04] [Server thread/INFO]: [Jobs] MythicMobs was found - Enabling capabilities.
+[14:50:04] [Server thread/INFO]: Loading explorer data
+[14:50:04] [Server thread/INFO]: Loaded explorer data (1950) in 105 ms
+[14:50:05] [Server thread/INFO]: Plugin has been enabled successfully.
+[14:50:05] [Server thread/INFO]: ------------------------------------
+[14:50:05] [Server thread/INFO]: [bloodmoon-advanced] Enabling bloodmoon-advanced v4.5.7
+[14:50:05] [Server thread/INFO]: [bloodmoon-advanced] plugin registered for user 1820939 with nonce 489221523
+[14:50:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bloodmoon-advanced [4.5.7]
+[14:50:05] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.10
+[14:50:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: betterrtp [3.6.10]
+[14:50:05] [Server thread/INFO]: [AngelChest] Enabling AngelChest v9.14.2
+[14:50:06] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
+[14:50:06] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
+[14:50:06] [Server thread/INFO]: [AngelChest] No graveyards.yml found, disabling Graveyards feature
+[14:50:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: angelchest [GENERIC]
+[14:50:06] [Server thread/INFO]: [AngelChest] Successfully hooked into Vault and the EconomyProvider, enabling economy functions.
+[14:50:06] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
+[14:50:06] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[14:50:07] [Server thread/INFO]: Running delayed init tasks
+[14:50:07] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[14:50:07] [Server thread/INFO]: [Jobs] Successfully linked with Vault. (XConomy)
+[14:50:07] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] Obteniendo información de versión...
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] [Importing models]
+[14:50:07] [Craft Scheduler Thread - 29 - Vault/INFO]: [Vault] Checking for Updates ... 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature.bbmodel.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] ================================[ ShopGUI+ 1.87.0 ]================================
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus]  
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Vault economy registered.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Vault economy enabled.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Using Vault as default economy provider.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Permissions support enabled.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] No external spawner plugins registered, using built-in spawners support.
+[14:50:07] [Craft Scheduler Thread - 4 - XConomy/INFO]: [XConomy] Es la version mas nueva
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded 10 main menu items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'farming' with 18 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'miscellaneous' with 9 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'armor' with 24 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'ores' with 8 items.
+[14:50:07] [Craft Scheduler Thread - 17 - PinataParty/INFO]: [PinataParty] v2.60.4 is available! You are running v2.60.3!
+[14:50:07] [Craft Scheduler Thread - 17 - PinataParty/INFO]: [PinataParty] Download it here: https://www.spigotmc.org/resources/59318/
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'blocks' with 37 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'drops' with 18 items.
+[14:50:07] [Craft Scheduler Thread - 29 - Vault/INFO]: [Vault] No new version available
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_double.bbmodel.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'tools' with 15 items.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_ring.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_still.bbmodel.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'dyes' with 16 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'food' with 19 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded 9 shops with total of 164 items.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded 0 permission-based price modifiers.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] Loaded 7 sounds.
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus]  
+[14:50:07] [Server thread/INFO]: [ShopGUIPlus] ====================================================================================
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     |------------------|
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     Current version: 14.2.12
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer]     This is the latest version!
+[14:50:07] [Craft Scheduler Thread - 11 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion_small.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_shine_vfx.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing Ezekiel.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/WARN]: [ModelEngine] [A] --Error: The cube cube in bone sword_blade has no faces. This might be caused by all faces having UV size of 0. Excluding cube from bone.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_large.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_small.bbmodel.
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:07] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_pool.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull_2ndphase.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_still.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_terror.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Importing warden_heart.bbmodel.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] [Generating assets]
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature.
+[14:50:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.5]
+[14:50:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: playerlist [3.0.3]
+[14:50:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault [1.8.1]
+[14:50:08] [Server thread/INFO]: 3 placeholder hook(s) registered!
+[14:50:08] [Server thread/INFO]: Done (44.752s)! For help, type "help"
+[14:50:08] [Server thread/INFO]: Timings Reset
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_double.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_ring.
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:08] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_still.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion_small.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_shine_vfx.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating ezekiel.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_large.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_small.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_pool.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull.
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:09] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull_2ndphase.
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_still.
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_terror.
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Generating warden_heart.
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] 
+[14:50:10] [Craft Scheduler Thread - 21 - ModelEngine/INFO]: [ModelEngine] [A] Resource pack zipped.
+[14:50:20] [User Authenticator #0/INFO]: UUID of player YuquitaFrita is 17805d73-a8f7-332d-a013-2a293f23df9a
+[14:50:21] [Server thread/INFO]: YuquitaFrita joined the game
+[14:50:22] [Server thread/INFO]: YuquitaFrita[/127.0.0.1:53443] logged in with entity id 72 at ([world]829.2476662755936, 70.0, -610.2521214934444)
+[14:50:22] [Server thread/WARN]: [Essentials] Permissions lag notice with (LuckPermsHandler). Response took 48.323800ms. Summary: Getting group for YuquitaFrita
+[14:50:26] [Server thread/INFO]: [AngelChest] Trying to hook into WorldGuard...
+[14:50:26] [Server thread/INFO]: [AngelChest] Successfully hooked into WorldGuard.
+[14:50:26] [Server thread/INFO]: YuquitaFrita was slain by Zombie Villager
+[14:50:48] [Server thread/INFO]: YuquitaFrita was shot by Stray
+[14:51:12] [Server thread/INFO]: YuquitaFrita issued server command: /gamemode creative
+[14:59:42] [Server thread/INFO]: YuquitaFrita issued server command: /rtp
+[14:59:44] [Server thread/WARN]: YuquitaFrita moved too quickly! -1482.8618784114929,-3.0,954.4034857794436
+[15:00:13] [Server thread/INFO]: YuquitaFrita issued server command: /rtp
+[15:00:14] [Server thread/WARN]: YuquitaFrita moved too quickly! -102.94057605512103,-2.0,-1163.863417494393
+[15:05:59] [Server thread/INFO]: YuquitaFrita issued server command: /jobs
+[15:06:03] [Server thread/INFO]: YuquitaFrita issued server command: /jobs shop
+[15:08:57] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/7805, uuid='aa737619-7d63-4f02-bc3a-113e46249d1f', l='ServerLevel[world]', x=897.50, y=-15.00, z=-187.50, cpos=[56, -12], tl=431, v=true] died: Skeletal Knight suffocated in a wall
+[15:31:30] [Server thread/INFO]: YuquitaFrita issued server command: /money
+[15:31:48] [Server thread/INFO]: YuquitaFrita issued server command: /tpr
+[15:32:17] [Server thread/WARN]: YuquitaFrita moved too quickly! -1.750367637927379E7,0.0,1.928113727165494E7
+[15:33:33] [Server thread/INFO]: YuquitaFrita issued server command: /betterrtp
+[15:34:00] [Server thread/INFO]: YuquitaFrita issued server command: /money
+[15:34:21] [Server thread/INFO]: YuquitaFrita issued server command: /betterrtp
+[15:34:22] [Server thread/WARN]: YuquitaFrita moved too quickly! -1005.6138462941726,6.0,94.04599163013302
+[15:34:27] [Server thread/INFO]: YuquitaFrita issued server command: /money
+[15:34:31] [Server thread/INFO]: YuquitaFrita issued server command: /gamemode survival
+[15:34:37] [Server thread/INFO]: YuquitaFrita issued server command: /deop YuquitaFrita
+[15:34:37] [Server thread/INFO]: [YuquitaFrita: Made YuquitaFrita no longer a server operator]
+[15:34:40] [Server thread/INFO]: YuquitaFrita issued server command: /betterrtp
+[15:34:52] [Server thread/INFO]: YuquitaFrita issued server command: /money
+[15:35:19] [Server thread/INFO]: YuquitaFrita was slain by Zombie
+[15:35:19] [Server thread/INFO]: Made YuquitaFrita a server operator
+[15:35:29] [Server thread/INFO]: YuquitaFrita issued server command: /actp 1
+[15:35:35] [Server thread/INFO]: YuquitaFrita issued server command: /gamemode creative
+[15:46:01] [Server thread/INFO]: Stopping the server
+[15:46:01] [Server thread/INFO]: Stopping server
+[15:46:01] [Server thread/INFO]: [AngelChest] Disabling AngelChest v9.14.2
+[15:46:01] [Server thread/INFO]: [bloodmoon-advanced] Disabling bloodmoon-advanced v4.5.7
+[15:46:01] [Server thread/INFO]: [Jobs] Disabling Jobs v5.2.0.0
+[15:46:01] [Server thread/INFO]: ------------- Jobs -------------
+[15:46:02] [Server thread/INFO]: [Jobs] Saved 206 new explorer entries.
+[15:46:02] [Server thread/INFO]: [Jobs] Updated 7 explorer entries.
+[15:46:02] [Server thread/INFO]: ------------------------------------
+[15:46:02] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.1.8
+[15:46:02] [Server thread/INFO]: [PinataParty] Disabling PinataParty v2.60.3
+[15:46:02] [Server thread/INFO]: [PinataParty] Removing 0 active pinatas...
+[15:46:02] [Server thread/INFO]: [PinataParty] Unregistering team...
+[15:46:02] [Server thread/INFO]: [PinataParty] Saving data...
+[15:46:02] [Server thread/INFO]: [PinataParty] Done and disabled in 7.91ms
+[15:46:02] [Server thread/INFO]: [PinataParty] If you liked the plugin, don't forget to give a ★★★★★ rating!
+[15:46:02] [Server thread/INFO]: [PinataParty] Thank you and have a great day!
+[15:46:02] [Server thread/INFO]: [ProCosmetics] Disabling ProCosmetics v13.9.2
+[15:46:02] [Jobs-BufferedPaymentThread/INFO]: Buffered payment thread shutdown.
+[15:46:02] [Jobs-DatabaseSaveTask/INFO]: Database save task shutdown!
+[15:46:02] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[15:46:02] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[15:46:02] [Server thread/INFO]: [ProtectionStones] Disabling ProtectionStones v2.10.3
+[15:46:02] [Server thread/INFO]: [ShopGUIPlus] Disabling ShopGUIPlus v1.87.0
+[15:46:02] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v14.2.12
+[15:46:02] [Server thread/INFO]: [SternalBoard] Disabling SternalBoard v2.2.0
+[15:46:02] [Server thread/INFO]: [XConomy] Disabling XConomy v2.22.1
+[15:46:02] [Server thread/INFO]: [XConomy] XConomy está deshabilitado
+[15:46:02] [Server thread/INFO]: [CMILib] Disabling CMILib v1.3.1.1
+[15:46:02] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.3.2-18ded834
+[15:46:02] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...
+[15:46:02] [Server thread/INFO]: [MythicMobs] All active settings have been saved.
+[15:46:02] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0
+[15:46:02] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[15:46:02] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.3
+[15:46:02] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.9-beta1+2249-223b80c
+[15:46:02] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[15:46:02] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.15+6463-5ca4dff
+[15:46:02] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[15:46:02] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[15:46:02] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.98
+[15:46:02] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[15:46:02] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[15:46:02] [Server thread/INFO]: [LuckPerms] Closing storage...
+[15:46:02] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[15:46:02] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[15:46:02] [Server thread/INFO]: [LuckPerms] Goodbye!
+[15:46:02] [Server thread/INFO]: Saving players
+[15:46:02] [Server thread/INFO]: YuquitaFrita lost connection: Server closed
+[15:46:02] [Server thread/INFO]: YuquitaFrita left the game
+[15:46:02] [Server thread/INFO]: Saving worlds
+[15:46:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:46:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[15:46:02] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[15:46:02] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[15:46:05] [Server thread/INFO]: [ChunkHolderManager] Saved 890 block chunks, 442 entity chunks, 0 poi chunks in world 'world' in 3.06s
+[15:46:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:46:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[15:46:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[15:46:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[15:46:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[15:46:13] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.03s
+[15:46:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:46:14] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:46:14] [Server thread/INFO]: Flushing Chunk IO
+[15:46:14] [Server thread/INFO]: Closing Thread Pool
+[15:46:14] [Server thread/INFO]: Closing Server
