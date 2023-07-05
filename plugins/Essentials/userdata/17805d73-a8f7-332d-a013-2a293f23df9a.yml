@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688503562378
-  login: 1688500222108
+  logout: 1688576079418
+  login: 1688576199756
   kits:
     tools: 1687573970481
 money: '0'
@@ -25,11 +25,11 @@ last-account-name: YuquitaFrita
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: 381.22486503571497
-  y: 63.54912369028919
-  z: -808.9342969718311
-  yaw: 55.804595947265625
-  pitch: -8.700538635253906
+  x: 1298.0542226522095
+  y: 68.0
+  z: -2694.761849235279
+  yaw: -93.123779296875
+  pitch: 30.87274932861328
 lastlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
