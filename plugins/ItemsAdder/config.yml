@@ -102,7 +102,7 @@ blocks:
   remove-unused-palettes-on-region-save: false
 items:
   fix-show-attack-and-damage-as-lore: true
-  give_death_location_maps: true
+  give_death_location_maps: false
   hide-custom-durability-lore: false
   handle-wear-held-actions-on-unexpected-inventory-changes: true
 liquids:
@@ -172,7 +172,7 @@ entities:
     optimized-packets: true
 recipes:
   hide-vanilla-unrecognized-recipe-errors: true
-  fix-packet-too-large-kick: false
+  fix-packet-too-large-kick: true
   show-no-permission-popup-in-recipebook: true
   show-no-permission-chat-message: false
   custom-recipes:

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.66.138.127
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1688619372961
+  login: 1688618575382
+money: '0'
+last-account-name: Lexais
+lastlocation:
+  world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
+  world-name: world
+  x: -7.104068784557065
+  y: 77.0
+  z: 4.2431018028786385
+  yaw: -100.8292236328125
+  pitch: 14.747356414794922
+logoutlocation:
+  world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
+  world-name: world
+  x: -242.64391784030968
+  y: 108.0
+  z: -1913.6581499110541
+  yaw: 89.4892807006836
+  pitch: 47.37849426269531

@@ -17,12 +17,12 @@ regions:
             wither-damage: deny
             ps-tax-payments-due: []
             greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            ps-tax-last-payment-added: []
             pvp: deny
+            ps-tax-last-payment-added: []
             ps-home: -121.0 64.0 -2074.0
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
-            ps-block-material: EMERALD_ORE
             mob-spawning: deny
+            ps-block-material: EMERALD_ORE
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
@@ -48,3 +48,40 @@ regions:
         - {x: 55, z: -2167}
         - {x: 55, z: -2039}
         - {x: -57, z: -2039}
+    ps-237x110y-1907z:
+        members:
+            unique-ids: [336ad795-ca83-3f03-a5e0-bb8ac77f32f3, c69ba30c-d39d-36ba-85bf-273af53a6a85]
+        flags:
+            wither-damage: deny
+            ps-tax-payments-due: []
+            greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
+            pvp: deny
+            ps-tax-last-payment-added: []
+            ps-home: -237.0 111.0 -1907.0
+            ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
+            ps-block-material: EMERALD_ORE
+            creeper-explosion: deny
+            farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
+            greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
+            ps-merged-regions: [ps-193x79y-1851z, ps-237x110y-1907z]
+            tnt: deny
+            ghast-fireball: deny
+            ps-merged-regions-types: [ps-237x110y-1907z EMERALD_ORE, ps-193x79y-1851z
+                    EMERALD_ORE]
+            farewell: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
+        owners:
+            unique-ids: [17805d73-a8f7-332d-a013-2a293f23df9a]
+        type: poly2d
+        priority: 0
+        max-y: 32767
+        min-y: -32768
+        points:
+        - {x: -173, z: -1915}
+        - {x: -173, z: -1971}
+        - {x: -301, z: -1971}
+        - {x: -301, z: -1843}
+        - {x: -257, z: -1843}
+        - {x: -257, z: -1787}
+        - {x: -129, z: -1787}
+        - {x: -129, z: -1915}
+        - {x: -173, z: -1915}
