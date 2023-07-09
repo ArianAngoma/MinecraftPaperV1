@@ -21,8 +21,8 @@ regions:
             ps-tax-last-payment-added: []
             ps-home: -121.0 64.0 -2074.0
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
-            mob-spawning: deny
             ps-block-material: EMERALD_ORE
+            mob-spawning: deny
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
@@ -48,9 +48,10 @@ regions:
         - {x: 55, z: -2167}
         - {x: 55, z: -2039}
         - {x: -57, z: -2039}
-    ps-237x110y-1907z:
+    ps-285x77y-1759z:
         members:
-            unique-ids: [336ad795-ca83-3f03-a5e0-bb8ac77f32f3, c69ba30c-d39d-36ba-85bf-273af53a6a85]
+            unique-ids: [336ad795-ca83-3f03-a5e0-bb8ac77f32f3, c69ba30c-d39d-36ba-85bf-273af53a6a85,
+                8bbfe3c6-40c3-3716-a8ca-1e3fabd5acaf]
         flags:
             wither-damage: deny
             ps-tax-payments-due: []
@@ -63,14 +64,15 @@ regions:
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            ps-merged-regions: [ps-193x79y-1851z, ps-237x110y-1907z]
+            ps-merged-regions: [ps-248x75y-1763z, ps-193x79y-1851z, ps-285x77y-1759z,
+                ps-237x110y-1907z]
             tnt: deny
             ghast-fireball: deny
-            ps-merged-regions-types: [ps-237x110y-1907z EMERALD_ORE, ps-193x79y-1851z
-                    EMERALD_ORE]
+            ps-merged-regions-types: [ps-285x77y-1759z EMERALD_ORE, ps-248x75y-1763z
+                    EMERALD_ORE, ps-237x110y-1907z EMERALD_ORE, ps-193x79y-1851z EMERALD_ORE]
             farewell: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
         owners:
-            unique-ids: [17805d73-a8f7-332d-a013-2a293f23df9a]
+            unique-ids: [17805d73-a8f7-332d-a013-2a293f23df9a, 8bbfe3c6-40c3-3716-a8ca-1e3fabd5acaf]
         type: poly2d
         priority: 0
         max-y: 32767
@@ -81,7 +83,15 @@ regions:
         - {x: -301, z: -1971}
         - {x: -301, z: -1843}
         - {x: -257, z: -1843}
-        - {x: -257, z: -1787}
+        - {x: -257, z: -1827}
+        - {x: -312, z: -1827}
+        - {x: -312, z: -1823}
+        - {x: -349, z: -1823}
+        - {x: -349, z: -1695}
+        - {x: -221, z: -1695}
+        - {x: -221, z: -1699}
+        - {x: -184, z: -1699}
+        - {x: -184, z: -1787}
         - {x: -129, z: -1787}
         - {x: -129, z: -1915}
         - {x: -173, z: -1915}

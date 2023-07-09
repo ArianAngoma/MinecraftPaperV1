@@ -546,6 +546,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:blaze": "2023-07-04 19:33:51 -0500",
+      "minecraft:pillager": "2023-07-09 01:07:07 -0500",
       "minecraft:skeleton": "2023-07-01 14:46:18 -0500",
       "minecraft:zoglin": "2023-07-01 23:21:45 -0500",
       "minecraft:magma_cube": "2023-07-04 19:31:39 -0500",
@@ -2252,6 +2253,72 @@
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2023-07-06 00:37:48 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_door": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_button": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_sign": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_fence": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:34:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_glow_ink_sac": "2023-07-07 00:56:25 -0500"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/make_a_sign_glow": {
+    "criteria": {
+      "make_a_sign_glow": "2023-07-07 00:56:30 -0500"
     },
     "done": true
   },

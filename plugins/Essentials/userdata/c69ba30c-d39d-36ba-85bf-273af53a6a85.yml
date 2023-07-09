@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 190.191.53.48
+ip-address: 190.193.24.215
 afk: false
 socialspy: false
 npc: false
@@ -16,23 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688624078890
-  login: 1688619503687
+  logout: 1688848096676
+  login: 1688876614857
 money: '0'
 last-account-name: XxHyunnyxX
 lastlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -112.34267563505978
-  y: 63.0
-  z: -2072.138970940058
-  yaw: -77.09988403320312
-  pitch: 23.850000381469727
+  x: -240.5676098057951
+  y: 88.6806535513071
+  z: -1814.7585044395332
+  yaw: 52.83642578125
+  pitch: 28.500167846679688
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -191.5418116194845
-  y: 78.33378802101227
-  z: -1819.6443220283886
-  yaw: 139.7996826171875
-  pitch: 22.950063705444336
+  x: -176.56079219062806
+  y: 84.92704972684227
+  z: -1788.503932634278
+  yaw: 172.5693359375
+  pitch: 7.799247741699219

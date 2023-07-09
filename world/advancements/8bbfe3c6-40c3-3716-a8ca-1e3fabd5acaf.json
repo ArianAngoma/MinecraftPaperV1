@@ -15,13 +15,16 @@
       "minecraft:dark_forest": "2023-07-01 19:01:46 -0500",
       "minecraft:sparse_jungle": "2023-07-06 00:30:10 -0500",
       "minecraft:river": "2023-07-01 19:01:37 -0500",
+      "minecraft:lukewarm_ocean": "2023-07-07 00:37:12 -0500",
       "minecraft:snowy_plains": "2023-06-29 22:51:49 -0500",
       "minecraft:snowy_taiga": "2023-06-29 22:59:57 -0500",
+      "minecraft:cold_ocean": "2023-07-07 00:39:24 -0500",
       "minecraft:forest": "2023-07-02 01:17:18 -0500",
       "minecraft:lush_caves": "2023-06-30 23:59:49 -0500",
       "minecraft:frozen_ocean": "2023-06-30 23:56:07 -0500",
       "minecraft:ocean": "2023-07-01 19:55:35 -0500",
       "minecraft:jungle": "2023-07-01 22:04:32 -0500",
+      "minecraft:old_growth_spruce_taiga": "2023-07-07 00:37:31 -0500",
       "minecraft:snowy_beach": "2023-07-01 19:38:24 -0500",
       "minecraft:old_growth_birch_forest": "2023-07-02 01:29:32 -0500",
       "minecraft:plains": "2023-07-01 19:16:30 -0500"
@@ -463,6 +466,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2023-07-01 20:48:56 -0500",
+      "minecraft:blaze": "2023-07-08 23:54:14 -0500",
       "minecraft:skeleton": "2023-06-29 23:06:59 -0500",
       "minecraft:zoglin": "2023-07-01 22:07:55 -0500",
       "minecraft:hoglin": "2023-07-01 22:07:42 -0500",
@@ -2496,39 +2500,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/magma_block": {
-    "criteria": {
-      "has_magma_cream": "2023-07-06 00:35:31 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
     "criteria": {
       "has_chicken": "2023-07-06 00:34:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
-    "criteria": {
-      "has_potato": "2023-07-06 00:59:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/jungle_wood": {
-    "criteria": {
-      "has_log": "2023-07-06 01:13:35 -0500"
-    },
-    "done": true
-  },
-  "minecraft:story/deflect_arrow": {
-    "criteria": {
-      "deflected_projectile": "2023-07-06 00:54:20 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/jungle_planks": {
-    "criteria": {
-      "has_logs": "2023-07-06 01:13:35 -0500"
     },
     "done": true
   },
@@ -2538,15 +2512,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2023-07-06 00:34:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2023-07-06 00:34:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magma_block": {
+    "criteria": {
+      "has_magma_cream": "2023-07-06 00:35:31 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2023-07-06 00:35:31 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/brown_dye": {
     "criteria": {
       "has_cocoa_beans": "2023-07-06 00:46:57 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+  "minecraft:recipes/food/cookie": {
     "criteria": {
-      "has_chicken": "2023-07-06 00:34:17 -0500"
+      "has_cocoa": "2023-07-06 00:46:57 -0500"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_boots": "2023-07-06 00:47:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:story/deflect_arrow": {
+    "criteria": {
+      "deflected_projectile": "2023-07-06 00:54:20 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
+    "criteria": {
+      "has_potato": "2023-07-06 00:59:17 -0500"
     },
     "done": true
   },
@@ -2562,27 +2578,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/arrow": {
+  "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
-      "has_feather": "2023-07-06 00:34:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:story/shiny_gear": {
-    "criteria": {
-      "diamond_boots": "2023-07-06 00:47:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
-    "criteria": {
-      "has_dandelion": "2023-07-06 00:35:31 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cookie": {
-    "criteria": {
-      "has_cocoa": "2023-07-06 00:46:57 -0500"
+      "has_coal": "2023-07-06 01:06:42 -0500"
     },
     "done": true
   },
@@ -2592,15 +2590,171 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/coal_block": {
-    "criteria": {
-      "has_coal": "2023-07-06 01:06:42 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/pumpkin_pie": {
     "criteria": {
       "has_carved_pumpkin": "2023-07-06 01:06:49 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_wood": {
+    "criteria": {
+      "has_log": "2023-07-06 01:13:35 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2023-07-06 01:13:35 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_button": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_door": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_fence": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_sign": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_pressure_plate": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs": {
+    "criteria": {
+      "has_planks": "2023-07-07 00:40:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_breath": {
+    "criteria": {
+      "dragon_breath": "2023-07-07 01:00:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_glazed_terracotta": {
+    "criteria": {
+      "has_red_terracotta": "2023-07-07 01:04:26 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_sign": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_fence": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab": {
+    "criteria": {
+      "has_planks": "2023-07-07 01:18:45 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_bed": {
+    "criteria": {
+      "has_pink_wool": "2023-07-07 01:22:39 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_carpet": {
+    "criteria": {
+      "has_pink_wool": "2023-07-07 01:22:39 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_banner": {
+    "criteria": {
+      "has_pink_wool": "2023-07-07 01:22:39 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_oak_wood": {
+    "criteria": {
+      "has_log": "2023-07-09 00:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2023-07-09 00:32:59 -0500"
     },
     "done": true
   },

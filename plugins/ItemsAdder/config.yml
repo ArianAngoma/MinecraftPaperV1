@@ -72,8 +72,8 @@ resource-pack:
       ALL: 10000
       DIAMOND: 11000
 config_files:
-  lang: es
-  dictionaries-lang: es
+  lang: en
+  dictionaries-lang: en
   force-sync-loading: false
 blocks:
   light-api: true
@@ -102,7 +102,7 @@ blocks:
   remove-unused-palettes-on-region-save: false
 items:
   fix-show-attack-and-damage-as-lore: true
-  give_death_location_maps: false
+  give_death_location_maps: true
   hide-custom-durability-lore: false
   handle-wear-held-actions-on-unexpected-inventory-changes: true
 liquids:
@@ -172,7 +172,7 @@ entities:
     optimized-packets: true
 recipes:
   hide-vanilla-unrecognized-recipe-errors: true
-  fix-packet-too-large-kick: true
+  fix-packet-too-large-kick: false
   show-no-permission-popup-in-recipebook: true
   show-no-permission-chat-message: false
   custom-recipes:
