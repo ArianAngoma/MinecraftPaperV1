@@ -1,0 +1,30 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/brick"
+    },
+	"overrides": [	
+		{"predicate": {"custom_model_data":3500}, "model": "rpg_pet_model/icon_aether_dragon"},
+		{"predicate": {"custom_model_data":3501}, "model": "rpg_pet_model/icon_angel"},
+		{"predicate": {"custom_model_data":3502}, "model": "rpg_pet_model/icon_dark_kitsune"},
+		{"predicate": {"custom_model_data":3503}, "model": "rpg_pet_model/icon_demon"},
+		{"predicate": {"custom_model_data":3504}, "model": "rpg_pet_model/icon_eagle"},
+		{"predicate": {"custom_model_data":3505}, "model": "rpg_pet_model/icon_fire_dragon"},
+		{"predicate": {"custom_model_data":3506}, "model": "rpg_pet_model/icon_frost_wolf"},
+		{"predicate": {"custom_model_data":3507}, "model": "rpg_pet_model/icon_hellhound"},
+		{"predicate": {"custom_model_data":3508}, "model": "rpg_pet_model/icon_ice_dragon"},
+		{"predicate": {"custom_model_data":3509}, "model": "rpg_pet_model/icon_kitsune"},
+		{"predicate": {"custom_model_data":3510}, "model": "rpg_pet_model/icon_lunar_wolf"},
+		{"predicate": {"custom_model_data":3511}, "model": "rpg_pet_model/icon_nature_dragon"},
+		{"predicate": {"custom_model_data":3512}, "model": "rpg_pet_model/icon_phoenix"},
+		{"predicate": {"custom_model_data":3513}, "model": "rpg_pet_model/icon_sai_ninja"},
+		{"predicate": {"custom_model_data":3514}, "model": "rpg_pet_model/icon_samurai"},
+		{"predicate": {"custom_model_data":3515}, "model": "rpg_pet_model/icon_shadow_dragon"},
+		{"predicate": {"custom_model_data":3516}, "model": "rpg_pet_model/icon_shuriken_ninja"},
+		{"predicate": {"custom_model_data":3517}, "model": "rpg_pet_model/icon_spirit_fox"},
+		{"predicate": {"custom_model_data":3518}, "model": "rpg_pet_model/icon_thunder_dragon"},
+		{"predicate": {"custom_model_data":3519}, "model": "rpg_pet_model/icon_thunderbird"},
+		{"predicate": {"custom_model_data":3520}, "model": "rpg_pet_model/icon_undead_dragon"},
+		{"predicate": {"custom_model_data":3521}, "model": "rpg_pet_model/icon_wind_dragon"}
+    ]
+}

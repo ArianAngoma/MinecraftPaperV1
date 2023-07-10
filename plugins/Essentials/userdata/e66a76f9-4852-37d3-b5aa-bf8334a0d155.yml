@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688880797102
+  logout: 1688883586914
   login: 1688880800439
 money: '0'
 last-account-name: Flaming
@@ -31,8 +31,8 @@ lastlocation:
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -1613.828861427615
-  y: 67.27234796371594
-  z: -2522.894198326167
-  yaw: 32.742919921875
-  pitch: 25.137157440185547
+  x: -235.25702176257712
+  y: 86.39553099846493
+  z: -1825.5669819147934
+  yaw: -136.14544677734375
+  pitch: 16.08783721923828

@@ -13,6 +13,7 @@
       "minecraft:badlands": "2023-07-01 22:04:17 -0500",
       "minecraft:beach": "2023-07-01 19:01:10 -0500",
       "minecraft:dark_forest": "2023-07-01 19:01:46 -0500",
+      "minecraft:mangrove_swamp": "2023-07-09 21:33:57 -0500",
       "minecraft:sparse_jungle": "2023-07-06 00:30:10 -0500",
       "minecraft:river": "2023-07-01 19:01:37 -0500",
       "minecraft:lukewarm_ocean": "2023-07-07 00:37:12 -0500",
@@ -26,7 +27,9 @@
       "minecraft:jungle": "2023-07-01 22:04:32 -0500",
       "minecraft:old_growth_spruce_taiga": "2023-07-07 00:37:31 -0500",
       "minecraft:snowy_beach": "2023-07-01 19:38:24 -0500",
+      "minecraft:windswept_savanna": "2023-07-09 21:32:39 -0500",
       "minecraft:old_growth_birch_forest": "2023-07-02 01:29:32 -0500",
+      "minecraft:savanna": "2023-07-09 21:32:03 -0500",
       "minecraft:plains": "2023-07-01 19:16:30 -0500"
     },
     "done": false
@@ -475,6 +478,7 @@
       "minecraft:spider": "2023-06-30 00:16:53 -0500",
       "minecraft:creeper": "2023-07-01 00:40:17 -0500",
       "minecraft:wither": "2023-07-01 19:49:36 -0500",
+      "minecraft:slime": "2023-07-09 21:40:22 -0500",
       "minecraft:witch": "2023-07-02 01:37:08 -0500",
       "minecraft:wither_skeleton": "2023-07-06 00:30:12 -0500",
       "minecraft:husk": "2023-06-30 00:01:05 -0500",
@@ -2755,6 +2759,264 @@
   "minecraft:recipes/decorations/oak_hanging_sign": {
     "criteria": {
       "has_stripped_logs": "2023-07-09 00:32:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2023-07-09 01:13:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_dark_oak_wood": {
+    "criteria": {
+      "has_log": "2023-07-09 01:13:59 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2023-07-09 01:42:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_bowl": "2023-07-09 21:24:40 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/muddy_mangrove_roots": {
+    "criteria": {
+      "has_mangrove_roots": "2023-07-09 21:35:08 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_mud": {
+    "criteria": {
+      "has_mud": "2023-07-09 21:36:31 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2023-07-09 21:39:53 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2023-07-09 21:39:53 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2023-07-09 21:39:53 -0500"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/bred_all_animals": {
+    "criteria": {
+      "minecraft:frog": "2023-07-09 21:42:29 -0500"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/breed_an_animal": {
+    "criteria": {
+      "bred": "2023-07-09 21:42:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2023-07-09 22:02:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_banner": {
+    "criteria": {
+      "has_brown_wool": "2023-07-09 22:24:51 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/gray_bed": {
+    "criteria": {
+      "has_gray_wool": "2023-07-09 23:03:27 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_carpet": {
+    "criteria": {
+      "has_magenta_wool": "2023-07-09 22:48:58 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_carpet": {
+    "criteria": {
+      "has_red_wool": "2023-07-09 23:03:28 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_bed": {
+    "criteria": {
+      "has_black_wool": "2023-07-09 23:02:54 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_bed": {
+    "criteria": {
+      "has_orange_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_bed": {
+    "criteria": {
+      "has_brown_wool": "2023-07-09 22:24:51 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_bed": {
+    "criteria": {
+      "has_light_gray_wool": "2023-07-09 22:21:16 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_banner": {
+    "criteria": {
+      "has_red_wool": "2023-07-09 23:03:28 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_banner": {
+    "criteria": {
+      "has_orange_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_banner": {
+    "criteria": {
+      "has_magenta_wool": "2023-07-09 22:48:58 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_carpet": {
+    "criteria": {
+      "has_brown_wool": "2023-07-09 22:24:51 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_bed": {
+    "criteria": {
+      "has_blue_wool": "2023-07-09 22:45:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bricks": {
+    "criteria": {
+      "has_brick": "2023-07-09 23:09:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_carpet": {
+    "criteria": {
+      "has_black_wool": "2023-07-09 23:02:54 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2023-07-09 22:31:02 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_bed": {
+    "criteria": {
+      "has_light_blue_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_carpet": {
+    "criteria": {
+      "has_blue_wool": "2023-07-09 22:45:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/gray_banner": {
+    "criteria": {
+      "has_gray_wool": "2023-07-09 23:03:27 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_carpet": {
+    "criteria": {
+      "has_light_blue_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_banner": {
+    "criteria": {
+      "has_light_gray_wool": "2023-07-09 22:21:16 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_banner": {
+    "criteria": {
+      "has_black_wool": "2023-07-09 23:02:54 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/gray_carpet": {
+    "criteria": {
+      "has_gray_wool": "2023-07-09 23:03:27 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_carpet": {
+    "criteria": {
+      "has_light_gray_wool": "2023-07-09 22:21:16 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_banner": {
+    "criteria": {
+      "has_light_blue_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/flower_pot": {
+    "criteria": {
+      "has_brick": "2023-07-09 23:09:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_banner": {
+    "criteria": {
+      "has_blue_wool": "2023-07-09 22:45:04 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_bed": {
+    "criteria": {
+      "has_magenta_wool": "2023-07-09 22:48:58 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_carpet": {
+    "criteria": {
+      "has_orange_wool": "2023-07-09 23:03:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_bed": {
+    "criteria": {
+      "has_red_wool": "2023-07-09 23:03:28 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/decorated_pot_simple": {
+    "criteria": {
+      "has_brick": "2023-07-09 23:09:09 -0500"
     },
     "done": true
   },

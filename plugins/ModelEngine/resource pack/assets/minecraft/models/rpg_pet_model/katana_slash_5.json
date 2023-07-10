@@ -1,0 +1,29 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "rpg_pet_texture/katana_slash_5",
+		"particle": "rpg_pet_texture/katana_slash_5"
+	},
+	"elements": [
+		{
+			"from": [-2, 8, -2],
+			"to": [18, 8, 18],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [2.25, 2, 13.75, 13.5], "texture": "#0"},
+				"down": {"uv": [2.25, 13.5, 13.75, 2], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 0, 180],
+			"translation": [0.5, -29.75, -1.75],
+			"scale": [3.5, 3.5, 3.5]
+		}
+	}
+}

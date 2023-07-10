@@ -1,0 +1,63 @@
+mount:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: SADDLE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mount"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;mount"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to mount your pet"}],"text":""}'
+rename:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: NAME_TAG
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Rename"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;rename"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to rename your pet"}],"text":""}'
+petmenu:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: FILLED_MAP
+  meta:
+    ==: ItemMeta
+    meta-type: MAP
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Back
+      to menu"}],"text":""}'
+    loc-name: MCPetsMenu;petmenu
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+      to get back to the menu"}],"text":""}'
+skins:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: MAGMA_CREAM
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Skins"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;skins"}],"text":""}'
+equipment:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: DIAMOND_HORSE_ARMOR
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"text":"Equipment"}],"text":""}'
+page_selector:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: PAPER
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    loc-name: '{"extra":[{"text":"MCPetsMenu;page_selector"}],"text":""}'
+    custom-model-data: 9660

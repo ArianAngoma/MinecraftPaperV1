@@ -61,6 +61,7 @@ regions:
             ps-home: -237.0 111.0 -1907.0
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
             ps-block-material: EMERALD_ORE
+            mob-spawning: deny
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
