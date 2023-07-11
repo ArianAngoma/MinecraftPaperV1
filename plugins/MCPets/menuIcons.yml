@@ -47,11 +47,45 @@ skins:
 equipment:
   ==: org.bukkit.inventory.ItemStack
   v: 3465
-  type: DIAMOND_HORSE_ARMOR
+  type: LEATHER_HORSE_ARMOR
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Equipment"}],"text":""}'
+    loc-name: '{"extra":[{"text":"MCPetsMenu;equipment"}],"text":""}'
+common_pet_food:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: SWEET_BERRIES
   meta:
     ==: ItemMeta
     meta-type: UNSPECIFIC
-    display-name: '{"extra":[{"text":"Equipment"}],"text":""}'
+    display-name: '{"italic":false,"color":"white","text":"Common Pet Food"}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeBPzs/Nzc+LL0gtiU/Lz09hAAAyxnI4IwAAAA==
+rare_pet_food:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: APPLE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"green","text":"Rare Pet Food"}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeAtSixKjS9ILYlPy89PYQAA7pq6lCEAAAA=
+epic_pet_food:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3465
+  type: GOLDEN_APPLE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"light_purple","text":"Epic Pet Food"}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeBNLchMji9ILYlPy89PYQAArPBrayEAAAA=
 page_selector:
   ==: org.bukkit.inventory.ItemStack
   v: 3465

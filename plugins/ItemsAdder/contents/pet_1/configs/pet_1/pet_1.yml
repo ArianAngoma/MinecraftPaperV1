@@ -1,0 +1,740 @@
+info:
+  namespace: pet_1
+items:
+  icon_aether_dragon:
+    display_name: "icon_aether_dragon"
+    permission: icon_aether_dragon
+    resource:
+      material: BRICK
+      model_id: 3500
+      generate: false
+      model_path: rpg_pet_model/icon_aether_dragon
+  icon_angel:
+    display_name: "icon_angel"
+    permission: icon_angel
+    resource:
+      material: BRICK
+      model_id: 3501
+      generate: false
+      model_path: rpg_pet_model/icon_angel
+  icon_dark_kitsune:
+    display_name: "icon_dark_kitsune"
+    permission: icon_dark_kitsune
+    resource:
+      material: BRICK
+      model_id: 3502
+      generate: false
+      model_path: rpg_pet_model/icon_dark_kitsune
+  icon_demon:
+    display_name: "icon_demon"
+    permission: icon_demon
+    resource:
+      material: BRICK
+      model_id: 3503
+      generate: false
+      model_path: rpg_pet_model/icon_demon
+  icon_eagle:
+    display_name: "icon_eagle"
+    permission: icon_eagle
+    resource:
+      material: BRICK
+      model_id: 3504
+      generate: false
+      model_path: rpg_pet_model/icon_eagle
+  icon_fire_dragon:
+    display_name: "icon_fire_dragon"
+    permission: icon_fire_dragon
+    resource:
+      material: BRICK
+      model_id: 3505
+      generate: false
+      model_path: rpg_pet_model/icon_fire_dragon
+  icon_frost_wolf:
+    display_name: "icon_frost_wolf"
+    permission: icon_frost_wolf
+    resource:
+      material: BRICK
+      model_id: 3506
+      generate: false
+      model_path: rpg_pet_model/icon_frost_wolf
+  icon_hellhound:
+    display_name: "icon_hellhound"
+    permission: icon_hellhound
+    resource:
+      material: BRICK
+      model_id: 3507
+      generate: false
+      model_path: rpg_pet_model/icon_hellhound
+  icon_ice_dragon:
+    display_name: "icon_ice_dragon"
+    permission: icon_ice_dragon
+    resource:
+      material: BRICK
+      model_id: 3508
+      generate: false
+      model_path: rpg_pet_model/icon_ice_dragon
+  icon_kitsune:
+    display_name: "icon_kitsune"
+    permission: icon_kitsune
+    resource:
+      material: BRICK
+      model_id: 3509
+      generate: false
+      model_path: rpg_pet_model/icon_kitsune
+  icon_lunar_wolf:
+    display_name: "icon_lunar_wolf"
+    permission: icon_lunar_wolf
+    resource:
+      material: BRICK
+      model_id: 3510
+      generate: false
+      model_path: rpg_pet_model/icon_lunar_wolf
+  icon_nature_dragon:
+    display_name: "icon_nature_dragon"
+    permission: icon_nature_dragon
+    resource:
+      material: BRICK
+      model_id: 3511
+      generate: false
+      model_path: rpg_pet_model/icon_nature_dragon
+  icon_phoenix:
+    display_name: "icon_phoenix"
+    permission: icon_phoenix
+    resource:
+      material: BRICK
+      model_id: 3512
+      generate: false
+      model_path: rpg_pet_model/icon_phoenix
+  icon_sai_ninja:
+    display_name: "icon_sai_ninja"
+    permission: icon_sai_ninja
+    resource:
+      material: BRICK
+      model_id: 3513
+      generate: false
+      model_path: rpg_pet_model/icon_sai_ninja
+  icon_samurai:
+    display_name: "icon_samurai"
+    permission: icon_samurai
+    resource:
+      material: BRICK
+      model_id: 3514
+      generate: false
+      model_path: rpg_pet_model/icon_samurai
+  icon_shadow_dragon:
+    display_name: "icon_shadow_dragon"
+    permission: icon_shadow_dragon
+    resource:
+      material: BRICK
+      model_id: 3515
+      generate: false
+      model_path: rpg_pet_model/icon_shadow_dragon
+  icon_shuriken_ninja:
+    display_name: "icon_shuriken_ninja"
+    permission: icon_shuriken_ninja
+    resource:
+      material: BRICK
+      model_id: 3516
+      generate: false
+      model_path: rpg_pet_model/icon_shuriken_ninja
+  icon_spirit_fox:
+    display_name: "icon_spirit_fox"
+    permission: icon_spirit_fox
+    resource:
+      material: BRICK
+      model_id: 3517
+      generate: false
+      model_path: rpg_pet_model/icon_spirit_fox
+  icon_thunder_dragon:
+    display_name: "icon_thunder_dragon"
+    permission: icon_thunder_dragon
+    resource:
+      material: BRICK
+      model_id: 3518
+      generate: false
+      model_path: rpg_pet_model/icon_thunder_dragon
+  icon_thunderbird:
+    display_name: "icon_thunderbird"
+    permission: icon_thunderbird
+    resource:
+      material: BRICK
+      model_id: 3519
+      generate: false
+      model_path: rpg_pet_model/icon_thunderbird
+  icon_undead_dragon:
+    display_name: "icon_undead_dragon"
+    permission: icon_undead_dragon
+    resource:
+      material: BRICK
+      model_id: 3520
+      generate: false
+      model_path: rpg_pet_model/icon_undead_dragon
+  icon_wind_dragon:
+    display_name: "icon_wind_dragon"
+    permission: icon_wind_dragon
+    resource:
+      material: BRICK
+      model_id: 3521
+      generate: false
+      model_path: rpg_pet_model/icon_wind_dragon
+  fire_ball:
+    display_name: "fire_ball"
+    permission: fire_ball
+    resource:
+      material: COAL
+      model_id: 5500
+      generate: false
+      model_path: rpg_pet_model/fire_ball
+  fire_claws_1:
+    display_name: "fire_claws_1"
+    permission: fire_claws_1
+    resource:
+      material: COAL
+      model_id: 5501
+      generate: false
+      model_path: rpg_pet_model/fire_claws_1
+  fire_claws_2:
+    display_name: "fire_claws_2"
+    permission: fire_claws_2
+    resource:
+      material: COAL
+      model_id: 5502
+      generate: false
+      model_path: rpg_pet_model/fire_claws_2
+  fire_claws_3:
+    display_name: "fire_claws_3"
+    permission: fire_claws_3
+    resource:
+      material: COAL
+      model_id: 5503
+      generate: false
+      model_path: rpg_pet_model/fire_claws_3
+  fire_claws_4:
+    display_name: "fire_claws_4"
+    permission: fire_claws_4
+    resource:
+      material: COAL
+      model_id: 5504
+      generate: false
+      model_path: rpg_pet_model/fire_claws_4
+  fire_claws_5:
+    display_name: "fire_claws_5"
+    permission: fire_claws_5
+    resource:
+      material: COAL
+      model_id: 5505
+      generate: false
+      model_path: rpg_pet_model/fire_claws_5
+  fire_claws_6:
+    display_name: "fire_claws_6"
+    permission: fire_claws_6
+    resource:
+      material: COAL
+      model_id: 5506
+      generate: false
+      model_path: rpg_pet_model/fire_claws_6
+  fire_claws_7:
+    display_name: "fire_claws_7"
+    permission: fire_claws_7
+    resource:
+      material: COAL
+      model_id: 5507
+      generate: false
+      model_path: rpg_pet_model/fire_claws_7
+  fire_claws_8:
+    display_name: "fire_claws_8"
+    permission: fire_claws_8
+    resource:
+      material: COAL
+      model_id: 5508
+      generate: false
+      model_path: rpg_pet_model/fire_claws_8
+  ice_fangs_1:
+    display_name: "ice_fangs_1"
+    permission: ice_fangs_1
+    resource:
+      material: COAL
+      model_id: 5509
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_1
+  ice_fangs_2:
+    display_name: "ice_fangs_2"
+    permission: ice_fangs_2
+    resource:
+      material: COAL
+      model_id: 5510
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_2
+  ice_fangs_3:
+    display_name: "ice_fangs_3"
+    permission: ice_fangs_3
+    resource:
+      material: COAL
+      model_id: 5511
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_3
+  ice_fangs_4:
+    display_name: "ice_fangs_4"
+    permission: ice_fangs_4
+    resource:
+      material: COAL
+      model_id: 5512
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_4
+  ice_fangs_5:
+    display_name: "ice_fangs_5"
+    permission: ice_fangs_5
+    resource:
+      material: COAL
+      model_id: 5513
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_5
+  ice_fangs_6:
+    display_name: "ice_fangs_6"
+    permission: ice_fangs_6
+    resource:
+      material: COAL
+      model_id: 5514
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_6
+  ice_fangs_7:
+    display_name: "ice_fangs_7"
+    permission: ice_fangs_7
+    resource:
+      material: COAL
+      model_id: 5515
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_7
+  ice_fangs_8:
+    display_name: "ice_fangs_8"
+    permission: ice_fangs_8
+    resource:
+      material: COAL
+      model_id: 5516
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_8
+  ice_fangs_9:
+    display_name: "ice_fangs_9"
+    permission: ice_fangs_9
+    resource:
+      material: COAL
+      model_id: 5517
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_9
+  ice_fangs_10:
+    display_name: "ice_fangs_10"
+    permission: ice_fangs_10
+    resource:
+      material: COAL
+      model_id: 5518
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_10
+  ice_fangs_11:
+    display_name: "ice_fangs_11"
+    permission: ice_fangs_11
+    resource:
+      material: COAL
+      model_id: 5519
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_11
+  ice_fangs_12:
+    display_name: "ice_fangs_12"
+    permission: ice_fangs_12
+    resource:
+      material: COAL
+      model_id: 5520
+      generate: false
+      model_path: rpg_pet_model/ice_fangs_12
+  katana_slash_1:
+    display_name: "katana_slash_1"
+    permission: katana_slash_1
+    resource:
+      material: COAL
+      model_id: 5521
+      generate: false
+      model_path: rpg_pet_model/katana_slash_1
+  katana_slash_2:
+    display_name: "katana_slash_2"
+    permission: katana_slash_2
+    resource:
+      material: COAL
+      model_id: 5522
+      generate: false
+      model_path: rpg_pet_model/katana_slash_2
+  katana_slash_3:
+    display_name: "katana_slash_3"
+    permission: katana_slash_3
+    resource:
+      material: COAL
+      model_id: 5523
+      generate: false
+      model_path: rpg_pet_model/katana_slash_3
+  katana_slash_4:
+    display_name: "katana_slash_4"
+    permission: katana_slash_4
+    resource:
+      material: COAL
+      model_id: 5524
+      generate: false
+      model_path: rpg_pet_model/katana_slash_4
+  katana_slash_5:
+    display_name: "katana_slash_5"
+    permission: katana_slash_5
+    resource:
+      material: COAL
+      model_id: 5525
+      generate: false
+      model_path: rpg_pet_model/katana_slash_5
+  katana_slash_6:
+    display_name: "katana_slash_6"
+    permission: katana_slash_6
+    resource:
+      material: COAL
+      model_id: 5526
+      generate: false
+      model_path: rpg_pet_model/katana_slash_6
+  moon_skill_1:
+    display_name: "moon_skill_1"
+    permission: moon_skill_1
+    resource:
+      material: COAL
+      model_id: 5527
+      generate: false
+      model_path: rpg_pet_model/moon_skill_1
+  moon_skill_2:
+    display_name: "moon_skill_2"
+    permission: moon_skill_2
+    resource:
+      material: COAL
+      model_id: 5528
+      generate: false
+      model_path: rpg_pet_model/moon_skill_2
+  moon_skill_3:
+    display_name: "moon_skill_3"
+    permission: moon_skill_3
+    resource:
+      material: COAL
+      model_id: 5529
+      generate: false
+      model_path: rpg_pet_model/moon_skill_3
+  moon_skill_4:
+    display_name: "moon_skill_4"
+    permission: moon_skill_4
+    resource:
+      material: COAL
+      model_id: 5530
+      generate: false
+      model_path: rpg_pet_model/moon_skill_4
+  moon_skill_5:
+    display_name: "moon_skill_5"
+    permission: moon_skill_5
+    resource:
+      material: COAL
+      model_id: 5531
+      generate: false
+      model_path: rpg_pet_model/moon_skill_5
+  moon_skill_6:
+    display_name: "moon_skill_6"
+    permission: moon_skill_6
+    resource:
+      material: COAL
+      model_id: 5532
+      generate: false
+      model_path: rpg_pet_model/moon_skill_6
+  moon_skill_7:
+    display_name: "moon_skill_7"
+    permission: moon_skill_7
+    resource:
+      material: COAL
+      model_id: 5533
+      generate: false
+      model_path: rpg_pet_model/moon_skill_7
+  moon_skill_8:
+    display_name: "moon_skill_8"
+    permission: moon_skill_8
+    resource:
+      material: COAL
+      model_id: 5534
+      generate: false
+      model_path: rpg_pet_model/moon_skill_8
+  moon_skill_9:
+    display_name: "moon_skill_9"
+    permission: moon_skill_9
+    resource:
+      material: COAL
+      model_id: 5535
+      generate: false
+      model_path: rpg_pet_model/moon_skill_9
+  moon_skill_10:
+    display_name: "moon_skill_10"
+    permission: moon_skill_10
+    resource:
+      material: COAL
+      model_id: 5536
+      generate: false
+      model_path: rpg_pet_model/moon_skill_10
+  moon_skill_11:
+    display_name: "moon_skill_11"
+    permission: moon_skill_11
+    resource:
+      material: COAL
+      model_id: 5537
+      generate: false
+      model_path: rpg_pet_model/moon_skill_11
+  moon_skill_12:
+    display_name: "moon_skill_12"
+    permission: moon_skill_12
+    resource:
+      material: COAL
+      model_id: 5538
+      generate: false
+      model_path: rpg_pet_model/moon_skill_12
+  ninja_shuriken_a:
+    display_name: "ninja_shuriken_a"
+    permission: ninja_shuriken_a
+    resource:
+      material: COAL
+      model_id: 5539
+      generate: false
+      model_path: rpg_pet_model/ninja_shuriken_a
+  shadow_ball:
+    display_name: "shadow_ball"
+    permission: shadow_ball
+    resource:
+      material: COAL
+      model_id: 5540
+      generate: false
+      model_path: rpg_pet_model/shadow_ball
+  shadow_fangs_1:
+    display_name: "shadow_fangs_1"
+    permission: shadow_fangs_1
+    resource:
+      material: COAL
+      model_id: 5541
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_1
+  shadow_fangs_2:
+    display_name: "shadow_fangs_2"
+    permission: shadow_fangs_2
+    resource:
+      material: COAL
+      model_id: 5542
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_2
+  shadow_fangs_3:
+    display_name: "shadow_fangs_3"
+    permission: shadow_fangs_3
+    resource:
+      material: COAL
+      model_id: 5543
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_3
+  shadow_fangs_4:
+    display_name: "shadow_fangs_4"
+    permission: shadow_fangs_4
+    resource:
+      material: COAL
+      model_id: 5544
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_4
+  shadow_fangs_5:
+    display_name: "shadow_fangs_5"
+    permission: shadow_fangs_5
+    resource:
+      material: COAL
+      model_id: 5545
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_5
+  shadow_fangs_6:
+    display_name: "shadow_fangs_6"
+    permission: shadow_fangs_6
+    resource:
+      material: COAL
+      model_id: 5546
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_6
+  shadow_fangs_7:
+    display_name: "shadow_fangs_7"
+    permission: shadow_fangs_7
+    resource:
+      material: COAL
+      model_id: 5547
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_7
+  shadow_fangs_8:
+    display_name: "shadow_fangs_8"
+    permission: shadow_fangs_8
+    resource:
+      material: COAL
+      model_id: 5548
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_8
+  shadow_fangs_9:
+    display_name: "shadow_fangs_9"
+    permission: shadow_fangs_9
+    resource:
+      material: COAL
+      model_id: 5549
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_9
+  shadow_fangs_10:
+    display_name: "shadow_fangs_10"
+    permission: shadow_fangs_10
+    resource:
+      material: COAL
+      model_id: 5550
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_10
+  shadow_fangs_11:
+    display_name: "shadow_fangs_11"
+    permission: shadow_fangs_11
+    resource:
+      material: COAL
+      model_id: 5551
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_11
+  shadow_fangs_12:
+    display_name: "shadow_fangs_12"
+    permission: shadow_fangs_12
+    resource:
+      material: COAL
+      model_id: 5552
+      generate: false
+      model_path: rpg_pet_model/shadow_fangs_12
+  spark_ball:
+    display_name: "spark_ball"
+    permission: spark_ball
+    resource:
+      material: COAL
+      model_id: 5553
+      generate: false
+      model_path: rpg_pet_model/spark_ball
+  thunder_bolt_1:
+    display_name: "thunder_bolt_1"
+    permission: thunder_bolt_1
+    resource:
+      material: COAL
+      model_id: 5554
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_1
+  thunder_bolt_2:
+    display_name: "thunder_bolt_2"
+    permission: thunder_bolt_2
+    resource:
+      material: COAL
+      model_id: 5555
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_2
+  thunder_bolt_3:
+    display_name: "thunder_bolt_3"
+    permission: thunder_bolt_3
+    resource:
+      material: COAL
+      model_id: 5556
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_3
+  thunder_bolt_4:
+    display_name: "thunder_bolt_4"
+    permission: thunder_bolt_4
+    resource:
+      material: COAL
+      model_id: 5557
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_4
+  thunder_bolt_5:
+    display_name: "thunder_bolt_5"
+    permission: thunder_bolt_5
+    resource:
+      material: COAL
+      model_id: 5558
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_5
+  thunder_bolt_6:
+    display_name: "thunder_bolt_6"
+    permission: thunder_bolt_6
+    resource:
+      material: COAL
+      model_id: 5559
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_6
+  thunder_bolt_7:
+    display_name: "thunder_bolt_7"
+    permission: thunder_bolt_7
+    resource:
+      material: COAL
+      model_id: 5560
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_7
+  thunder_bolt_8:
+    display_name: "thunder_bolt_8"
+    permission: thunder_bolt_8
+    resource:
+      material: COAL
+      model_id: 5561
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_8
+  thunder_bolt_9:
+    display_name: "thunder_bolt_9"
+    permission: thunder_bolt_9
+    resource:
+      material: COAL
+      model_id: 5562
+      generate: false
+      model_path: rpg_pet_model/thunder_bolt_9
+  trident_skill_1:
+    display_name: "trident_skill_1"
+    permission: trident_skill_1
+    resource:
+      material: COAL
+      model_id: 5563
+      generate: false
+      model_path: rpg_pet_model/trident_skill_1
+  trident_skill_2:
+    display_name: "trident_skill_2"
+    permission: trident_skill_2
+    resource:
+      material: COAL
+      model_id: 5564
+      generate: false
+      model_path: rpg_pet_model/trident_skill_2
+  trident_skill_3:
+    display_name: "trident_skill_3"
+    permission: trident_skill_3
+    resource:
+      material: COAL
+      model_id: 5565
+      generate: false
+      model_path: rpg_pet_model/trident_skill_3
+  trident_skill_4:
+    display_name: "trident_skill_4"
+    permission: trident_skill_4
+    resource:
+      material: COAL
+      model_id: 5566
+      generate: false
+      model_path: rpg_pet_model/trident_skill_4
+  trident_skill_5:
+    display_name: "trident_skill_5"
+    permission: trident_skill_5
+    resource:
+      material: COAL
+      model_id: 5567
+      generate: false
+      model_path: rpg_pet_model/trident_skill_5
+  trident_skill_6:
+    display_name: "trident_skill_6"
+    permission: trident_skill_6
+    resource:
+      material: COAL
+      model_id: 5568
+      generate: false
+      model_path: rpg_pet_model/trident_skill_6
+  trident_skill_7:
+    display_name: "trident_skill_7"
+    permission: trident_skill_7
+    resource:
+      material: COAL
+      model_id: 5569
+      generate: false
+      model_path: rpg_pet_model/trident_skill_7
+  

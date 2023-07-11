@@ -11,13 +11,13 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1688963071535
+  lastteleport: 1689038541680
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688958176661
-  login: 1688958331711
+  logout: 1688971078703
+  login: 1689037989777
   kits:
     tools: 1687573970481
 money: '0'
@@ -25,19 +25,19 @@ last-account-name: YuquitaFrita
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -273.63389649142664
-  y: 97.0
-  z: -1808.5573475776368
-  yaw: -101.41307830810547
-  pitch: 13.91653823852539
+  x: -383.75031347684063
+  y: 78.0
+  z: -1756.0580850531362
+  yaw: 153.998779296875
+  pitch: 20.60152816772461
 lastlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -86.4381917850141
-  y: 65.0
-  z: -1682.2550611032127
-  yaw: 144.53195190429688
-  pitch: 8.249650001525879
+  x: -256.6261720241405
+  y: 89.40756629321484
+  z: -1807.6250116746307
+  yaw: -134.3665008544922
+  pitch: -1.7255878448486328
 homes:
   casita:
     world: 4498563c-2814-4c79-b320-5d7b8dcfb03b

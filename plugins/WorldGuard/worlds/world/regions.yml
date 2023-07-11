@@ -17,12 +17,12 @@ regions:
             wither-damage: deny
             ps-tax-payments-due: []
             greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            pvp: deny
             ps-tax-last-payment-added: []
             ps-home: -121.0 64.0 -2074.0
+            pvp: deny
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
-            ps-block-material: EMERALD_ORE
             mob-spawning: deny
+            ps-block-material: EMERALD_ORE
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
@@ -56,12 +56,12 @@ regions:
             wither-damage: deny
             ps-tax-payments-due: []
             greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            pvp: deny
             ps-tax-last-payment-added: []
             ps-home: -237.0 111.0 -1907.0
+            pvp: deny
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
+            mob-spawning: allow
             ps-block-material: EMERALD_ORE
-            mob-spawning: deny
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita

@@ -1,0 +1,38 @@
+{
+  "samus.ice_breath": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/ice_breath"
+    ]
+  },
+  "samus.katana_slash": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/katana_slash"
+    ]
+  },
+  "samus.lightning_static": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/lightning_static"
+    ]
+  },
+  "samus.pet_heal": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/pet_heal"
+    ]
+  },
+  "samus.scratch": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/scratch"
+    ]
+  },
+  "samus.thunder_bolt": {
+    "category": "master",
+    "sounds": [
+      "pet_1:samus/rpg_pet/thunder_bolt"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "pet_1:rpg_pet_texture/shuriken_ninja"
+	},
+	"elements": [
+		{
+			"from": [3.5, 3.5, 3.5],
+			"to": [12.5, 12.5, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.25, 2.25], "texture": "#1"},
+				"east": {"uv": [0, 2.5, 2.25, 4.75], "texture": "#1"},
+				"south": {"uv": [2.5, 0, 4.75, 2.25], "texture": "#1"},
+				"west": {"uv": [2.5, 2.5, 4.75, 4.75], "texture": "#1"},
+				"up": {"uv": [2.25, 7.25, 0, 5], "texture": "#1"},
+				"down": {"uv": [7.25, 0, 5, 2.25], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

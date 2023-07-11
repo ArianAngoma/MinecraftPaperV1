@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1688958176639
+  logout: 1688965575418
   login: 1688958349387
 money: '0'
 last-account-name: Ainnoot
 logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
-  x: -75.56881251608847
-  y: 65.0
-  z: -1693.325445301546
-  yaw: -90.95611572265625
-  pitch: 17.82803726196289
+  x: -503.6970919616959
+  y: 70.0
+  z: -1680.4108892029867
+  yaw: -1.9510498046875
+  pitch: 16.350025177001953
 lastlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
