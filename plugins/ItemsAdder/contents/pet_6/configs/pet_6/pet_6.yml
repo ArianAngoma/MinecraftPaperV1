@@ -1,0 +1,291 @@
+info:
+  namespace: pet_6
+items:
+  icon_assassin:
+    display_name: "icon_assassin"
+    permission: icon_assassin
+    resource:
+      material: BRICK
+      model_id: 3531
+      generate: false
+      model_path: rpg_pet_2_model/icon_assassin
+  icon_dark_knight:
+    display_name: "icon_dark_knight"
+    permission: icon_dark_knight
+    resource:
+      material: BRICK
+      model_id: 3532
+      generate: false
+      model_path: rpg_pet_2_model/icon_dark_knight
+  icon_dragon_warrior:
+    display_name: "icon_dragon_warrior"
+    permission: icon_dragon_warrior
+    resource:
+      material: BRICK
+      model_id: 3533
+      generate: false
+      model_path: rpg_pet_2_model/icon_dragon_warrior
+  icon_martial_artist:
+    display_name: "icon_martial_artist"
+    permission: icon_martial_artist
+    resource:
+      material: BRICK
+      model_id: 3538
+      generate: false
+      model_path: rpg_pet_2_model/icon_martial_artist
+  icon_ninja_samurai:
+    display_name: "icon_ninja_samurai"
+    permission: icon_ninja_samurai
+    resource:
+      material: BRICK
+      model_id: 3540
+      generate: false
+      model_path: rpg_pet_2_model/icon_ninja_samurai
+  icon_paladin:
+    display_name: "icon_paladin"
+    permission: icon_paladin
+    resource:
+      material: BRICK
+      model_id: 3541
+      generate: false
+      model_path: rpg_pet_2_model/icon_paladin
+  icon_reaper:
+    display_name: "icon_reaper"
+    permission: icon_reaper
+    resource:
+      material: BRICK
+      model_id: 3543
+      generate: false
+      model_path: rpg_pet_2_model/icon_reaper
+  icon_warrior:
+    display_name: "icon_warrior"
+    permission: icon_warrior
+    resource:
+      material: BRICK
+      model_id: 3547
+      generate: false
+      model_path: rpg_pet_2_model/icon_warrior
+  fx_impact_red_1:
+    display_name: "fx_impact_red_1"
+    permission: fx_impact_red_1
+    resource:
+      material: COAL
+      model_id: 5575
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_red_1
+  fx_impact_red_2:
+    display_name: "fx_impact_red_2"
+    permission: fx_impact_red_2
+    resource:
+      material: COAL
+      model_id: 5576
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_red_2
+  fx_impact_red_3:
+    display_name: "fx_impact_red_3"
+    permission: fx_impact_red_3
+    resource:
+      material: COAL
+      model_id: 5577
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_red_3
+  fx_impact_red_4:
+    display_name: "fx_impact_red_4"
+    permission: fx_impact_red_4
+    resource:
+      material: COAL
+      model_id: 5578
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_red_4
+  fx_impact_red_5:
+    display_name: "fx_impact_red_5"
+    permission: fx_impact_red_5
+    resource:
+      material: COAL
+      model_id: 5579
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_red_5
+  fx_impact_yellow_1:
+    display_name: "fx_impact_yellow_1"
+    permission: fx_impact_yellow_1
+    resource:
+      material: COAL
+      model_id: 5580
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_yellow_1
+  fx_impact_yellow_2:
+    display_name: "fx_impact_yellow_2"
+    permission: fx_impact_yellow_2
+    resource:
+      material: COAL
+      model_id: 5581
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_yellow_2
+  fx_impact_yellow_3:
+    display_name: "fx_impact_yellow_3"
+    permission: fx_impact_yellow_3
+    resource:
+      material: COAL
+      model_id: 5582
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_yellow_3
+  fx_impact_yellow_4:
+    display_name: "fx_impact_yellow_4"
+    permission: fx_impact_yellow_4
+    resource:
+      material: COAL
+      model_id: 5583
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_yellow_4
+  fx_impact_yellow_5:
+    display_name: "fx_impact_yellow_5"
+    permission: fx_impact_yellow_5
+    resource:
+      material: COAL
+      model_id: 5584
+      generate: false
+      model_path: rpg_pet_2_model/fx_impact_yellow_5
+  fx_slash_black_1:
+    display_name: "fx_slash_black_1"
+    permission: fx_slash_black_1
+    resource:
+      material: COAL
+      model_id: 5585
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_1
+  fx_slash_black_2:
+    display_name: "fx_slash_black_2"
+    permission: fx_slash_black_2
+    resource:
+      material: COAL
+      model_id: 5586
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_2
+  fx_slash_black_3:
+    display_name: "fx_slash_black_3"
+    permission: fx_slash_black_3
+    resource:
+      material: COAL
+      model_id: 5587
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_3
+  fx_slash_black_4:
+    display_name: "fx_slash_black_4"
+    permission: fx_slash_black_4
+    resource:
+      material: COAL
+      model_id: 5588
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_4
+  fx_slash_black_5:
+    display_name: "fx_slash_black_5"
+    permission: fx_slash_black_5
+    resource:
+      material: COAL
+      model_id: 5589
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_5
+  fx_slash_black_6:
+    display_name: "fx_slash_black_6"
+    permission: fx_slash_black_6
+    resource:
+      material: COAL
+      model_id: 5590
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_black_6
+  fx_slash_purple_1:
+    display_name: "fx_slash_purple_1"
+    permission: fx_slash_purple_1
+    resource:
+      material: COAL
+      model_id: 5591
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_1
+  fx_slash_purple_2:
+    display_name: "fx_slash_purple_2"
+    permission: fx_slash_purple_2
+    resource:
+      material: COAL
+      model_id: 5592
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_2
+  fx_slash_purple_3:
+    display_name: "fx_slash_purple_3"
+    permission: fx_slash_purple_3
+    resource:
+      material: COAL
+      model_id: 5593
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_3
+  fx_slash_purple_4:
+    display_name: "fx_slash_purple_4"
+    permission: fx_slash_purple_4
+    resource:
+      material: COAL
+      model_id: 5594
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_4
+  fx_slash_purple_5:
+    display_name: "fx_slash_purple_5"
+    permission: fx_slash_purple_5
+    resource:
+      material: COAL
+      model_id: 5595
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_5
+  fx_slash_purple_6:
+    display_name: "fx_slash_purple_6"
+    permission: fx_slash_purple_6
+    resource:
+      material: COAL
+      model_id: 5596
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_purple_6
+  fx_slash_red_1:
+    display_name: "fx_slash_red_1"
+    permission: fx_slash_red_1
+    resource:
+      material: COAL
+      model_id: 5597
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_1
+  fx_slash_red_2:
+    display_name: "fx_slash_red_2"
+    permission: fx_slash_red_2
+    resource:
+      material: COAL
+      model_id: 5598
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_2
+  fx_slash_red_3:
+    display_name: "fx_slash_red_3"
+    permission: fx_slash_red_3
+    resource:
+      material: COAL
+      model_id: 5599
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_3
+  fx_slash_red_4:
+    display_name: "fx_slash_red_4"
+    permission: fx_slash_red_4
+    resource:
+      material: COAL
+      model_id: 5600
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_4
+  fx_slash_red_5:
+    display_name: "fx_slash_red_5"
+    permission: fx_slash_red_5
+    resource:
+      material: COAL
+      model_id: 5601
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_5
+  fx_slash_red_6:
+    display_name: "fx_slash_red_6"
+    permission: fx_slash_red_6
+    resource:
+      material: COAL
+      model_id: 5602
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_red_6

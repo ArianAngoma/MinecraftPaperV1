@@ -1,0 +1,52 @@
+{
+  "samus.beam_shoot": {
+    "category": "master",
+    "sounds": [
+      "pet_4:samus/rpg_pet_2/beam_shoot"
+    ]
+  },
+  "samus.combo_punch": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/combo_punch"
+    ]
+  },
+  "samus.spin_slash": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/spin_slash"
+    ]
+  },
+  "samus.heavy_slash": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/heavy_slash_1",
+	  "pet_6:samus/rpg_pet_2/heavy_slash_2"
+    ]
+  },
+  "samus.light_slash": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/light_slash_1",
+	  "pet_6:samus/rpg_pet_2/light_slash_2"
+    ]
+  },
+  "samus.paladin_hammer": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/paladin_hammer"
+    ]
+  },
+  "samus.pet_heal": {
+    "category": "master",
+    "sounds": [
+      "pet_6:samus/rpg_pet_2/pet_heal"
+    ]
+  },
+  "samus.root_grow": {
+    "category": "master",
+    "sounds": [
+      "pet_4:samus/rpg_pet_2/root_grow"
+    ]
+  }
+}

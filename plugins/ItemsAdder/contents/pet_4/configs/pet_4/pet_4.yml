@@ -1,0 +1,155 @@
+info:
+  namespace: pet_4
+items:
+  icon_elder_ent:
+    display_name: "icon_elder_ent"
+    permission: icon_elder_ent
+    resource:
+      material: BRICK
+      model_id: 3534
+      generate: false
+      model_path: rpg_pet_2_model/icon_elder_ent
+  icon_ent:
+    display_name: "icon_ent"
+    permission: icon_ent
+    resource:
+      material: BRICK
+      model_id: 3535
+      generate: false
+      model_path: rpg_pet_2_model/icon_ent
+  icon_nether_and_ender:
+    display_name: "icon_nether_and_ender"
+    permission: icon_nether_and_ender
+    resource:
+      material: BRICK
+      model_id: 3539
+      generate: false
+      model_path: rpg_pet_2_model/icon_nether_and_ender
+  icon_sun_and_moon:
+    display_name: "icon_sun_and_moon"
+    permission: icon_sun_and_moon
+    resource:
+      material: BRICK
+      model_id: 3545
+      generate: false
+      model_path: rpg_pet_2_model/icon_sun_and_moon
+  icon_undead_ent:
+    display_name: "icon_undead_ent"
+    permission: icon_undead_ent
+    resource:
+      material: BRICK
+      model_id: 3546
+      generate: false
+      model_path: rpg_pet_2_model/icon_undead_ent
+  icon_water_and_fire:
+    display_name: "icon_water_and_fire"
+    permission: icon_water_and_fire
+    resource:
+      material: BRICK
+      model_id: 3548
+      generate: false
+      model_path: rpg_pet_2_model/icon_water_and_fire
+  icon_yin_and_yang:
+    display_name: "icon_yin_and_yang"
+    permission: icon_yin_and_yang
+    resource:
+      material: BRICK
+      model_id: 3549
+      generate: false
+      model_path: rpg_pet_2_model/icon_yin_and_yang
+  fx_yang_1:
+    display_name: "fx_yang_1"
+    permission: fx_yang_1
+    resource:
+      material: COAL
+      model_id: 5610
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_1
+  fx_yang_2:
+    display_name: "fx_yang_2"
+    permission: fx_yang_2
+    resource:
+      material: COAL
+      model_id: 5611
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_2
+  fx_yang_3:
+    display_name: "fx_yang_3"
+    permission: fx_yang_3
+    resource:
+      material: COAL
+      model_id: 5612
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_3
+  fx_yang_4:
+    display_name: "fx_yang_4"
+    permission: fx_yang_4
+    resource:
+      material: COAL
+      model_id: 5613
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_4
+  fx_yang_5:
+    display_name: "fx_yang_5"
+    permission: fx_yang_5
+    resource:
+      material: COAL
+      model_id: 5614
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_5
+  fx_yang_6:
+    display_name: "fx_yang_6"
+    permission: fx_yang_6
+    resource:
+      material: COAL
+      model_id: 5615
+      generate: false
+      model_path: rpg_pet_2_model/fx_yang_6
+  fx_yin_1:
+    display_name: "fx_yin_1"
+    permission: fx_yin_1
+    resource:
+      material: COAL
+      model_id: 5616
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_1
+  fx_yin_2:
+    display_name: "fx_yin_2"
+    permission: fx_yin_2
+    resource:
+      material: COAL
+      model_id: 5617
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_2
+  fx_yin_3:
+    display_name: "fx_yin_3"
+    permission: fx_yin_3
+    resource:
+      material: COAL
+      model_id: 5618
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_3
+  fx_yin_4:
+    display_name: "fx_yin_4"
+    permission: fx_yin_4
+    resource:
+      material: COAL
+      model_id: 5619
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_4
+  fx_yin_5:
+    display_name: "fx_yin_5"
+    permission: fx_yin_5
+    resource:
+      material: COAL
+      model_id: 5620
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_5
+  fx_yin_6:
+    display_name: "fx_yin_6"
+    permission: fx_yin_6
+    resource:
+      material: COAL
+      model_id: 5621
+      generate: false
+      model_path: rpg_pet_2_model/fx_yin_6

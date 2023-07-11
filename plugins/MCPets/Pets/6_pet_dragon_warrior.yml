@@ -1,0 +1,78 @@
+Id: DD_Pet_Dragon_Warrior
+MythicMob: Pet_Dragon_Warrior
+Permission: mcpet.pet_dragon_warrior
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 3
+Icon:
+  Name: §5Dragon Warrior
+  Material: BRICK
+  CustomModelData: 3533
+  Description:
+  - §fGet your pet Dragon Warrior!
+  - ""
+  - §f[§5Dragon Strike§f]
+  - §fYour Dragon Warrior strikes the enemy with its spear.
+  - §f[§5Dragon Soul§f]
+  - §fEvery 5th Dragon Strike, your dragon warrior summons a
+  - §fdragon soul that breathes fire at enemies.
+Levels:
+  Lvl_Common:
+    Name: "§fCommon"
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 1
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: "§aRare"
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 1
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &aRare &6level!"
+      Type: CHAT
+  Lvl_Epic:
+    Name: "§dEpic"
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 1
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &dEpic &6level!"
+      Type: CHAT
+  Lvl_Legendary:
+    Name: "§eLegendary"
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 1
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &eLegendary &6level!"
+      Type: CHAT

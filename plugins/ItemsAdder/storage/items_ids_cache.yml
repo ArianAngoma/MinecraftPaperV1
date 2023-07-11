@@ -36,6 +36,27 @@ BRICK:
   pet_1:icon_thunderbird: 3519
   pet_1:icon_undead_dragon: 3520
   pet_1:icon_wind_dragon: 3521
+  pet_5:icon_angel_slime: 3529
+  pet_5:icon_archangel_slime: 3530
+  pet_5:icon_ice_emperor_penguin: 3536
+  pet_5:icon_ice_penguin: 3537
+  pet_5:icon_penguin: 3542
+  pet_5:icon_slime: 3544
+  pet_6:icon_assassin: 3531
+  pet_6:icon_dark_knight: 3532
+  pet_6:icon_dragon_warrior: 3533
+  pet_6:icon_martial_artist: 3538
+  pet_6:icon_ninja_samurai: 3540
+  pet_6:icon_paladin: 3541
+  pet_6:icon_reaper: 3543
+  pet_6:icon_warrior: 3547
+  pet_4:icon_elder_ent: 3534
+  pet_4:icon_ent: 3535
+  pet_4:icon_nether_and_ender: 3539
+  pet_4:icon_sun_and_moon: 3545
+  pet_4:icon_undead_ent: 3546
+  pet_4:icon_water_and_fire: 3548
+  pet_4:icon_yin_and_yang: 3549
 COAL:
   pet_1:fire_ball: 5500
   pet_1:fire_claws_1: 5501
@@ -107,3 +128,53 @@ COAL:
   pet_1:trident_skill_5: 5567
   pet_1:trident_skill_6: 5568
   pet_1:trident_skill_7: 5569
+  pet_5:fx_goo: 5572
+  pet_5:fx_ice_crystal: 5573
+  pet_5:fx_iceball: 5574
+  pet_5:fx_slash_white_1: 5603
+  pet_5:fx_slash_white_2: 5604
+  pet_5:fx_slash_white_3: 5605
+  pet_5:fx_slash_white_4: 5606
+  pet_5:fx_slash_white_5: 5607
+  pet_5:fx_slash_white_6: 5608
+  pet_5:fx_snowball: 5609
+  pet_6:fx_impact_red_1: 5575
+  pet_6:fx_impact_red_2: 5576
+  pet_6:fx_impact_red_3: 5577
+  pet_6:fx_impact_red_4: 5578
+  pet_6:fx_impact_red_5: 5579
+  pet_6:fx_impact_yellow_1: 5580
+  pet_6:fx_impact_yellow_2: 5581
+  pet_6:fx_impact_yellow_3: 5582
+  pet_6:fx_impact_yellow_4: 5583
+  pet_6:fx_impact_yellow_5: 5584
+  pet_6:fx_slash_black_1: 5585
+  pet_6:fx_slash_black_2: 5586
+  pet_6:fx_slash_black_3: 5587
+  pet_6:fx_slash_black_4: 5588
+  pet_6:fx_slash_black_5: 5589
+  pet_6:fx_slash_black_6: 5590
+  pet_6:fx_slash_purple_1: 5591
+  pet_6:fx_slash_purple_2: 5592
+  pet_6:fx_slash_purple_3: 5593
+  pet_6:fx_slash_purple_4: 5594
+  pet_6:fx_slash_purple_5: 5595
+  pet_6:fx_slash_purple_6: 5596
+  pet_6:fx_slash_red_1: 5597
+  pet_6:fx_slash_red_2: 5598
+  pet_6:fx_slash_red_3: 5599
+  pet_6:fx_slash_red_4: 5600
+  pet_6:fx_slash_red_5: 5601
+  pet_6:fx_slash_red_6: 5602
+  pet_4:fx_yang_1: 5610
+  pet_4:fx_yang_2: 5611
+  pet_4:fx_yang_3: 5612
+  pet_4:fx_yang_4: 5613
+  pet_4:fx_yang_5: 5614
+  pet_4:fx_yang_6: 5615
+  pet_4:fx_yin_1: 5616
+  pet_4:fx_yin_2: 5617
+  pet_4:fx_yin_3: 5618
+  pet_4:fx_yin_4: 5619
+  pet_4:fx_yin_5: 5620
+  pet_4:fx_yin_6: 5621

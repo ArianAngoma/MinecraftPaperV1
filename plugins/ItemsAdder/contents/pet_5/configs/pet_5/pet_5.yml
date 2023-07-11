@@ -1,0 +1,131 @@
+info:
+  namespace: pet_5
+items:
+  icon_angel_slime:
+    display_name: "icon_angel_slime"
+    permission: icon_angel_slime
+    resource:
+      material: BRICK
+      model_id: 3529
+      generate: false
+      model_path: rpg_pet_2_model/icon_angel_slime
+  icon_archangel_slime:
+    display_name: "icon_archangel_slime"
+    permission: icon_archangel_slime
+    resource:
+      material: BRICK
+      model_id: 3530
+      generate: false
+      model_path: rpg_pet_2_model/icon_archangel_slime
+  icon_ice_emperor_penguin:
+    display_name: "icon_ice_emperor_penguin"
+    permission: icon_ice_emperor_penguin
+    resource:
+      material: BRICK
+      model_id: 3536
+      generate: false
+      model_path: rpg_pet_2_model/icon_ice_emperor_penguin
+  icon_ice_penguin:
+    display_name: "icon_ice_penguin"
+    permission: icon_ice_penguin
+    resource:
+      material: BRICK
+      model_id: 3537
+      generate: false
+      model_path: rpg_pet_2_model/icon_ice_penguin
+  icon_penguin:
+    display_name: "icon_penguin"
+    permission: icon_penguin
+    resource:
+      material: BRICK
+      model_id: 3542
+      generate: false
+      model_path: rpg_pet_2_model/icon_penguin
+  icon_slime:
+    display_name: "icon_slime"
+    permission: icon_slime
+    resource:
+      material: BRICK
+      model_id: 3544
+      generate: false
+      model_path: rpg_pet_2_model/icon_slime
+  fx_goo:
+    display_name: "fx_goo"
+    permission: fx_goo
+    resource:
+      material: COAL
+      model_id: 5572
+      generate: false
+      model_path: rpg_pet_2_model/fx_goo
+  fx_ice_crystal:
+    display_name: "fx_ice_crystal"
+    permission: fx_ice_crystal
+    resource:
+      material: COAL
+      model_id: 5573
+      generate: false
+      model_path: rpg_pet_2_model/fx_ice_crystal
+  fx_iceball:
+    display_name: "fx_iceball"
+    permission: fx_iceball
+    resource:
+      material: COAL
+      model_id: 5574
+      generate: false
+      model_path: rpg_pet_2_model/fx_iceball
+  fx_slash_white_1:
+    display_name: "fx_slash_white_1"
+    permission: fx_slash_white_1
+    resource:
+      material: COAL
+      model_id: 5603
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_1
+  fx_slash_white_2:
+    display_name: "fx_slash_white_2"
+    permission: fx_slash_white_2
+    resource:
+      material: COAL
+      model_id: 5604
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_2
+  fx_slash_white_3:
+    display_name: "fx_slash_white_3"
+    permission: fx_slash_white_3
+    resource:
+      material: COAL
+      model_id: 5605
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_3
+  fx_slash_white_4:
+    display_name: "fx_slash_white_4"
+    permission: fx_slash_white_4
+    resource:
+      material: COAL
+      model_id: 5606
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_4
+  fx_slash_white_5:
+    display_name: "fx_slash_white_5"
+    permission: fx_slash_white_5
+    resource:
+      material: COAL
+      model_id: 5607
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_5
+  fx_slash_white_6:
+    display_name: "fx_slash_white_6"
+    permission: fx_slash_white_6
+    resource:
+      material: COAL
+      model_id: 5608
+      generate: false
+      model_path: rpg_pet_2_model/fx_slash_white_6
+  fx_snowball:
+    display_name: "fx_snowball"
+    permission: fx_snowball
+    resource:
+      material: COAL
+      model_id: 5609
+      generate: false
+      model_path: rpg_pet_2_model/fx_snowball

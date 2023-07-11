@@ -1,600 +1,183 @@
-[19:53:23] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:53:26] [ServerMain/INFO]: Loaded 7 recipes
-[19:53:27] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[19:53:27] [Server thread/INFO]: Loading properties
-[19:53:27] [Server thread/INFO]: This server is running Paper version git-Paper-49 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: e8bec64)
-[19:53:27] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:53:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:53:28] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
-    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
-    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[19:53:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
-[19:53:28] [Server thread/INFO]: Default game type: SURVIVAL
-[19:53:28] [Server thread/INFO]: Generating keypair
-[19:53:28] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:53:28] [Server thread/INFO]: Using default channel type
-[19:53:28] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[19:53:28] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[19:53:30] [Server thread/INFO]: [AngelChest] Hooked into WorldGuard 7.0.9-beta1+2249-223b80c
-[19:53:30] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.98
-[19:53:31] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[19:53:31] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.15+6463-5ca4dff
-[19:53:32] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6df7a124]
-[19:53:32] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9-beta1+2249-223b80c
-[19:53:32] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.3
-[19:53:32] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.3.2-18ded834
-[19:53:32] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[19:53:33] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.0.0
-[19:53:33] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.1) has not yet been tested! Proceed with caution.
-[19:53:35] [Server thread/INFO]: [LoneLibs] Loading server plugin LoneLibs v1.0.25
-[19:53:35] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.0
-[19:53:35] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR3.1.8
-[19:53:35] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v3.5.0c-r2
-[19:53:36] [Server thread/INFO]: [CMILib] Loading server plugin CMILib v1.3.1.1
-[19:53:36] [Server thread/INFO]: [XConomy] Loading server plugin XConomy v2.22.1
-[19:53:36] [Server thread/INFO]: [SternalBoard] Loading server plugin SternalBoard v2.2.0
-[19:53:36] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v14.2.12
-[19:53:36] [Server thread/INFO]: [ShopGUIPlus] Loading server plugin ShopGUIPlus v1.87.0
-[19:53:36] [Server thread/INFO]: [ProtectionStones] Loading server plugin ProtectionStones v2.10.3
-[19:53:36] [Server thread/INFO]: [ProCosmetics] Loading server plugin ProCosmetics v13.9.2
-[19:53:36] [Server thread/INFO]: [PinataParty] Loading server plugin PinataParty v2.60.3
-[19:53:36] [Server thread/INFO]: [MCPets] Loading server plugin MCPets v3.1.1
-[19:53:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mcpets [1.0.0]
-[19:53:36] [Server thread/INFO]: [MCPets] : mcpets-dismount flag registered successfully !
-[19:53:36] [Server thread/INFO]: [MCPets] : mcpets-despawn flag registered successfully !
-[19:53:36] [Server thread/INFO]: [Jobs] Loading server plugin Jobs v5.2.0.0
-[19:53:36] [Server thread/INFO]: [bloodmoon-advanced] Loading server plugin bloodmoon-advanced v4.5.7
-[19:53:36] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v9.14.2
-[19:53:36] [Server thread/INFO]: [AngelChest] Successfully registered WorldGuard flags.
-[19:53:36] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:53:36] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.98
-[19:53:37] [Server thread/INFO]:         __    
-[19:53:37] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.98
-[19:53:37] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[19:53:37] [Server thread/INFO]: 
-[19:53:37] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[19:53:37] [Server thread/INFO]: [LuckPerms] Loading storage provider... [MYSQL]
-[19:53:38] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Starting...
-[19:53:38] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Start completed.
-[19:53:39] [Server thread/INFO]: [LuckPerms] Loading messaging service... [SQL]
-[19:53:39] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[19:53:39] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[19:53:40] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3862ms)
-[19:53:40] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[19:53:40] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[19:53:40] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[19:53:40] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[19:53:40] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[19:53:40] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.15+6463-5ca4dff
-[19:53:40] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[19:53:40] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[19:53:41] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
-[19:53:43] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
-[19:53:43] [Server thread/INFO]: [LoneLibs] Enabling LoneLibs v1.0.25
-[19:53:43] [Server thread/INFO]: [XConomy] Enabling XConomy v2.22.1
-[19:53:43] [Server thread/INFO]: [XConomy] UUID-Mode: Default
-[19:53:43] [Server thread/INFO]: [XConomy] Language: SPANISH
-[19:53:43] [Server thread/INFO]: [XConomy] Modo de guardado - MySQL
-[19:53:43] [Server thread/INFO]: [XConomy] Conectado con MySQL
-[19:53:43] [Server thread/INFO]: [XConomy] XConomy está habilitado
-[19:53:43] [Server thread/INFO]: [XConomy] Encontrado PlaceholderAPI
-[19:53:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: xconomy [2.22.1]
-[19:53:43] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
-[19:53:44] [Server thread/INFO]: [XConomy] ===== YiC =====
-[19:53:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:53:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:53:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[19:53:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:53:44] [Server thread/INFO]: Preparing level "world"
-[19:53:45] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[19:53:45] [Server thread/INFO]: Time elapsed: 323 ms
-[19:53:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[19:53:45] [Server thread/INFO]: Time elapsed: 66 ms
-[19:53:45] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9-beta1+2249-223b80c
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[19:53:46] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[19:53:46] [Server thread/INFO]: [WorldGuard] Loading region data...
-[19:53:46] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.3
-[19:53:47] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[19:53:47] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.3.2-18ded834
-[19:53:47] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.1)...
-[19:53:47] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality
-[19:53:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mythic [5.0.0]
-[19:53:52] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
-[19:53:52] [Server thread/INFO]: [MythicMobs] Mythic ProtocolLib Support has been enabled!
-[19:53:52] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
-[19:53:52] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
-[19:53:52] [Server thread/INFO]: [MythicMobs] Base directory D:\MinecraftPaper\plugins\MythicMobs\SavedData
-[19:53:52] [Server thread/INFO]: [MythicMobs] Module directory D:\MinecraftPaper\plugins\MythicMobs\SavedData\worlds
-[19:53:54] [Server thread/INFO]: [MythicMobs] Loading Packs...
-[19:53:54] [Server thread/INFO]: [MythicMobs] Loading Items...
-[19:53:54] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
-[19:53:54] [Server thread/INFO]: [MythicMobs] Loading Skills...
-[19:53:56] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
-[19:53:56] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
-[19:53:56] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 58 mobs.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 256 skills.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 77 mythic items.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
-[19:53:56] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
-[19:53:56] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
-[19:53:56] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
-[19:53:57] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs Premium v5.3.2 ( build 18ded834 ) has been successfully loaded!
-[19:53:57] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0
-[19:53:57] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[19:53:57] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[19:53:57] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[19:53:58] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[19:53:58] [Server thread/INFO]: [Essentials] Using locale es
-[19:53:58] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[19:53:58] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[19:53:58] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[19:53:58] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[19:53:58] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.8
-[19:53:59] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.
-[19:53:59] [Server thread/INFO]: [ModelEngine] [S] Compatibility applied: MythicMobs
-[19:53:59] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v3.5.0c-r2
-[19:53:59] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R1! Trying to find NMS support
-[19:53:59] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
-[19:53:59] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
-[19:54:00] [Server thread/INFO]: [ItemsAdder] 
-  ___  ___        __        __   __   ___  __      ItemsAdder 3.5.0c-r2
-|  |  |__   |\/| /__`  /\  |  \ |  \ |__  |__)     LoneLibs 1.0.25
-|  |  |___  |  | .__/ /--\ |__/ |__/ |___ |  \     Paper git-Paper-49 (MC: 1.20.1)
-                                               
-[19:54:00] [Server thread/INFO]: [CMILib] Enabling CMILib v1.3.1.1
-[19:54:02] [Server thread/INFO]: Server version: v1_20_R1 - 1.20.1 - paper
-[19:54:03] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil [1.3.1.1]
-[19:54:03] [Server thread/INFO]: PlaceholderAPI hooked.
-[19:54:03] [Server thread/INFO]: Updated (EN) language file. Took 156ms
-[19:54:03] [Server thread/INFO]: [SternalBoard] Enabling SternalBoard v2.2.0
-[19:54:03] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.12
-[19:54:04] [Server thread/INFO]: [SkinsRestorer] Detected Minecraft v1_20_R1, using MappingSpigotSkinRefresher.
-[19:54:05] [Server thread/INFO]: [SkinsRestorer] Connected to MySQL!
-[19:54:05] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
-[19:54:05] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[19:54:05] [Server thread/INFO]: [ShopGUIPlus] Enabling ShopGUIPlus v1.87.0
-[19:54:06] [Server thread/INFO]: [ProtectionStones] Enabling ProtectionStones v2.10.3
-[19:54:06] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.GreetingFlagHandler
-[19:54:06] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.FarewellFlagHandler
-[19:54:06] [Server thread/INFO]: [ProtectionStones] PlaceholderAPI support enabled!
-[19:54:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: protectionstones [2.10.3]
-[19:54:06] [Server thread/INFO]: [ProtectionStones] LuckPerms support enabled!
-[19:54:06] [Server thread/INFO]: [ProtectionStones] Protection Stone Blocks:
-[19:54:06] [Server thread/INFO]: [ProtectionStones] - EMERALD_ORE (64)
-[19:54:06] [Server thread/INFO]: [ProtectionStones] Building region cache...
-[19:54:06] [Server thread/INFO]: [ProtectionStones] Building UUID cache... (if slow change async-load-uuid-cache in the config to true)
-[19:54:06] [Server thread/INFO]: [ProtectionStones] Checking if PS regions have been updated to UUIDs...
-[19:54:06] [Server thread/INFO]: [ProtectionStones] §fProtectionStones has successfully started!
-[19:54:06] [Server thread/INFO]: [ProCosmetics] Enabling ProCosmetics v13.9.2
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing configs...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing menus...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing cosmetics...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing arrow effects...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing balloons...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing banners...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing death effects...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing emotes...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing gadgets...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing miniatures...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing morphs...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing mounts...
-[19:54:07] [Server thread/INFO]: [ProCosmetics] Initializing music...
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Initializing particle effects...
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Initializing pets...
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Initializing statuses...
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Initializing treasures...
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Hooking into PlaceholderAPI...
-[19:54:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: procosmetics [1.0.0]
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Connecting to the database...
-[19:54:09] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[19:54:09] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[19:54:09] [Server thread/INFO]: [ProCosmetics] Successfully connected to the database!
-[19:54:10] [Server thread/INFO]: [ProCosmetics] Hooking into Essentials...
-[19:54:11] [Server thread/INFO]: [ProCosmetics] Initialized! Took 4069ms.
-[19:54:11] [Server thread/INFO]: [PinataParty] Enabling PinataParty v2.60.3
-[19:54:11] [Server thread/INFO]: [PinataParty] Registering hooks...
-[19:54:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pinataparty [2.60.3]
-[19:54:11] [Server thread/INFO]: [PinataParty] Hooked into PlaceholderAPI
-[19:54:11] [Server thread/INFO]: [PinataParty] Votifier not found! Not enabling the voting system! Download and install it from https://www.spigotmc.org/resources/13449/
-[19:54:11] [Server thread/INFO]: [PinataParty] Hooked into Vault
-[19:54:11] [Server thread/INFO]: [PinataParty] Registering commands...
-[19:54:11] [Server thread/INFO]: [PinataParty] Registering listeners...
-[19:54:11] [Server thread/INFO]: [PinataParty] Loading data...
-[19:54:11] [Server thread/INFO]: [PinataParty] Starting tasks...
-[19:54:11] [Server thread/INFO]: [PinataParty] Starting metrics...
-[19:54:11] [Server thread/INFO]: [PinataParty] Plugin registered to 1820939 | 940378444
-[19:54:11] [Server thread/INFO]: [PinataParty] Done and enabled in 128.83ms
-[19:54:11] [Server thread/INFO]: [MCPets] Enabling MCPets v3.1.1
-[19:54:11] [Server thread/INFO]: [MCPets] : Language file reloaded.
-[19:54:11] [Server thread/INFO]: [MCPets] : Blacklist file reloaded.
-[19:54:11] [Server thread/INFO]: Loading pets... 
-[19:54:11] [Server thread/INFO]:   - F_Pet_Aether_Dragon loaded succesfully.
-[19:54:11] [Server thread/INFO]:   - A_Pet_Angel loaded succesfully.
-[19:54:11] [Server thread/INFO]:   - C_Pet_Dark_Kitsune loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - A_Pet_Demon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - B_Pet_Eagle loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Fire_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - E_Pet_Frost_Wolf loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - E_Pet_Hellhound loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Ice_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - C_Pet_Kitsune loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - E_Pet_Lunar_Wolf loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Nature_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - B_Pet_Phoenix loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - D_Pet_Sai_Ninja loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - D_Pet_Samurai loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Shadow_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - D_Pet_Shuriken_Ninja loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - C_Pet_Spirit_Fox loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - B_Pet_Thunderbird loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Thunder_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Undead_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]:   - F_Pet_Wind_Dragon loaded succesfully.
-[19:54:12] [Server thread/INFO]: [MCPets] : 22 pets registered successfully !
-[19:54:12] [Server thread/INFO]: [MCPets] : 0 categories registered successfully !
-[19:54:12] [Server thread/INFO]: -=-=-=-= MCPets loaded =-=-=-=-
-[19:54:12] [Server thread/INFO]:       Plugin made by Nocsy
-[19:54:12] [Server thread/INFO]: -=-=-=-= -=-=-=-=-=-=- =-=-=-=-
-[19:54:12] [Server thread/INFO]: -=- Launching Flags -=-
-[19:54:12] [Server thread/INFO]: [MCPets] : Starting flag mcpets-dismount.
-[19:54:12] [Server thread/INFO]: [MCPets] : Starting flag mcpets-despawn.
-[19:54:12] [Server thread/INFO]: 2 flags launched.
-[19:54:12] [Server thread/INFO]: [Jobs] Enabling Jobs v5.2.0.0
-[19:54:12] [Server thread/INFO]: ------------- Jobs -------------
-[19:54:12] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: jobsr [5.2.0.0]
-[19:54:12] [Server thread/INFO]: PlaceholderAPI hooked.
-[19:54:12] [Server thread/INFO]: Connected to database (MySQL)
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Novice has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Apprentice has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Initiate has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Journeyman has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Adept has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Master has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Grandmaster has an invalid Name property. Skipping!
-[19:54:12] [Server thread/ERROR]: [Jobs] Title Legendary has an invalid Name property. Skipping!
-[19:54:12] [Server thread/INFO]: Loaded 69 protected blocks timers
-[19:54:12] [Server thread/INFO]: Loaded 1403 custom item names
-[19:54:12] [Server thread/INFO]: Loaded 81 custom entity names
-[19:54:12] [Server thread/INFO]: Loaded 2 custom MythicMobs names
-[19:54:12] [Server thread/INFO]: Loaded 38 custom enchant names
-[19:54:12] [Server thread/INFO]: Loaded 21 custom enchant names
-[19:54:12] [Server thread/INFO]: Loaded 16 custom color names
-[19:54:12] [Server thread/INFO]: Loaded 4 shop items
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Granjero
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Pescador
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Minero
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Cervecero
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Crafter
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Constructor
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Cazador
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Armero
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Cavador
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Encantador
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Explorador
-[19:54:13] [Server thread/INFO]: Loaded 1 quests for Leniador
-[19:54:13] [Server thread/INFO]: Loaded 12 jobs
-[19:54:13] [Server thread/INFO]: Loaded 0 boosted items
-[19:54:13] [Server thread/INFO]: Loaded 3 furnace for reassigning.
-[19:54:13] [Server thread/INFO]: Loaded 1 brewing for reassigning.
-[19:54:13] [Jobs-DatabaseSaveTask/INFO]: Started database save task.
-[19:54:13] [Jobs-BufferedPaymentThread/INFO]: Started buffered payment thread.
-[19:54:13] [Server thread/INFO]: Preloaded 12 players data in 0.03
-[19:54:13] [Server thread/INFO]: WorldGuard detected.
-[19:54:13] [Server thread/INFO]: MythicMobs 5.x detected.
-[19:54:13] [Server thread/INFO]: [Jobs] MythicMobs was found - Enabling capabilities.
-[19:54:13] [Server thread/INFO]: Loading explorer data
-[19:54:13] [Server thread/INFO]: Loaded explorer data (3997) in 64 ms
-[19:54:13] [Server thread/INFO]: Plugin has been enabled successfully.
-[19:54:13] [Server thread/INFO]: ------------------------------------
-[19:54:13] [Server thread/INFO]: [bloodmoon-advanced] Enabling bloodmoon-advanced v4.5.7
-[19:54:14] [Server thread/INFO]: [bloodmoon-advanced] plugin registered for user 1820939 with nonce 489221523
-[19:54:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bloodmoon-advanced [4.5.7]
-[19:54:14] [Server thread/INFO]: [AngelChest] Enabling AngelChest v9.14.2
-[19:54:15] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
-[19:54:15] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
-[19:54:15] [Server thread/INFO]: [AngelChest] No graveyards.yml found, disabling Graveyards feature
-[19:54:15] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: angelchest [GENERIC]
-[19:54:15] [Server thread/INFO]: [AngelChest] Successfully hooked into Vault and the EconomyProvider, enabling economy functions.
-[19:54:15] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
-[19:54:15] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[19:54:15] [Server thread/INFO]: Running delayed init tasks
-[19:54:15] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[19:54:15] [Server thread/INFO]: [ItemsAdder] [Pack] Extracting internal contents from .jar
-[19:54:15] [Craft Scheduler Thread - 11 - Vault/INFO]: [Vault] Checking for Updates ... 
-[19:54:15] [Craft Scheduler Thread - 8 - Essentials/INFO]: [Essentials] Obteniendo información de versión...
-[19:54:15] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:15] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] [Importing models]
-[19:54:15] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:15] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature.bbmodel.
-[19:54:16] [Server thread/INFO]: [ItemsAdder] [Pack] DONE extracting internal contents from .jar
-[19:54:16] [Craft Scheduler Thread - 11 - Vault/INFO]: [Vault] No new version available
-[19:54:16] [Craft Scheduler Thread - 15 - CMILib/INFO]: New version of CMILib was detected. Please update it
-[19:54:16] [Craft Scheduler Thread - 5 - XConomy/INFO]: [XConomy] Es la version mas nueva
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_double.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 24 - PinataParty/INFO]: [PinataParty] v2.61.0 is available! You are running v2.60.3!
-[19:54:16] [Craft Scheduler Thread - 24 - PinataParty/INFO]: [PinataParty] Download it here: https://www.spigotmc.org/resources/59318/
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_dust_ring.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_creature_still.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_explosion_small.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing deep_shine_vfx.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing Ezekiel.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     |------------------|
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     Current version: 14.2.12
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer]     This is the latest version!
-[19:54:16] [Craft Scheduler Thread - 18 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/WARN]: [ModelEngine] [A] --Error: The cube cube in bone sword_blade has no faces. This might be caused by all faces having UV size of 0. Excluding cube from bone.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_aether_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_angel.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_dark_kitsune.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_demon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_eagle.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_fire_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_frost_wolf.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_hellhound.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_ice_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_kitsune.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_lunar_wolf.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 13 - ItemsAdder/INFO]: [ItemsAdder] [License] Spigot product licensed to: ArianMinecraftV1 (1820939)
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_nature_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_phoenix.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_sai_ninja.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_samurai.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_shadow_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_shuriken_ninja.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_spirit_fox.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_thunder_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_thunderbird.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_undead_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing pet_wind_dragon.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_large.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_deep_debris_small.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither.bbmodel.
-[19:54:16] [Server thread/INFO]: [Jobs] Successfully linked with Vault. (XConomy)
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_pool.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull.bbmodel.
-[19:54:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.5]
-[19:54:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: playerlist [3.0.3]
-[19:54:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault [1.8.1]
-[19:54:16] [Server thread/INFO]: 3 placeholder hook(s) registered!
-[19:54:16] [Server thread/INFO]: Done (49.417s)! For help, type "help"
-[19:54:16] [Server thread/INFO]: Timings Reset
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_skull_2ndphase.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_still.bbmodel.
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:16] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing toro_wither_terror.bbmodel.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing warden_heart.bbmodel.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Importing wind_tornado.bbmodel.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/WARN]: [ModelEngine] [A] --Warning: Missing hitbox.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] [Generating assets]
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_double.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_dust_ring.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_creature_still.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_explosion_small.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating deep_shine_vfx.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating ezekiel.
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Loaded 99 items
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 0/188 REAL block IDs
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 0/750 REAL_NOTE block IDs
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 0/63 REAL_TRANSPARENT block IDs
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 0/127 REAL_WIRE block IDs
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 0/14 FIRE block IDs
-[19:54:17] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] Used 6/6608 font_images
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_aether_dragon.
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:17] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_angel.
-[19:54:18] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded 1 categories
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_dark_kitsune.
-[19:54:18] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded successfully.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_demon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_eagle.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_fire_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_frost_wolf.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_hellhound.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_ice_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_kitsune.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_lunar_wolf.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_nature_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_phoenix.
-[19:54:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
-[19:54:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
-[19:54:18] [Server thread/INFO]: [Mythic] Reloading plugin...
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_sai_ninja.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_samurai.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_shadow_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_shuriken_ninja.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_spirit_fox.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_thunder_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_thunderbird.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_undead_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating pet_wind_dragon.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_large.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_deep_debris_small.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_pool.
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:18] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull.
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_skull_2ndphase.
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_still.
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating toro_wither_terror.
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating warden_heart.
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Packs...
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Items...
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:19] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Generating wind_tornado.
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Skills...
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
-[19:54:19] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 58 mobs.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 256 skills.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 77 mythic items.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
-[19:54:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
-[19:54:20] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
-[19:54:20] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] ================================[ ShopGUI+ 1.87.0 ]================================
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus]  
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Vault economy registered.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Vault economy enabled.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Using Vault as default economy provider.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Permissions support enabled.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Enabled item provider for ItemsAdder.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] No external spawner plugins registered, using built-in spawners support.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 10 main menu items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'farming' with 18 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'miscellaneous' with 9 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'armor' with 24 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'ores' with 8 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'blocks' with 37 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'drops' with 18 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'tools' with 15 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'dyes' with 16 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'food' with 19 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 9 shops with total of 164 items.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 0 permission-based price modifiers.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 7 sounds.
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus]  
-[19:54:20] [Server thread/INFO]: [ShopGUIPlus] ====================================================================================
-[19:54:22] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] 
-[19:54:22] [Craft Scheduler Thread - 12 - ModelEngine/INFO]: [ModelEngine] [A] Resource pack zipped.
-[19:54:31] [Craft Scheduler Thread - 18 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Resourcepack URL is valid (auto-external-host), LastEdit: 2023-07-10_19-54. Url: http://resourcepack.host/dl/zRyI7O7esN9pJfMg5hhE9dhXU4jiOVZV/pack.zip
-[19:56:53] [User Authenticator #0/INFO]: UUID of player XxHyunnyxX is c69ba30c-d39d-36ba-85bf-273af53a6a85
-[19:56:54] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@264a1156[id=c69ba30c-d39d-36ba-85bf-273af53a6a85,name=XxHyunnyxX,properties={textures=[com.mojang.authlib.properties.Property@162e4656]},legacy=false] (/190.193.24.215:65080): You are not whitelisted on this server!
-[19:56:54] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@264a1156[id=c69ba30c-d39d-36ba-85bf-273af53a6a85,name=XxHyunnyxX,properties={textures=[com.mojang.authlib.properties.Property@162e4656]},legacy=false] (/190.193.24.215:65080): You are not whitelisted on this server!
-[19:56:54] [Server thread/INFO]: com.mojang.authlib.GameProfile@264a1156[id=c69ba30c-d39d-36ba-85bf-273af53a6a85,name=XxHyunnyxX,properties={textures=[com.mojang.authlib.properties.Property@162e4656]},legacy=false] (/190.193.24.215:65080) lost connection: You are not whitelisted on this server!
-[19:57:07] [Server thread/INFO]: Added XxHyunnyxX to the whitelist
-[19:57:12] [User Authenticator #0/INFO]: UUID of player XxHyunnyxX is c69ba30c-d39d-36ba-85bf-273af53a6a85
-[19:57:12] [Server thread/INFO]: XxHyunnyxX joined the game
-[19:57:12] [Server thread/INFO]: XxHyunnyxX[/190.193.24.215:65097] logged in with entity id 15 at ([world]-273.3280978839835, 79.87277381578431, -1779.699999988079)
-[20:06:13] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R1! Trying to find NMS support
-[20:06:13] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
-[20:06:13] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
-[20:06:19] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/1629, uuid='d117f340-af27-49ef-81fe-af3b4a4ea55c', l='ServerLevel[world]', x=-260.50, y=22.00, z=-1791.50, cpos=[-17, -112], tl=431, v=true] died: Skeletal Knight suffocated in a wall
-[20:06:34] [Server thread/INFO]: Villager EntityVillager['Villager'/1617, uuid='96d5b0e6-e9b7-4be6-9eed-9dac1b74ddd4', l='ServerLevel[world]', x=-272.58, y=77.00, z=-1776.22, cpos=[-18, -112], tl=787, v=true] died, message: 'Villager was shot by Pillager'
-[20:13:09] [User Authenticator #1/INFO]: UUID of player YuquitaFrita is 17805d73-a8f7-332d-a013-2a293f23df9a
-[20:13:09] [Server thread/INFO]: YuquitaFrita joined the game
-[20:13:09] [Server thread/INFO]: YuquitaFrita[/127.0.0.1:60649] logged in with entity id 3719 at ([world]-383.75031347684063, 78.0, -1756.0580850531362)
-[20:15:59] [Server thread/INFO]: YuquitaFrita issued server command: /pets spawn A_Pet_Demon XxHyunnyxX
-[20:16:02] [Server thread/INFO]: YuquitaFrita issued server command: /pets spawn A_Pet_Demon XxHyunnyxX true
-[20:16:06] [Server thread/INFO]: YuquitaFrita issued server command: /pets spawn A_Pet_Demon XxHyunnyxX true
-[20:16:14] [Server thread/INFO]: YuquitaFrita issued server command: /pets spawn A_Pet_Demon YuquitaFrita true
-[20:16:22] [Server thread/INFO]: YuquitaFrita issued server command: /gamemode survival
-[20:16:52] [Server thread/INFO]: YuquitaFrita issued server command: /gamemode creative
-[20:17:04] [Server thread/INFO]: YuquitaFrita issued server command: /tp XxHyunnyxX
-[20:22:21] [Server thread/INFO]: YuquitaFrita issued server command: /tp XxHyunnyxX
-[20:22:21] [Server thread/WARN]: YuquitaFrita moved too quickly! 18.126172024140487,1.5924337067851582,9.125011674630741
-[20:25:59] [Server thread/INFO]: YuquitaFrita issued server command: /ia
-[20:26:08] [Server thread/INFO]: YuquitaFrita issued server command: /pets open YuquitaFrita
-[20:26:10] [Async Chat Thread - #2/INFO]: [Not Secure] <XxHyunnyxX> bajalo a potato
-[20:26:17] [Async Chat Thread - #3/INFO]: [Not Secure] <[Cazador] YuquitaFrita> no
-[20:26:19] [Async Chat Thread - #2/INFO]: [Not Secure] <[Cazador] YuquitaFrita> 9 fps
-[20:26:21] [Async Chat Thread - #3/INFO]: [Not Secure] <[Cazador] YuquitaFrita> 9
-[20:26:28] [Async Chat Thread - #2/INFO]: [Not Secure] <XxHyunnyxX> a mi
-[20:26:39] [Async Chat Thread - #2/INFO]: [Not Secure] <[Cazador] YuquitaFrita> ah dale
-[20:26:41] [Async Chat Thread - #3/INFO]: [Not Secure] <[Cazador] YuquitaFrita> activa mouse
-[20:26:45] [Async Chat Thread - #2/INFO]: [Not Secure] <XxHyunnyxX> ya esta
-[20:27:41] [Async Chat Thread - #3/INFO]: [Not Secure] <XxHyunnyxX> desmuteate+
+[00:00:31] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:00:31] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:00:56] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:00:56] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:01:23] [Server thread/INFO]: Ainnoot issued server command: /msg YuquitaFrita
+[00:01:33] [Server thread/INFO]: Ainnoot issued server command: /msg YuquitaFrita le quita tu mascota a huynny xd
+[00:01:41] [Server thread/INFO]: Ainnoot issued server command: /msg YuquitaFrita como se la regreso?
+[00:02:18] [Server thread/INFO]: Ainnoot issued server command: /gamemode spectator
+[00:02:22] [Server thread/INFO]: Ainnoot issued server command: /gamemode survival
+[00:03:01] [Server thread/INFO]: Ainnoot issued server command: /pets give XxhyunnyxX
+[00:03:04] [Server thread/INFO]: Ainnoot issued server command: /pets
+[00:03:10] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:03:10] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:03:29] [Server thread/INFO]: Ainnoot issued server command: /gamemode creative
+[00:03:47] [Server thread/INFO]: Ainnoot lost connection: Disconnected
+[00:03:47] [Server thread/INFO]: Ainnoot left the game
+[00:04:27] [User Authenticator #8/INFO]: UUID of player Ainnoot is 8bbfe3c6-40c3-3716-a8ca-1e3fabd5acaf
+[00:04:27] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:04:27] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:04:27] [Server thread/INFO]: Ainnoot joined the game
+[00:04:27] [Server thread/INFO]: Ainnoot[/190.236.179.131:65348] logged in with entity id 106483 at ([world]-245.61540479714284, 73.88201173462603, -1806.2955502739117)
+[00:08:08] [Server thread/INFO]: Ainnoot issued server command: /pets
+[00:08:14] [Server thread/INFO]: Ainnoot issued server command: /pets spawn
+[00:08:16] [Server thread/INFO]: Ainnoot issued server command: /pets spawn A_Pet_Angel
+[00:08:20] [Server thread/INFO]: Ainnoot issued server command: /pets spawn Pet_Angel
+[00:08:27] [Server thread/INFO]: Ainnoot issued server command: /pets reload
+[00:08:27] [Server thread/INFO]: [MCPets] : Language file reloaded.
+[00:08:27] [Server thread/INFO]: [MCPets] : Blacklist file reloaded.
+[00:08:27] [Server thread/INFO]: Loading pets... 
+[00:08:27] [Server thread/INFO]:   - AC_Pet_Elder_Ent loaded succesfully.
+[00:08:27] [Server thread/INFO]:   - AA_Pet_Ent loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - BD_Pet_Nether_And_Ender loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - BA_Pet_Sun_And_Moon loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - AB_Pet_Undead_Ent loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - BB_Pet_Water_And_Fire loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - BC_Pet_Yin_And_Yang loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CB_Pet_Angel_Slime loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CC_Pet_Archangel_Slime loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CF_Pet_Ice_Emperor_Penguin loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CE_Pet_Ice_Penguin loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CD_Pet_Penguin loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - CA_Pet_Slime loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DE_Pet_Assassin loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DB_Pet_Dark_Knight loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DD_Pet_Dragon_Warrior loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DF_Pet_Martial_Artist loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DG_Pet_Ninja_Samurai loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DC_Pet_Paladin loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DH_Pet_Reaper loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - DA_Pet_Warrior loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - F_Pet_Aether_Dragon loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - A_Pet_Angel loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - C_Pet_Dark_Kitsune loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - A_Pet_Demon loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - B_Pet_Eagle loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - F_Pet_Fire_Dragon loaded succesfully.
+[00:08:28] [Server thread/INFO]:   - E_Pet_Frost_Wolf loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - E_Pet_Hellhound loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Ice_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - C_Pet_Kitsune loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - E_Pet_Lunar_Wolf loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Nature_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - B_Pet_Phoenix loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - D_Pet_Sai_Ninja loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - D_Pet_Samurai loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Shadow_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - D_Pet_Shuriken_Ninja loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - C_Pet_Spirit_Fox loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - B_Pet_Thunderbird loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Thunder_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Undead_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]:   - F_Pet_Wind_Dragon loaded succesfully.
+[00:08:29] [Server thread/INFO]: [MCPets] : 43 pets registered successfully !
+[00:08:29] [Server thread/INFO]: [MCPets] : 0 categories registered successfully !
+[00:09:01] [Server thread/INFO]: Ainnoot issued server command: /pets
+[00:10:07] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:10:07] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:10:56] [Server thread/INFO]: Ainnoot issued server command: /effect give Ainnoot minecraft:invisibility infinite 255 true
+[00:10:56] [Server thread/INFO]: [Ainnoot: Applied effect Invisibility to Ainnoot]
+[00:11:39] [Server thread/INFO]: Ainnoot issued server command: /tp XxHyunnyxX
+[00:12:18] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:12:18] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:13:53] [Server thread/INFO]: Ainnoot issued server command: /tp XxHyunnyxX
+[00:13:59] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:13:59] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:14:31] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:14:31] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:15:03] [Server thread/INFO]: Ainnoot issued server command: /tp XxHyunnyxX
+[00:16:09] [Server thread/INFO]: Ainnoot issued server command: /pet set
+[00:17:03] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:17:03] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:17:52] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:17:52] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:19:07] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:19:07] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:19:57] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:19:57] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:20:24] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:20:24] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:21:57] [Server thread/INFO]: Ainnoot issued server command: /msg YuquitaFrita dale un pets a la hyunny se lo quite accidental mente dx
+[00:22:09] [Server thread/INFO]: YuquitaFrita issued server command: /pets spawn E_Pet_Lunar_Wolf XxHyunnyxX false
+[00:22:09] [Server thread/WARN]: [MythicMobs] AI pathfinder ownertarget is not valid for mob type PIG
+[00:22:09] [Server thread/WARN]: [MythicMobs] AI pathfinder ownerattacker is not valid for mob type PIG
+[00:22:13] [Server thread/INFO]: YuquitaFrita issued server command: /tp XxHyunnyxX
+[00:22:49] [Server thread/INFO]: YuquitaFrita lost connection: Disconnected
+[00:22:49] [Server thread/INFO]: YuquitaFrita left the game
+[00:22:50] [Server thread/INFO]: Ainnoot issued server command: /pets
+[00:22:54] [Server thread/INFO]: Stopping the server
+[00:22:54] [Server thread/INFO]: Stopping server
+[00:22:54] [Server thread/INFO]: [AngelChest] Disabling AngelChest v9.14.2
+[00:22:54] [Server thread/INFO]: [bloodmoon-advanced] Disabling bloodmoon-advanced v4.5.7
+[00:22:54] [Server thread/INFO]: [Jobs] Disabling Jobs v5.2.0.0
+[00:22:54] [Server thread/INFO]: ------------- Jobs -------------
+[00:22:54] [Server thread/INFO]: [Jobs] Saved 35 new explorer entries.
+[00:22:54] [Server thread/INFO]: [Jobs] Updated 17 explorer entries.
+[00:22:54] [Server thread/INFO]: ------------------------------------
+[00:22:54] [Jobs-DatabaseSaveTask/INFO]: Database save task shutdown!
+[00:22:54] [Jobs-BufferedPaymentThread/INFO]: Buffered payment thread shutdown.
+[00:22:54] [Server thread/INFO]: [MCPets] Disabling MCPets v3.1.1
+[00:22:54] [Server thread/INFO]: -=-=-=-= MCPets disable =-=-=-=-
+[00:22:54] [Server thread/INFO]:           See you soon
+[00:22:54] [Server thread/INFO]: -=-=-=-= -=-=-=-=-=-=- =-=-=-=-
+[00:22:54] [Server thread/INFO]: [PinataParty] Disabling PinataParty v2.60.3
+[00:22:54] [Server thread/INFO]: [PinataParty] Removing 0 active pinatas...
+[00:22:54] [Server thread/INFO]: [PinataParty] Unregistering team...
+[00:22:54] [Server thread/INFO]: [PinataParty] Saving data...
+[00:22:54] [Server thread/INFO]: [PinataParty] Done and disabled in 5.91ms
+[00:22:54] [Server thread/INFO]: [PinataParty] If you liked the plugin, don't forget to give a ★★★★★ rating!
+[00:22:54] [Server thread/INFO]: [PinataParty] Thank you and have a great day!
+[00:22:54] [Server thread/INFO]: [ProCosmetics] Disabling ProCosmetics v13.9.2
+[00:22:54] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[00:22:54] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[00:22:54] [Server thread/INFO]: [ProtectionStones] Disabling ProtectionStones v2.10.3
+[00:22:54] [Server thread/INFO]: [ShopGUIPlus] Disabling ShopGUIPlus v1.87.0
+[00:22:54] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v14.2.12
+[00:22:54] [Server thread/INFO]: [SternalBoard] Disabling SternalBoard v2.2.0
+[00:22:54] [Server thread/INFO]: [XConomy] Disabling XConomy v2.22.1
+[00:22:54] [Server thread/INFO]: [XConomy] XConomy está deshabilitado
+[00:22:54] [Server thread/INFO]: [CMILib] Disabling CMILib v1.3.1.1
+[00:22:54] [Server thread/INFO]: [ItemsAdder] Disabling ItemsAdder v3.5.0c-r2
+[00:22:54] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.1.8
+[00:22:54] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0
+[00:22:54] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[00:22:54] [Server thread/INFO]: [LoneLibs] Disabling LoneLibs v1.0.25
+[00:22:54] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0
+[00:22:54] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.3.2-18ded834
+[00:22:54] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...
+[00:22:54] [Server thread/INFO]: [MythicMobs] All active settings have been saved.
+[00:22:54] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.3
+[00:22:54] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.9-beta1+2249-223b80c
+[00:22:54] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[00:22:54] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.15+6463-5ca4dff
+[00:22:54] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[00:22:54] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[00:22:54] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.98
+[00:22:54] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[00:22:54] [Server thread/INFO]: [LuckPerms] Closing messaging service...
+[00:22:54] [Server thread/INFO]: [LuckPerms] Closing storage...
+[00:22:54] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown initiated...
+[00:22:54] [Server thread/INFO]: [me.lucko.luckperms.lib.hikari.HikariDataSource] luckperms-hikari - Shutdown completed.
+[00:22:54] [Server thread/INFO]: [LuckPerms] Goodbye!
+[00:22:54] [Server thread/INFO]: Saving players
+[00:22:55] [Server thread/INFO]: XxHyunnyxX lost connection: Server closed
+[00:22:55] [Server thread/INFO]: XxHyunnyxX left the game
+[00:22:55] [Server thread/INFO]: Ainnoot lost connection: Server closed
+[00:22:55] [Server thread/INFO]: Ainnoot left the game
+[00:22:55] [Server thread/INFO]: Saving worlds
+[00:22:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:22:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[00:22:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[00:22:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[00:22:55] [Server thread/INFO]: [ChunkHolderManager] Saved 57 block chunks, 271 entity chunks, 0 poi chunks in world 'world' in 0.64s
+[00:23:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:23:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[00:23:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[00:23:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[00:23:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[00:23:00] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[00:23:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:23:01] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:23:01] [Server thread/INFO]: Flushing Chunk IO
+[00:23:01] [Server thread/INFO]: Closing Thread Pool
+[00:23:01] [Server thread/INFO]: Closing Server

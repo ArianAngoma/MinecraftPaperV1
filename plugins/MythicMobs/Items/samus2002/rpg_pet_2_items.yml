@@ -1,0 +1,369 @@
+######## created by samus2002 #########
+
+common_pet_food:
+  Id: sweet_berries
+  Display: "&fCommon Pet Food"
+  Hide:
+  - ATTRIBUTES
+  
+rare_pet_food:
+  Id: apple
+  Display: "&aRare Pet Food"
+  Hide:
+  - ATTRIBUTES
+  
+epic_pet_food:
+  Id: golden_apple
+  Display: "&dEpic Pet Food"
+  Hide:
+  - ATTRIBUTES
+  
+fx_goo:
+  Id: coal
+  Display: "&6"
+  Model: 5572
+  Hide:
+  - ATTRIBUTES
+ 
+fx_ice_crystal:
+  Id: coal
+  Display: "&6"
+  Model: 5573
+  Hide:
+  - ATTRIBUTES
+
+fx_iceball:
+  Id: coal
+  Display: "&6"
+  Model: 5574
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_red_1:
+  Id: coal
+  Display: "&6"
+  Model: 5575
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_red_2:
+  Id: coal
+  Display: "&6"
+  Model: 5576
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_red_3:
+  Id: coal
+  Display: "&6"
+  Model: 5577
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_red_4:
+  Id: coal
+  Display: "&6"
+  Model: 5578
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_red_5:
+  Id: coal
+  Display: "&6"
+  Model: 5579
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_yellow_1:
+  Id: coal
+  Display: "&6"
+  Model: 5580
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_yellow_2:
+  Id: coal
+  Display: "&6"
+  Model: 5581
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_yellow_3:
+  Id: coal
+  Display: "&6"
+  Model: 5582
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_yellow_4:
+  Id: coal
+  Display: "&6"
+  Model: 5583
+  Hide:
+  - ATTRIBUTES
+  
+fx_impact_yellow_5:
+  Id: coal
+  Display: "&6"
+  Model: 5584
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_black_1:
+  Id: coal
+  Display: "&6"
+  Model: 5585
+  Hide:
+  - ATTRIBUTES
+ 
+fx_slash_black_2:
+  Id: coal
+  Display: "&6"
+  Model: 5586
+  Hide:
+  - ATTRIBUTES
+
+fx_slash_black_3:
+  Id: coal
+  Display: "&6"
+  Model: 5587
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_black_4:
+  Id: coal
+  Display: "&6"
+  Model: 5588
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_black_5:
+  Id: coal
+  Display: "&6"
+  Model: 5589
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_black_6:
+  Id: coal
+  Display: "&6"
+  Model: 5590
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_purple_1:
+  Id: coal
+  Display: "&6"
+  Model: 5591
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_purple_2:
+  Id: coal
+  Display: "&6"
+  Model: 5592
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_purple_3:
+  Id: coal
+  Display: "&6"
+  Model: 5593
+  Hide:
+  - ATTRIBUTES
+ 
+fx_slash_purple_4:
+  Id: coal
+  Display: "&6"
+  Model: 5594
+  Hide:
+  - ATTRIBUTES
+
+fx_slash_purple_5:
+  Id: coal
+  Display: "&6"
+  Model: 5595
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_purple_6:
+  Id: coal
+  Display: "&6"
+  Model: 5596
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_1:
+  Id: coal
+  Display: "&6"
+  Model: 5597
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_2:
+  Id: coal
+  Display: "&6"
+  Model: 5598
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_3:
+  Id: coal
+  Display: "&6"
+  Model: 5599
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_4:
+  Id: coal
+  Display: "&6"
+  Model: 5600
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_5:
+  Id: coal
+  Display: "&6"
+  Model: 5601
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_red_6:
+  Id: coal
+  Display: "&6"
+  Model: 5602
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_white_1:
+  Id: coal
+  Display: "&6"
+  Model: 5603
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_white_2:
+  Id: coal
+  Display: "&6"
+  Model: 5604
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_white_3:
+  Id: coal
+  Display: "&6"
+  Model: 5605
+  Hide:
+  - ATTRIBUTES
+  
+fx_slash_white_4:
+  Id: coal
+  Display: "&6"
+  Model: 5606
+  Hide:
+  - ATTRIBUTES
+ 
+fx_slash_white_5:
+  Id: coal
+  Display: "&6"
+  Model: 5607
+  Hide:
+  - ATTRIBUTES
+
+fx_slash_white_6:
+  Id: coal
+  Display: "&6"
+  Model: 5608
+  Hide:
+  - ATTRIBUTES
+  
+fx_snowball:
+  Id: coal
+  Display: "&6"
+  Model: 5609
+  Hide:
+  - ATTRIBUTES
+  
+fx_yang_1:
+  Id: coal
+  Display: "&6"
+  Model: 5610
+  Hide:
+  - ATTRIBUTES
+  
+fx_yang_2:
+  Id: coal
+  Display: "&6"
+  Model: 5611
+  Hide:
+  - ATTRIBUTES
+  
+fx_yang_3:
+  Id: coal
+  Display: "&6"
+  Model: 5612
+  Hide:
+  - ATTRIBUTES
+  
+fx_yang_4:
+  Id: coal
+  Display: "&6"
+  Model: 5613
+  Hide:
+  - ATTRIBUTES
+ 
+fx_yang_5:
+  Id: coal
+  Display: "&6"
+  Model: 5614
+  Hide:
+  - ATTRIBUTES
+
+fx_yang_6:
+  Id: coal
+  Display: "&6"
+  Model: 5615
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_1:
+  Id: coal
+  Display: "&6"
+  Model: 5616
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_2:
+  Id: coal
+  Display: "&6"
+  Model: 5617
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_3:
+  Id: coal
+  Display: "&6"
+  Model: 5618
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_4:
+  Id: coal
+  Display: "&6"
+  Model: 5619
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_5:
+  Id: coal
+  Display: "&6"
+  Model: 5620
+  Hide:
+  - ATTRIBUTES
+  
+fx_yin_6:
+  Id: coal
+  Display: "&6"
+  Model: 5621
+  Hide:
+  - ATTRIBUTES

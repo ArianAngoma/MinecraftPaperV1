@@ -1,0 +1,108 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "rpg_pet_2_texture/pet_angel_slime"
+	},
+	"elements": [
+		{
+			"from": [3.5, 15, 3.5],
+			"to": [12.5, 15, 12.5],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [0, 10.5, 2.25, 10.5], "texture": "#1"},
+				"east": {"uv": [2.5, 10.5, 4.75, 10.5], "texture": "#1"},
+				"south": {"uv": [10.5, 3.5, 12.75, 3.5], "texture": "#1"},
+				"west": {"uv": [10.5, 3.75, 12.75, 3.75], "texture": "#1"},
+				"up": {"uv": [4.75, 7.25, 2.5, 5], "texture": "#1"},
+				"down": {"uv": [4.75, 5, 2.5, 7.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3.5, 3.5, 3.5],
+			"to": [12.5, 12.5, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.25, 2.25], "texture": "#1"},
+				"east": {"uv": [0, 2.5, 2.25, 4.75], "texture": "#1"},
+				"south": {"uv": [2.5, 0, 4.75, 2.25], "texture": "#1"},
+				"west": {"uv": [2.5, 2.5, 4.75, 4.75], "texture": "#1"},
+				"up": {"uv": [2.25, 7.25, 0, 5], "texture": "#1"},
+				"down": {"uv": [7.25, 0, 5, 2.25], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [0, -1.75, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "body",
+			"origin": [0, 16.01903, -0.27978],
+			"color": 0,
+			"children": [
+				{
+					"name": "left_arm",
+					"origin": [-4.05214, 15.68853, -0.29327],
+					"rotation": [0, 0, 10],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "right_arm",
+					"origin": [4.05214, 15.68853, -0.29327],
+					"rotation": [0, 0, -10],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "ring",
+					"origin": [0, 22, -0.29327],
+					"color": 0,
+					"children": [0]
+				},
+				{
+					"name": "left_wing",
+					"origin": [-1.77733, 16.77262, 4.241],
+					"rotation": [0, 32.5, 0],
+					"color": 0,
+					"children": [
+						{
+							"name": "left_wing_end",
+							"origin": [-5.40915, 18.62345, 4.18007],
+							"rotation": [0, -45, 0],
+							"color": 0,
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "right_wing",
+					"origin": [1.77733, 16.27262, 4.241],
+					"rotation": [0, -32.5, 0],
+					"color": 0,
+					"children": [
+						{
+							"name": "right_wing_end",
+							"origin": [5.22641, 18.83634, 4.18849],
+							"rotation": [0, 45, 0],
+							"color": 0,
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "tag_name",
+					"origin": [0, 20.25, -0.25],
+					"color": 0,
+					"children": []
+				},
+				1
+			]
+		}
+	]
+}

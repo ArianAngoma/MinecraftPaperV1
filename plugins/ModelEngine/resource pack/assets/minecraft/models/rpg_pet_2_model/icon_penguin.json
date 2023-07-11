@@ -1,0 +1,89 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "rpg_pet_2_texture/pet_penguin"
+	},
+	"elements": [
+		{
+			"from": [3.5, 3.5, 3.5],
+			"to": [12.5, 12.5, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.5, 5.5, 11.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.25, 2.25], "texture": "#1"},
+				"east": {"uv": [0, 2.5, 2.25, 4.75], "texture": "#1"},
+				"south": {"uv": [2.5, 0, 4.75, 2.25], "texture": "#1"},
+				"west": {"uv": [2.5, 2.5, 4.75, 4.75], "texture": "#1"},
+				"up": {"uv": [2.25, 7.25, 0, 5], "texture": "#1"},
+				"down": {"uv": [7.25, 0, 5, 2.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.5, 5.5, 1.75],
+			"to": [9.5, 7.5, 3.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10.5, 5.5, 11.5]},
+			"faces": {
+				"north": {"uv": [5.5, 7.25, 6.25, 7.75], "texture": "#1"},
+				"east": {"uv": [1, 7.5, 1.5, 8], "texture": "#1"},
+				"south": {"uv": [0, 7.5, 0.75, 8], "texture": "#1"},
+				"west": {"uv": [7.5, 1.5, 8, 2], "texture": "#1"},
+				"up": {"uv": [8.25, 0.5, 7.5, 0], "texture": "#1"},
+				"down": {"uv": [8.25, 0.75, 7.5, 1.25], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "body",
+			"origin": [0.0097, 5.75, 0.175],
+			"color": 0,
+			"children": [
+				{
+					"name": "left_leg",
+					"origin": [-2.9903, 0.91667, 0.21667],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "right_leg",
+					"origin": [3.0097, 0.91667, 0.21667],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "tag_name",
+					"origin": [0, 9, -0.125],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "left_arm",
+					"origin": [-4.3568, 5.5305, -0.1],
+					"color": 0,
+					"children": [
+						{
+							"name": "ball",
+							"origin": [-5.90259, 1.70631, 0.05],
+							"color": 0,
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "right_arm",
+					"origin": [4.3568, 5.5305, -0.1],
+					"color": 0,
+					"children": []
+				},
+				0,
+				1
+			]
+		}
+	]
+}

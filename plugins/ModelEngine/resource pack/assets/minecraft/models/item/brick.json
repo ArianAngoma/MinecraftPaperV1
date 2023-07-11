@@ -3,7 +3,7 @@
     "textures": {
         "layer0": "item/brick"
     },
-	"overrides": [	
+	"overrides": [
 		{"predicate": {"custom_model_data":3500}, "model": "rpg_pet_model/icon_aether_dragon"},
 		{"predicate": {"custom_model_data":3501}, "model": "rpg_pet_model/icon_angel"},
 		{"predicate": {"custom_model_data":3502}, "model": "rpg_pet_model/icon_dark_kitsune"},
@@ -25,6 +25,27 @@
 		{"predicate": {"custom_model_data":3518}, "model": "rpg_pet_model/icon_thunder_dragon"},
 		{"predicate": {"custom_model_data":3519}, "model": "rpg_pet_model/icon_thunderbird"},
 		{"predicate": {"custom_model_data":3520}, "model": "rpg_pet_model/icon_undead_dragon"},
-		{"predicate": {"custom_model_data":3521}, "model": "rpg_pet_model/icon_wind_dragon"}
+		{"predicate": {"custom_model_data":3521}, "model": "rpg_pet_model/icon_wind_dragon"},
+		{"predicate": {"custom_model_data":3529}, "model": "rpg_pet_2_model/icon_angel_slime"},
+		{"predicate": {"custom_model_data":3530}, "model": "rpg_pet_2_model/icon_archangel_slime"},
+		{"predicate": {"custom_model_data":3531}, "model": "rpg_pet_2_model/icon_assassin"},
+		{"predicate": {"custom_model_data":3532}, "model": "rpg_pet_2_model/icon_dark_knight"},
+		{"predicate": {"custom_model_data":3533}, "model": "rpg_pet_2_model/icon_dragon_warrior"},
+		{"predicate": {"custom_model_data":3534}, "model": "rpg_pet_2_model/icon_elder_ent"},
+		{"predicate": {"custom_model_data":3535}, "model": "rpg_pet_2_model/icon_ent"},
+		{"predicate": {"custom_model_data":3536}, "model": "rpg_pet_2_model/icon_ice_emperor_penguin"},
+		{"predicate": {"custom_model_data":3537}, "model": "rpg_pet_2_model/icon_ice_penguin"},
+		{"predicate": {"custom_model_data":3538}, "model": "rpg_pet_2_model/icon_martial_artist"},
+		{"predicate": {"custom_model_data":3539}, "model": "rpg_pet_2_model/icon_nether_and_ender"},
+		{"predicate": {"custom_model_data":3540}, "model": "rpg_pet_2_model/icon_ninja_samurai"},
+		{"predicate": {"custom_model_data":3541}, "model": "rpg_pet_2_model/icon_paladin"},
+		{"predicate": {"custom_model_data":3542}, "model": "rpg_pet_2_model/icon_penguin"},
+		{"predicate": {"custom_model_data":3543}, "model": "rpg_pet_2_model/icon_reaper"},
+		{"predicate": {"custom_model_data":3544}, "model": "rpg_pet_2_model/icon_slime"},
+		{"predicate": {"custom_model_data":3545}, "model": "rpg_pet_2_model/icon_sun_and_moon"},
+		{"predicate": {"custom_model_data":3546}, "model": "rpg_pet_2_model/icon_undead_ent"},
+		{"predicate": {"custom_model_data":3547}, "model": "rpg_pet_2_model/icon_warrior"},
+		{"predicate": {"custom_model_data":3548}, "model": "rpg_pet_2_model/icon_water_and_fire"},
+		{"predicate": {"custom_model_data":3549}, "model": "rpg_pet_2_model/icon_yin_and_yang"}
     ]
 }

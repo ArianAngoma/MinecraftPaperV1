@@ -1,0 +1,77 @@
+Id: BC_Pet_Yin_And_Yang
+MythicMob: Pet_Yin_And_Yang
+Permission: mcpet.pet_yin_and_yang
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 3
+Icon:
+  Name: §9Yin & §fYang
+  Material: BRICK
+  CustomModelData: 3549
+  Description:
+  - §fGet your pet Yin & Yang!
+  - ""
+  - §f[§9Aura of Weakness§f]
+  - §fYour Yin gives slowness and weakness to an enemy.
+  - §f[§fAura of Strength§f]
+  - §fYour Yang gives you speed and strength.
+Levels:
+  Lvl_Common:
+    Name: "§fCommon"
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 1
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: "§aRare"
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 1
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &aRare &6level!"
+      Type: CHAT
+  Lvl_Epic:
+    Name: "§dEpic"
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 1
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &dEpic &6level!"
+      Type: CHAT
+  Lvl_Legendary:
+    Name: "§eLegendary"
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 1
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: "&6Level up! Your pet is now &eLegendary &6level!"
+      Type: CHAT
