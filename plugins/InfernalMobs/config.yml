@@ -3,7 +3,7 @@
 # Enabledmobs are the mobs that can become infernal.
 # Loot is the items that are dropped when an infernal mob dies. (You can have up to 64)
 # Item is the item, Amount is the amount, Durability is how damaged it will be (0 is undamaged).
-# nameTagsLevel is the visibility level of the name tags, 0 = no tag, 
+# nameTagsLevel is the visibility level of the name tags, 0 = no tag,
 # 1 = tag shown when your looking at the mob, 2 = tag always shown.
 # Note, if you have name tags set to 0, on server restart all infernal mobs will turn normal.
 # If you want to enable the boss bar you must have BarAPI on your server.
@@ -11,7 +11,7 @@
 # <abilities> = A list of about 3-5 (whatever can fit) names of abilities the boss has.
 # <mobName> = Name of the mob, so if the mob is a creeper the mobName will be "Creeper".
 
-chance: 100
+chance: 55
 # mobChances:
 #  Ghast: 150
 # levelChance:
@@ -29,7 +29,7 @@ namePrefix: '&fInfernal'
 #  '7': '&fInfernal'
 nameTagsLevel: 1
 nameTagsName: '&f<prefix> <mobName>'
-bossBarsName: '&fLevel <mobLevel> &f<prefix> <mobName>'
+bossBarsName: '&fNivel <mobLevel> &f<prefix> <mobName>'
 enableBossBar: true
 bossBarSettings:
   defaultColor: PINK
@@ -60,20 +60,20 @@ effectAllPlayerAttacks: true
 enableParticles: true
 enableDeathMessages: false
 deathMessages:
-- '&cplayer &chas killed an mob&c!'
-- '&cAn mob &cwas slain by player&c!'
-- '&cplayer &cowned an mob&c!'
-- '&cAn mob &cwas beheaded by player&c''s weapon!'
-- '&cplayer&c''s weapon &ckilled an mob&c!'
-- '&cAn mob &cwas killed by player &cusing a weapon&c!'
+- '&cJugador &cha matado a un mob&c!'
+- '&cUn mob &cfue asesinado por un jugador&c!'
+- '&cJugador &cposeía un mob&c!'
+- '&cUn mob &cfue decapitado por el arma del jugador&c!'
+- '&cEl arma del jugador &cdecapitó a un mob&c!'
+- '&cUn mob &cfue asesinado por un jugador usando un arma&c!'
 enableSpawnMessages: false
 spawnMessageRadius: 64
 spawnMessages:
-- '&cAn Infernal mob has spawned near you!'
-- '&cWatch out!'
-- '&cYou hear a faint scream...'
-- '&cSomething is coming...'
-- '&cYou hear a mob nearby...'
+- '&c¡Una mob infernal ha engendrado cerca de ti!'
+- '&c¡Cuidado!'
+- '&cOyes un leve grito...'
+- '&cAlgo viene...'
+- '&cOyes un mob cerca...'
 mobworlds:
 - <all>
 effectworlds:
@@ -259,9 +259,9 @@ disabledBabyMobs:
 # xpMultiplier is what the normal xp a mob drops will be multiplied by.
 # healthByDistance makes mobs HP go up as you go further from the world spawn.
 # Every addDistance blocks the mobs will get healthToAdd times how far they are HP.
-minpowers: 3
-maxpowers: 7
-healthMultiplier: 4
+minpowers: 4
+maxpowers: 8
+healthMultiplier: 5
 healthByPower: false
 healthByDistance: false
 powerByDistance: false
@@ -270,7 +270,7 @@ powerToAdd: 1
 xpMultiplier: 8
 addDistance: 200
 enableDrops: true
-dropChance: 1
+dropChance: 100
 enableFarmingDrops: false
 naturalSpawnHeight: 0
 configVersion: 'git-Paper-49 (MC: 1.20.1)'
