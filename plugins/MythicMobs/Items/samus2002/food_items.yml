@@ -1,0 +1,622 @@
+######## created by samus2002 #########
+  
+Apple_Pie:
+  Id: IRON_NUGGET
+  Model: 4500
+  Display: 'Apple Pie'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4500
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Apple_Pie:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | apple | air
+      - wheat | sugar | wheat
+  Skills:
+  - skill{s=Apple_Pie} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Bibimbap:
+  Id: IRON_NUGGET
+  Model: 4501
+  Display: 'Bibimbap'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4501
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Bibimbap:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - wheat_seeds | egg | carrot
+      - wheat | wheat | wheat
+  Skills:
+  - skill{s=Bibimbap} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.stone.place} @self ~onBlockPlace
+  - sound{s=block.stone.break} @self ~onBlockBreak
+  - sound{s=block.stone.hit} @self ~onBlockRotate
+  - sound{s=block.stone.break} @self ~onDamaged
+  
+Chicken_Box:
+  Id: IRON_NUGGET
+  Model: 4502
+  Display: 'Box of Chicken'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4502
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Chicken_Box:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - Fried_Chicken | Chicken_Nugget | Chicken_Nugget
+      - Fried_Chicken | Chicken_Nugget | Chicken_Nugget
+  Skills:
+  - skill{s=Chicken_Box} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Chicken_Nugget:
+  Id: IRON_NUGGET
+  Model: 4503
+  Display: 'Chicken Nugget'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4503
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Chicken_Nugget:
+      Type: SHAPED
+      Amount: 6
+      Ingredients:
+      - air | air | air
+      - wooden_sword | cooked_chicken | air
+      - air | air | air
+  Skills:
+  - skill{s=Chicken_Nugget} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Fried_Chicken:
+  Id: IRON_NUGGET
+  Model: 4511
+  Display: 'Fried Chicken'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4511
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Fried_Chicken:
+      Type: SHAPED
+      Amount: 2
+      Ingredients:
+      - air | air | air
+      - wooden_sword | cooked_chicken | wooden_sword
+      - air | air | air
+  Skills:
+  - skill{s=Fried_Chicken} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Coke:
+  Id: IRON_NUGGET
+  Model: 4505
+  Display: 'Coke'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4505
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Coke:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | brown_dye | air
+      - sugar | water_bucket | sugar
+      - air | air | air
+  Skills:
+  - skill{s=Coke} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.glass.place} @self ~onBlockPlace
+  - sound{s=block.glass.break} @self ~onBlockBreak
+  - sound{s=block.glass.hit} @self ~onBlockRotate
+  - sound{s=block.glass.break} @self ~onDamaged
+  
+Fanta:
+  Id: IRON_NUGGET
+  Model: 4509
+  Display: 'Fanta'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4509
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Fanta:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | orange_dye | air
+      - sugar | water_bucket | sugar
+      - air | air | air
+  Skills:
+  - skill{s=Fanta} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.glass.place} @self ~onBlockPlace
+  - sound{s=block.glass.break} @self ~onBlockBreak
+  - sound{s=block.glass.hit} @self ~onBlockRotate
+  - sound{s=block.glass.break} @self ~onDamaged
+  
+Soda_Pop:
+  Id: IRON_NUGGET
+  Model: 4517
+  Display: 'Soda Pop'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4517
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Soda_Pop:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | light_blue_dye | air
+      - sugar | water_bucket | sugar
+      - air | air | air
+  Skills:
+  - skill{s=Soda_Pop} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.glass.place} @self ~onBlockPlace
+  - sound{s=block.glass.break} @self ~onBlockBreak
+  - sound{s=block.glass.hit} @self ~onBlockRotate
+  - sound{s=block.glass.break} @self ~onDamaged
+  
+Oreo:
+  Id: IRON_NUGGET
+  Model: 4513
+  Display: 'Oreo'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4513
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Oreo:
+      Type: SHAPED
+      Amount: 4
+      Ingredients:
+      - air | cocoa_beans | air
+      - cocoa_beans | sugar | cocoa_beans
+      - air | cocoa_beans | air
+  Skills:
+  - skill{s=Oreo} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.stone.place} @self ~onBlockPlace
+  - sound{s=block.stone.break} @self ~onBlockBreak
+  - sound{s=block.stone.hit} @self ~onBlockRotate
+  - sound{s=block.stone.break} @self ~onDamaged
+  
+French_Fries:
+  Id: IRON_NUGGET
+  Model: 4510
+  Display: 'French Fries'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4510
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    French_Fries:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - potato | potato | potato
+      - air | air | air
+  Skills:
+  - skill{s=French_Fries} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Chicken_Set:
+  Id: IRON_NUGGET
+  Model: 4504
+  Display: 'Chicken Set'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4504
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Chicken_Set:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - French_Fries | Chicken_Box | Coke
+      - air | Oreo | air
+  Skills:
+  - skill{s=Chicken_Set} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.stone.place} @self ~onBlockPlace
+  - sound{s=block.stone.break} @self ~onBlockBreak
+  - sound{s=block.stone.hit} @self ~onBlockRotate
+  - sound{s=block.stone.break} @self ~onDamaged
+  
+Strawberry_Cupcake:
+  Id: IRON_NUGGET
+  Model: 4506
+  Display: 'Strawberry Cupcake'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4506
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Strawberry_Cupcake:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | sweet_berries | air
+      - air | wheat | air
+  Skills:
+  - skill{s=Strawberry_Cupcake} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Vanilla_Cupcake:
+  Id: IRON_NUGGET
+  Model: 4507
+  Display: 'Vanilla Cupcake'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4507
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Vanilla_Cupcake:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | sugar | air
+      - air | wheat | air
+  Skills:
+  - skill{s=Vanilla_Cupcake} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Chocolate_Cupcake:
+  Id: IRON_NUGGET
+  Model: 4508
+  Display: 'Chocolate Cupcake'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4508
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Chocolate_Cupcake:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | cocoa_beans | air
+      - air | wheat | air
+  Skills:
+  - skill{s=Chocolate_Cupcake} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Lettuce:
+  Id: IRON_NUGGET
+  Model: 4512
+  Display: 'Lettuce'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4512
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Lettuce:
+      Type: SHAPED
+      Amount: 2
+      Ingredients:
+      - air | air | air
+      - air | birch_sapling | air
+      - air | air | air
+  Skills:
+  - skill{s=Lettuce} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Tonkatsu:
+  Id: IRON_NUGGET
+  Model: 4520
+  Display: 'Tonkatsu'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4520
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Tonkatsu:
+      Type: SHAPED
+      Amount: 2
+      Ingredients:
+      - air | air | air
+      - wooden_sword | cooked_porkchop | air
+      - air | air | air
+  Skills:
+  - skill{s=Tonkatsu} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Tonkatsu_Set:
+  Id: IRON_NUGGET
+  Model: 4521
+  Display: 'Tonkatsu Set'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4521
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Tonkatsu_Set:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - Tonkatsu | air | Lettuce
+      - Tonkatsu | Tonkatsu | Tonkatsu
+  Skills:
+  - skill{s=Tonkatsu_Set} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.stone.place} @self ~onBlockPlace
+  - sound{s=block.stone.break} @self ~onBlockBreak
+  - sound{s=block.stone.hit} @self ~onBlockRotate
+  - sound{s=block.stone.break} @self ~onDamaged
+  
+Pizza:
+  Id: IRON_NUGGET
+  Model: 4514
+  Display: 'Pizza'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4514
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Pizza:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - wheat | cooked_beef | wheat
+      - cooked_beef | milk_bucket | cooked_beef
+      - wheat | cooked_beef | wheat
+  Skills:
+  - skill{s=Pizza} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Boxed_Pizza:
+  Id: IRON_NUGGET
+  Model: 4515
+  Display: 'Boxed Pizza'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4515
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Boxed_Pizza:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | paper | air
+      - paper | Pizza | paper
+      - air | paper | air
+  Skills:
+  - skill{s=Pizza} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.wool.place} @self ~onBlockPlace
+  - sound{s=block.wool.break} @self ~onBlockBreak
+  - sound{s=block.wool.hit} @self ~onBlockRotate
+  - sound{s=block.wool.break} @self ~onDamaged
+  
+Salmon_Sushi:
+  Id: IRON_NUGGET
+  Model: 4516
+  Display: 'Salmon Sushi'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4516
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Salmon_Sushi:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | salmon | air
+      - air | wheat | air
+  Skills:
+  - skill{s=Salmon_Sushi} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Sushi_Roll:
+  Id: IRON_NUGGET
+  Model: 4518
+  Display: 'Sushi Roll'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4518
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Sushi_Roll:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - air | air | air
+      - air | dried_kelp | air
+      - air | wheat | air
+  Skills:
+  - skill{s=Sushi_Roll} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.honey_block.place} @self ~onBlockPlace
+  - sound{s=block.honey_block.break} @self ~onBlockBreak
+  - sound{s=block.honey_block.hit} @self ~onBlockRotate
+  - sound{s=block.honey_block.break} @self ~onDamaged
+  
+Sushi_Set:
+  Id: IRON_NUGGET
+  Model: 4519
+  Display: 'Sushi Set'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4519
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Sushi_Set:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - Sushi_Roll | Sushi_Roll | Sushi_Roll
+      - Salmon_Sushi | kelp | Salmon_Sushi
+      - air | air | air
+  Skills:
+  - skill{s=Sushi_Set} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.stone.place} @self ~onBlockPlace
+  - sound{s=block.stone.break} @self ~onBlockBreak
+  - sound{s=block.stone.hit} @self ~onBlockRotate
+  - sound{s=block.stone.break} @self ~onDamaged
+  
+Trifle:
+  Id: IRON_NUGGET
+  Model: 4522
+  Display: 'Trifle'
+  Type: FURNITURE
+  Furniture:
+    Material: IRON_NUGGET
+    Model: 4522
+    Health: 1
+    Barriers:
+    - 0,0,0
+  Recipes:
+    Trifle:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - sweet_berries | sweet_berries | sweet_berries
+      - sugar | sugar | sugar
+      - wheat | wheat | wheat
+  Skills:
+  - skill{s=Trifle} ~onSwing
+  FurnitureSkills:
+  - sound{s=block.glass.place} @self ~onBlockPlace
+  - sound{s=block.glass.break} @self ~onBlockBreak
+  - sound{s=block.glass.hit} @self ~onBlockRotate
+  - sound{s=block.glass.break} @self ~onDamaged

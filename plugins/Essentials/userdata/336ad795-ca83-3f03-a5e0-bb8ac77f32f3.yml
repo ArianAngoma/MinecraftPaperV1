@@ -16,19 +16,11 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1689051552384
-  login: 1689048073025
+  logout: 1689215179895
+  login: 1689214844637
 money: '0'
 last-account-name: Lexais
 lastlocation:
-  world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
-  world-name: world
-  x: -237.0286140962085
-  y: 85.0
-  z: -1890.030053906155
-  yaw: -74.8154296875
-  pitch: 15.2999906539917
-logoutlocation:
   world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
   world-name: world
   x: -258.5890229145443
@@ -36,3 +28,11 @@ logoutlocation:
   z: -1914.1186330390456
   yaw: 138.87200927734375
   pitch: 5.549909591674805
+logoutlocation:
+  world: 4498563c-2814-4c79-b320-5d7b8dcfb03b
+  world-name: world
+  x: -246.35997128497894
+  y: 95.63087272331131
+  z: -1920.7300351509007
+  yaw: 97.61715698242188
+  pitch: 32.249332427978516

@@ -1,0 +1,38 @@
+info:
+  namespace: food
+categories:
+  food:
+    enabled: true
+    icon: "food:chicken_set"
+    name: 'Food'
+    permission: "ia.menu.samus_food"
+    #THIS IS OPTIONAL. Plugin will take the one in ia_gui.yml if not set.
+    font_image:
+      name: "_iainternal:blank_menu"
+      x_position_pixels: -16
+    #THIS IS OPTIONAL. Plugin will take the one in ia_gui.yml if not set.
+    title_position_pixels: 0
+    items:
+      - "food:apple_pie"
+      - "food:bibimbap"
+      - "food:chicken_box"
+      - "food:chicken_nugget"
+      - "food:fried_chicken"
+      - "food:coke"
+      - "food:fanta"
+      - "food:soda_pop"
+      - "food:oreo"
+      - "food:french_fries"
+      - "food:chicken_set"
+      - "food:strawberry_cupcake"
+      - "food:vanilla_cupcake"
+      - "food:chocolate_cupcake"
+      - "food:lettuce"
+      - "food:tonkatsu"
+      - "food:tonkatsu_set"
+      - "food:pizza"
+      - "food:boxed_pizza"
+      - "food:salmon_sushi"
+      - "food:sushi_roll"
+      - "food:sushi_set"
+      - "food:trifle"

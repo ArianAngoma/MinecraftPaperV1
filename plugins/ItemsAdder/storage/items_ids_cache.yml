@@ -178,3 +178,27 @@ COAL:
   pet_4:fx_yin_4: 5619
   pet_4:fx_yin_5: 5620
   pet_4:fx_yin_6: 5621
+IRON_NUGGET:
+  food:apple_pie: 4500
+  food:bibimbap: 4501
+  food:chicken_box: 4502
+  food:chicken_nugget: 4503
+  food:fried_chicken: 4511
+  food:coke: 4505
+  food:fanta: 4509
+  food:soda_pop: 4517
+  food:oreo: 4513
+  food:french_fries: 4510
+  food:chicken_set: 4504
+  food:strawberry_cupcake: 4506
+  food:vanilla_cupcake: 4507
+  food:chocolate_cupcake: 4508
+  food:lettuce: 4512
+  food:tonkatsu: 4520
+  food:tonkatsu_set: 4521
+  food:pizza: 4514
+  food:boxed_pizza: 4515
+  food:salmon_sushi: 4516
+  food:sushi_roll: 4518
+  food:sushi_set: 4519
+  food:trifle: 4522
