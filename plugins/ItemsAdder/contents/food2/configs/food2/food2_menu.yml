@@ -1,0 +1,43 @@
+info:
+  namespace: food2
+categories:
+  food2:
+    enabled: true
+    icon: "food2:roasted_turkey"
+    name: 'Food 2'
+    permission: "ia.menu.samus_food2"
+    #THIS IS OPTIONAL. Plugin will take the one in ia_gui.yml if not set.
+    font_image:
+      name: "_iainternal:blank_menu"
+      x_position_pixels: -16
+    #THIS IS OPTIONAL. Plugin will take the one in ia_gui.yml if not set.
+    title_position_pixels: 0
+    items:
+      - "food2:baguette"
+      - "food2:beer"
+      - "food2:burger_double"
+      - "food2:burger_small"
+      - "food2:candy_cane"
+      - "food2:cheese_slice"
+      - "food2:donut_chocolate"
+      - "food2:donut_mint"
+      - "food2:donut_pink"
+      - "food2:gingerbread"
+      - "food2:hot_chocolate"
+      - "food2:hot_dog"
+      - "food2:kebap_chicken"
+      - "food2:kebap_lamb"
+      - "food2:kebap_set"
+      - "food2:lemonade"
+      - "food2:lemonade_dispenser"
+      - "food2:onigiri"
+      - "food2:patty"
+      - "food2:ramen"
+      - "food2:roast"
+      - "food2:sausage"
+      - "food2:strawberry_ade"
+      - "food2:strawberry_ade_dispenser"
+      - "food2:taco"
+      - "food2:tomato_slice"
+      - "food2:roasted_turkey"
+      - "food2:wine"

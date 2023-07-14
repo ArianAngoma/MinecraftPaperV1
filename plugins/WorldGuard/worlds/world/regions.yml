@@ -17,9 +17,9 @@ regions:
             wither-damage: deny
             ps-tax-payments-due: []
             greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            pvp: deny
             ps-home: -121.0 64.0 -2074.0
             ps-tax-last-payment-added: []
+            pvp: deny
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
             mob-spawning: deny
             ps-block-material: EMERALD_ORE
@@ -56,21 +56,21 @@ regions:
             wither-damage: deny
             ps-tax-payments-due: []
             greeting: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            pvp: deny
             ps-home: -237.0 111.0 -1907.0
             ps-tax-last-payment-added: []
+            pvp: deny
             ps-tax-autopayer: 17805d73-a8f7-332d-a013-2a293f23df9a
             mob-spawning: allow
             ps-block-material: EMERALD_ORE
             creeper-explosion: deny
             farewell-action: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
             greeting-action: §lEntrando en el §f§lárea protegida de §b§lYuquitaFrita
-            ps-merged-regions: [ps-248x75y-1763z, ps-193x79y-1851z, ps-270x89y-1836z,
+            ps-merged-regions: [ps-248x75y-1763z, ps-268x80y-1851z, ps-193x79y-1851z,
                 ps-285x77y-1759z, ps-237x110y-1907z]
             tnt: deny
             ghast-fireball: deny
-            ps-merged-regions-types: [ps-270x89y-1836z EMERALD_ORE, ps-285x77y-1759z
-                    EMERALD_ORE, ps-248x75y-1763z EMERALD_ORE, ps-237x110y-1907z EMERALD_ORE,
+            ps-merged-regions-types: [ps-285x77y-1759z EMERALD_ORE, ps-248x75y-1763z
+                    EMERALD_ORE, ps-237x110y-1907z EMERALD_ORE, ps-268x80y-1851z EMERALD_ORE,
                 ps-193x79y-1851z EMERALD_ORE]
             farewell: §lSaliendo de el §f§lárea protegida de §b§lYuquitaFrita
         owners:
@@ -83,9 +83,9 @@ regions:
         - {x: -173, z: -1915}
         - {x: -173, z: -1971}
         - {x: -301, z: -1971}
-        - {x: -301, z: -1900}
-        - {x: -334, z: -1900}
-        - {x: -334, z: -1823}
+        - {x: -301, z: -1915}
+        - {x: -332, z: -1915}
+        - {x: -332, z: -1823}
         - {x: -349, z: -1823}
         - {x: -349, z: -1695}
         - {x: -221, z: -1695}

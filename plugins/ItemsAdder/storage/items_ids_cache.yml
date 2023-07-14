@@ -202,3 +202,31 @@ IRON_NUGGET:
   food:sushi_roll: 4518
   food:sushi_set: 4519
   food:trifle: 4522
+  food2:baguette: 4523
+  food2:beer: 4524
+  food2:burger_double: 4525
+  food2:burger_small: 4526
+  food2:candy_cane: 4527
+  food2:cheese_slice: 4528
+  food2:donut_chocolate: 4529
+  food2:donut_mint: 4530
+  food2:donut_pink: 4531
+  food2:gingerbread: 4532
+  food2:hot_chocolate: 4533
+  food2:hot_dog: 4534
+  food2:kebap_chicken: 4535
+  food2:kebap_lamb: 4536
+  food2:kebap_set: 4537
+  food2:lemonade: 4538
+  food2:strawberry_ade: 4546
+  food2:lemonade_dispenser: 4539
+  food2:strawberry_ade_dispenser: 4547
+  food2:onigiri: 4540
+  food2:patty: 4541
+  food2:ramen: 4542
+  food2:roast: 4543
+  food2:sausage: 4544
+  food2:taco: 4548
+  food2:tomato_slice: 4549
+  food2:roasted_turkey: 4550
+  food2:wine: 4551

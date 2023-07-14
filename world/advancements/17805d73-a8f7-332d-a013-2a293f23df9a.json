@@ -2528,15 +2528,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2023-07-12 20:42:46 -0500"
+    },
+    "done": true
+  },
   "minecraft:story/root": {
     "criteria": {
       "crafting_table": "2023-07-12 20:45:59 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+  "minecraft:story/obtain_armor": {
     "criteria": {
-      "has_iron_nugget": "2023-07-12 20:42:46 -0500"
+      "iron_helmet": "2023-07-13 22:45:46 -0500"
     },
     "done": true
   },

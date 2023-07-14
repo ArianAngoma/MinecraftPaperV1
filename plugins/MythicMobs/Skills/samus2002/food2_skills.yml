@@ -1,0 +1,287 @@
+######## created by samus2002 #########
+
+# Food #
+
+baguette:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=8} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=BREAD;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+beer:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - potion{type=CONFUSION;duration=120;level=1;hasParticles=false} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=WHEAT;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+burger_double:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=6} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+burger_small:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+candy_cane:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=1} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=APPLE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+cheese_slice:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=1} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=YELLOW_DYE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+donut_chocolate:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COCOA_BEANS;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+donut_mint:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=CYAN_DYE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+donut_pink:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=PINK_DYE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+gingerbread:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=3} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKIE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+hot_chocolate:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=COCOA_BEANS;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+hot_dog:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=7} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+kebap_chicken:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=6} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=RAW_CHICKEN;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+kebap_lamb:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=6} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_MUTTON;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+kebap_set:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=12} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=RAW_CHICKEN;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  - effect:particles{particle=item_crack;m=COOKED_MUTTON;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+lemonade:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=HONEYCOMB;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+strawberry_ade:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=APPLE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+lemonade_dispenser:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=7} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=HONEYCOMB;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+strawberry_ade_dispenser:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=7} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=APPLE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+onigiri:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=DRIED_KELP;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+patty:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=2} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+ramen:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=6} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_CHICKEN;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  
+roast:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=12} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+sausage:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+taco:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=7} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=WHEAT;amount=7;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+  - effect:particles{particle=item_crack;m=COOKED_BEEF;amount=7;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+tomato_slice:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=1} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=APPLE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+roasted_turkey:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=14} @self
+  - sound{s=entity.generic.eat} @self
+  - effect:particles{particle=item_crack;m=COOKED_CHICKEN;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self
+
+wine:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  - feed{amount=4} @self
+  - potion{type=CONFUSION;duration=120;level=1;hasParticles=false} @self
+  - sound{s=entity.generic.drink} @self
+  - effect:particles{particle=item_crack;m=APPLE;amount=10;hS=0.2;vS=0.2;speed=0;y=1.3;forwardOffset=0.2} @self

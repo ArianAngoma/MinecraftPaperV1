@@ -1,0 +1,1368 @@
+info:
+  namespace: food2
+items:
+    baguette:
+      display_name: "Baguette"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4523
+        generate: false
+        model_path: food2_model/baguette
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.wool.place
+            break:
+              name: block.wool.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 8
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    beer:
+      display_name: "Beer"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4524
+        generate: false
+        model_path: food2_model/beer
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+            potion_effect:
+              type: CONFUSION
+              duration: 120
+              amplifier: 1
+    burger_double:
+      display_name: "Double Cheeseburger"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4525
+        generate: false
+        model_path: food2_model/burger_double
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 6
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    burger_small:
+      display_name: "Burger"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4526
+        generate: false
+        model_path: food2_model/burger_small
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    candy_cane:
+      display_name: "Candy Cane"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4527
+        generate: false
+        model_path: food2_model/candy_cane
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 1
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    cheese_slice:
+      display_name: "Slice of Cheese"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4528
+        generate: false
+        model_path: food2_model/cheese_slice
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 1
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    donut_chocolate:
+      display_name: "Chocolate Donut"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4529
+        generate: false
+        model_path: food2_model/donut_chocolate
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    donut_mint:
+      display_name: "Mint Donut"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4530
+        generate: false
+        model_path: food2_model/donut_mint
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    donut_pink:
+      display_name: "Pink Donut"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4531
+        generate: false
+        model_path: food2_model/donut_pink
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    gingerbread:
+      display_name: "Gingerbread"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4532
+        generate: false
+        model_path: food2_model/gingerbread
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.stone.place
+            break:
+              name: block.stone.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 3
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    hot_chocolate:
+      display_name: "Hot Chocolate"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4533
+        generate: false
+        model_path: food2_model/hot_chocolate
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    hot_dog:
+      display_name: "Hot Dog"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4534
+        generate: false
+        model_path: food2_model/hot_dog
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 7
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    kebap_chicken:
+      display_name: "Chicken Kebap"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4535
+        generate: false
+        model_path: food2_model/kebap_chicken
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.wool.place
+            break:
+              name: block.wool.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 6
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    kebap_lamb:
+      display_name: "Lamb Kebap"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4536
+        generate: false
+        model_path: food2_model/kebap_lamb
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.wool.place
+            break:
+              name: block.wool.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 6
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    kebap_set:
+      display_name: "Kebap Set"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4537
+        generate: false
+        model_path: food2_model/kebap_set
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.stone.place
+            break:
+              name: block.stone.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 12
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    lemonade:
+      display_name: "Lemonade"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4538
+        generate: false
+        model_path: food2_model/lemonade
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    strawberry_ade:
+      display_name: "Strawberry Ade"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4546
+        generate: false
+        model_path: food2_model/strawberry_ade
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    lemonade_dispenser:
+      display_name: "Lemonade Dispenser"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4539
+        generate: false
+        model_path: food2_model/lemonade_dispenser
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 7
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    strawberry_ade_dispenser:
+      display_name: "Strawberry Ade Dispenser"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4547
+        generate: false
+        model_path: food2_model/strawberry_ade_dispenser
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 7
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    onigiri:
+      display_name: "Onigiri"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4540
+        generate: false
+        model_path: food2_model/onigiri
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.wool.place
+            break:
+              name: block.wool.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    patty:
+      display_name: "Patty"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4541
+        generate: false
+        model_path: food2_model/patty
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 2
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    ramen:
+      display_name: "Ramen"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4542
+        generate: false
+        model_path: food2_model/ramen
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.stone.place
+            break:
+              name: block.stone.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 6
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    roast:
+      display_name: "Roast"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4543
+        generate: false
+        model_path: food2_model/roast
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.stone.place
+            break:
+              name: block.stone.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 12
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    sausage:
+      display_name: "Sausage"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4544
+        generate: false
+        model_path: food2_model/sausage
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    taco:
+      display_name: "Taco"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4548
+        generate: false
+        model_path: food2_model/taco
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.wool.place
+            break:
+              name: block.wool.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 7
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    tomato_slice:
+      display_name: "Slice of Tomato"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4549
+        generate: false
+        model_path: food2_model/tomato_slice
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 1
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    roasted_turkey:
+      display_name: "Roasted Turkey"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4550
+        generate: false
+        model_path: food2_model/roasted_turkey
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.honey_block.place
+            break:
+              name: block.honey_block.break 
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 14
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.eat
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+    wine:
+      display_name: "Wine"
+      resource:
+        material: IRON_NUGGET
+        model_id: 4551
+        generate: false
+        model_path: food2_model/wine
+      behaviours:
+        furniture:
+          entity: item_frame
+          solid: true
+          hitbox:
+            length: 1
+            width: 1
+            height: 1
+          placeable_on:
+            walls: false
+            ceiling: false
+            floor: true
+          sound:
+            place:
+              name: block.glass.place
+            break:
+              name: block.glass.break
+            potion_effect:
+              type: CONFUSION
+              duration: 120
+              amplifier: 1
+      events:
+        interact:
+          left_shift:
+            feed:
+              amount: 4
+              saturation: 0
+            play_sound_1:
+              name: entity.generic.drink
+              pitch: 1
+              delay: 0
+            decrement_amount:
+              amount: 1
+recipes:
+  crafting_table:
+    baguette:
+      enabled: true
+      pattern:
+      - XXX
+      - AAA
+      - XXX
+      ingredients:
+        A: BREAD
+      result:
+        item: food2:baguette
+        amount: 1
+    beer:
+      enabled: true
+      pattern:
+      - XXX
+      - BAB
+      - XXX
+      ingredients:
+        A: WATER_BUCKET
+        B: WHEAT
+      result:
+        item: food2:beer
+        amount: 1
+    burger_double:
+      enabled: true
+      pattern:
+      - XBX
+      - ADC
+      - XXX
+      ingredients:
+        A: food2:patty
+        B: food2:tomato_slice
+        C: food2:cheese_slice
+        D: food2:burger_small
+      result:
+        item: food2:burger_double
+        amount: 1
+    burger_small:
+      enabled: true
+      pattern:
+      - XDX
+      - ABC
+      - XDX
+      ingredients:
+        A: food2:patty
+        B: food2:tomato_slice
+        C: food2:cheese_slice
+        D: BREAD
+      result:
+        item: food2:burger_small
+        amount: 1
+    candy_cane:
+      enabled: true
+      pattern:
+      - AXX
+      - XBX
+      - XXA
+      ingredients:
+        A: SUGAR
+        B: RED_DYE
+      result:
+        item: food2:candy_cane
+        amount: 2
+    cheese_slice:
+      enabled: true
+      pattern:
+      - XXX
+      - BAB
+      - XXX
+      ingredients:
+        A: MILK_BUCKET
+        B: SUGAR
+      result:
+        item: food2:cheese_slice
+        amount: 4
+    donut_chocolate:
+      enabled: true
+      pattern:
+      - XAX
+      - CBC
+      - XXX
+      ingredients:
+        A: COCOA_BEANS
+        B: SUGAR
+        C: BREAD
+      result:
+        item: food2:donut_chocolate
+        amount: 1
+    donut_mint:
+      enabled: true
+      pattern:
+      - XAX
+      - CBC
+      - XXX
+      ingredients:
+        A: CYAN_DYE
+        B: SUGAR
+        C: BREAD
+      result:
+        item: food2:donut_mint
+        amount: 1
+    donut_pink:
+      enabled: true
+      pattern:
+      - XAX
+      - CBC
+      - XXX
+      ingredients:
+        A: PINK_DYE
+        B: SUGAR
+        C: BREAD
+      result:
+        item: food2:donut_pink
+        amount: 1
+    gingerbread:
+      enabled: true
+      pattern:
+      - XCX
+      - BAB
+      - XXX
+      ingredients:
+        A: MILK_BUCKET
+        B: EGG
+        C: SUGAR
+      result:
+        item: food2:gingerbread
+        amount: 2
+    hot_chocolate:
+      enabled: true
+      pattern:
+      - XBX
+      - ACA
+      - XXX
+      ingredients:
+        A: COCOA_BEANS
+        B: SUGAR
+        C: MILK_BUCKET
+      result:
+        item: food2:hot_chocolate
+        amount: 1
+    sausage:
+      enabled: true
+      pattern:
+      - AXX
+      - XAX
+      - XXA
+      ingredients:
+        A: COOKED_PORKCHOP
+      result:
+        item: food2:sausage
+        amount: 2
+    hot_dog:
+      enabled: true
+      pattern:
+      - XAX
+      - XBX
+      - XXX
+      ingredients:
+        A: food2:sausage
+        B: BREAD
+      result:
+        item: food2:hot_dog
+        amount: 1
+    kebap_chicken:
+      enabled: true
+      pattern:
+      - AXX
+      - XBX
+      - XXA
+      ingredients:
+        A: STICK
+        B: COOKED_CHICKEN
+      result:
+        item: food2:kebap_chicken
+        amount: 2
+    kebap_lamb:
+      enabled: true
+      pattern:
+      - AXX
+      - XBX
+      - XXA
+      ingredients:
+        A: STICK
+        B: COOKED_MUTTON
+      result:
+        item: food2:kebap_lamb
+        amount: 2
+    kebap_set:
+      enabled: true
+      pattern:
+      - AXB
+      - AXB
+      - XXX
+      ingredients:
+        A: food2:kebap_chicken
+        B: food2:kebap_lamb
+      result:
+        item: food2:kebap_set
+        amount: 1
+    lemonade:
+      enabled: true
+      pattern:
+      - XBX
+      - XAX
+      - XXX
+      ingredients:
+        A: WATER_BUCKET
+        B: YELLOW_DYE
+      result:
+        item: food2:lemonade
+        amount: 1
+    lemonade_dispenser:
+      enabled: true
+      pattern:
+      - BBB
+      - AAA
+      - XXX
+      ingredients:
+        A: WATER_BUCKET
+        B: YELLOW_DYE
+      result:
+        item: food2:lemonade_dispenser
+        amount: 1
+    strawberry_ade:
+      enabled: true
+      pattern:
+      - XBX
+      - XAX
+      - XXX
+      ingredients:
+        A: WATER_BUCKET
+        B: SWEET_BERRIES
+      result:
+        item: food2:strawberry_ade
+        amount: 1
+    strawberry_ade_dispenser:
+      enabled: true
+      pattern:
+      - BBB
+      - AAA
+      - XXX
+      ingredients:
+        A: WATER_BUCKET
+        B: SWEET_BERRIES
+      result:
+        item: food2:strawberry_ade_dispenser
+        amount: 1
+    onigiri:
+      enabled: true
+      pattern:
+      - XAX
+      - XBX
+      - XXX
+      ingredients:
+        A: WHEAT
+        B: DRIED_KELP
+      result:
+        item: food2:onigiri
+        amount: 2
+    patty:
+      enabled: true
+      pattern:
+      - XXX
+      - AAA
+      - XXX
+      ingredients:
+        A: COOKED_BEEF
+      result:
+        item: food2:patty
+        amount: 3
+    ramen:
+      enabled: true
+      pattern:
+      - BAC
+      - XDX
+      - XXX
+      ingredients:
+        A: WHEAT
+        B: COOKED_PORKCHOP
+        C: EGG
+        D: WATER_BUCKET
+      result:
+        item: food2:ramen
+        amount: 1
+    roast:
+      enabled: true
+      pattern:
+      - XAX
+      - BAB
+      - XXX
+      ingredients:
+        A: COOKED_BEEF
+        B: CARROT
+      result:
+        item: food2:roast
+        amount: 1
+    taco:
+      enabled: true
+      pattern:
+      - CXD
+      - BAB
+      - BBB
+      ingredients:
+        A: COOKED_BEEF
+        B: WHEAT
+        C: food2:tomato_slice
+        D: food2:cheese_slice
+      result:
+        item: food2:taco
+        amount: 2
+    tomato_slice:
+      enabled: true
+      pattern:
+      - XXX
+      - BAX
+      - XXX
+      ingredients:
+        A: SWEET_BERRIES
+        B: WOODEN_SWORD
+      result:
+        item: food2:tomato_slice
+        amount: 2
+    roasted_turkey:
+      enabled: true
+      pattern:
+      - XXX
+      - BAB
+      - XXX
+      ingredients:
+        A: COOKED_CHICKEN
+        B: COAL
+      result:
+        item: food2:roasted_turkey
+        amount: 1
+    wine:
+      enabled: true
+      pattern:
+      - ABA
+      - XCX
+      - XXX
+      ingredients:
+        A: SWEET_BERRIES
+        B: APPLE
+        C: WATER_BUCKET
+      result:
+        item: food2:wine
+        amount: 2
