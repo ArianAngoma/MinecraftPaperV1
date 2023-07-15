@@ -806,8 +806,10 @@
       "potato": "2023-07-12 00:55:21 -0500",
       "golden_apple": "2023-06-29 23:34:51 -0500",
       "rotten_flesh": "2023-07-12 00:38:51 -0500",
+      "salmon": "2023-07-15 00:35:32 -0500",
       "golden_carrot": "2023-07-06 00:50:15 -0500",
-      "enchanted_golden_apple": "2023-06-29 23:35:32 -0500"
+      "enchanted_golden_apple": "2023-06-29 23:35:32 -0500",
+      "cod": "2023-07-15 00:35:16 -0500"
     },
     "done": false
   },
@@ -3630,6 +3632,24 @@
   "minecraft:recipes/misc/pink_dye_from_pink_tulip": {
     "criteria": {
       "has_pink_tulip": "2023-07-15 00:26:32 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2023-07-15 00:37:12 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
+    "criteria": {
+      "has_orange_tulip": "2023-07-15 00:39:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2023-07-15 01:02:59 -0500"
     },
     "done": true
   },
