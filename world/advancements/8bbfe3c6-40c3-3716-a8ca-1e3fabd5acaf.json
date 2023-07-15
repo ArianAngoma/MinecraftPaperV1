@@ -475,6 +475,7 @@
       "minecraft:skeleton": "2023-06-29 23:06:59 -0500",
       "minecraft:zoglin": "2023-07-01 22:07:55 -0500",
       "minecraft:hoglin": "2023-07-01 22:07:42 -0500",
+      "minecraft:guardian": "2023-07-15 00:33:16 -0500",
       "minecraft:vindicator": "2023-07-01 22:20:30 -0500",
       "minecraft:magma_cube": "2023-07-06 00:33:49 -0500",
       "minecraft:spider": "2023-06-30 00:16:53 -0500",
@@ -3294,9 +3295,63 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_sugar_cane": "2023-07-11 23:42:02 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2023-07-11 23:42:02 -0500"
+    },
+    "done": true
+  },
   "minecraft:nether/obtain_crying_obsidian": {
     "criteria": {
       "crying_obsidian": "2023-07-11 23:53:40 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/respawn_anchor": {
+    "criteria": {
+      "has_obsidian": "2023-07-11 23:53:40 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/vex_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2023-07-12 00:07:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/vex_armor_trim_smithing_template": {
+    "criteria": {
+      "has_vex_armor_trim_smithing_template": "2023-07-12 00:07:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silence_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2023-07-12 00:07:14 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silence_armor_trim_smithing_template": {
+    "criteria": {
+      "has_silence_armor_trim_smithing_template": "2023-07-12 00:07:14 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/snout_armor_trim_smithing_template": {
+    "criteria": {
+      "has_snout_armor_trim_smithing_template": "2023-07-12 00:07:21 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/snout_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2023-07-12 00:07:21 -0500"
     },
     "done": true
   },
@@ -3306,9 +3361,87 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/lime_dye": {
+  "minecraft:recipes/redstone/comparator": {
     "criteria": {
-      "has_white_dye": "2023-07-12 00:22:09 -0500"
+      "has_quartz": "2023-07-12 00:07:44 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2023-07-12 00:07:44 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2023-07-12 00:07:44 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2023-07-12 00:07:44 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2023-07-12 00:07:44 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_red_bed": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_red_wool": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/purple_dye": {
+    "criteria": {
+      "has_red_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/orange_dye_from_red_yellow": {
+    "criteria": {
+      "has_red_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_candle": {
+    "criteria": {
+      "has_red_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
+    "criteria": {
+      "has_red_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_red_white_dye": {
+    "criteria": {
+      "has_red_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_red_carpet": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:08:17 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
+    "criteria": {
+      "has_rose_red": "2023-07-12 00:08:17 -0500"
     },
     "done": true
   },
@@ -3317,20 +3450,6 @@
       "has_needed_dye": "2023-07-12 00:08:42 -0500"
     },
     "done": true
-  },
-  "minecraft:recipes/redstone/comparator": {
-    "criteria": {
-      "has_quartz": "2023-07-12 00:07:44 -0500"
-    },
-    "done": true
-  },
-  "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
-    "criteria": {
-      "armor_trimmed_minecraft:silence_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:57 -0500",
-      "armor_trimmed_minecraft:vex_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:37 -0500",
-      "armor_trimmed_minecraft:snout_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:10:26 -0500"
-    },
-    "done": false
   },
   "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
     "criteria": {
@@ -3344,51 +3463,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dye_red_bed": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_black_bed": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:15:56 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_red_wool": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/dye_blue_carpet": {
     "criteria": {
       "has_needed_dye": "2023-07-12 00:08:42 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/purple_dye": {
-    "criteria": {
-      "has_red_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/light_gray_dye_from_gray_white_dye": {
-    "criteria": {
-      "has_white_dye": "2023-07-12 00:22:09 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_white_carpet": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:22:09 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/orange_dye_from_red_yellow": {
-    "criteria": {
-      "has_red_dye": "2023-07-12 00:08:17 -0500"
     },
     "done": true
   },
@@ -3398,87 +3475,29 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/snout_armor_trim_smithing_template": {
+  "minecraft:recipes/building_blocks/dye_blue_bed": {
     "criteria": {
-      "has_snout_armor_trim_smithing_template": "2023-07-12 00:07:21 -0500"
+      "has_needed_dye": "2023-07-12 00:08:42 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/misc/silence_armor_trim_smithing_template_smithing_trim": {
+  "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
     "criteria": {
-      "has_smithing_trim_template": "2023-07-12 00:07:14 -0500"
+      "armor_trimmed_minecraft:silence_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:57 -0500",
+      "armor_trimmed_minecraft:vex_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:37 -0500",
+      "armor_trimmed_minecraft:snout_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:10:26 -0500"
     },
-    "done": true
+    "done": false
   },
-  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+  "minecraft:adventure/trim_with_any_armor_pattern": {
     "criteria": {
-      "has_sugar_cane": "2023-07-11 23:42:02 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_magenta_bed": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:16:22 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/respawn_anchor": {
-    "criteria": {
-      "has_obsidian": "2023-07-11 23:53:40 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/silence_armor_trim_smithing_template": {
-    "criteria": {
-      "has_silence_armor_trim_smithing_template": "2023-07-12 00:07:14 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_magenta_wool": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:16:22 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_magenta_carpet": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:16:22 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/red_candle": {
-    "criteria": {
-      "has_red_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/vex_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2023-07-12 00:07:07 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
-    "criteria": {
-      "has_red_dye": "2023-07-12 00:08:17 -0500"
+      "armor_trimmed_minecraft:vex_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:37 -0500"
     },
     "done": true
   },
   "minecraft:recipes/decorations/pink_candle": {
     "criteria": {
       "has_pink_dye": "2023-07-12 00:14:51 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/snout_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2023-07-12 00:07:21 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_white_wool": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:22:09 -0500"
     },
     "done": true
   },
@@ -3500,27 +3519,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/white_candle": {
+  "minecraft:recipes/building_blocks/dye_pink_carpet": {
     "criteria": {
-      "has_white_dye": "2023-07-12 00:22:09 -0500"
+      "has_needed_dye": "2023-07-12 00:14:51 -0500"
     },
     "done": true
   },
-  "minecraft:adventure/voluntary_exile": {
+  "minecraft:recipes/building_blocks/dye_black_bed": {
     "criteria": {
-      "voluntary_exile": "2023-07-12 00:32:06 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/pink_dye_from_red_white_dye": {
-    "criteria": {
-      "has_red_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_blue_bed": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:08:42 -0500"
+      "has_needed_dye": "2023-07-12 00:15:56 -0500"
     },
     "done": true
   },
@@ -3530,69 +3537,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dye_red_carpet": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/light_gray_dye_from_black_white_dye": {
     "criteria": {
       "has_black_dye": "2023-07-12 00:15:56 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dye_pink_carpet": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:14:51 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/magenta_candle": {
-    "criteria": {
-      "has_magenta_dye": "2023-07-12 00:16:22 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/diorite": {
-    "criteria": {
-      "has_quartz": "2023-07-12 00:07:44 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dye_white_bed": {
-    "criteria": {
-      "has_needed_dye": "2023-07-12 00:22:09 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
-    "criteria": {
-      "has_rose_red": "2023-07-12 00:08:17 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/granite": {
-    "criteria": {
-      "has_quartz": "2023-07-12 00:07:44 -0500"
-    },
-    "done": true
-  },
-  "minecraft:adventure/trim_with_any_armor_pattern": {
-    "criteria": {
-      "armor_trimmed_minecraft:vex_armor_trim_smithing_template_smithing_trim": "2023-07-12 00:09:37 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/black_candle": {
     "criteria": {
       "has_black_dye": "2023-07-12 00:15:56 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/paper": {
-    "criteria": {
-      "has_reeds": "2023-07-11 23:42:02 -0500"
     },
     "done": true
   },
@@ -3608,21 +3561,75 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/quartz_block": {
+  "minecraft:recipes/building_blocks/dye_magenta_bed": {
     "criteria": {
-      "has_quartz": "2023-07-12 00:07:44 -0500"
+      "has_needed_dye": "2023-07-12 00:16:22 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/misc/vex_armor_trim_smithing_template": {
+  "minecraft:recipes/building_blocks/dye_magenta_wool": {
     "criteria": {
-      "has_vex_armor_trim_smithing_template": "2023-07-12 00:07:07 -0500"
+      "has_needed_dye": "2023-07-12 00:16:22 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/daylight_detector": {
+  "minecraft:recipes/building_blocks/dye_magenta_carpet": {
     "criteria": {
-      "has_quartz": "2023-07-12 00:07:44 -0500"
+      "has_needed_dye": "2023-07-12 00:16:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_candle": {
+    "criteria": {
+      "has_magenta_dye": "2023-07-12 00:16:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lime_dye": {
+    "criteria": {
+      "has_white_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_gray_white_dye": {
+    "criteria": {
+      "has_white_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_white_carpet": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_white_wool": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_candle": {
+    "criteria": {
+      "has_white_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_white_bed": {
+    "criteria": {
+      "has_needed_dye": "2023-07-12 00:22:09 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2023-07-12 00:32:06 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_pink_tulip": {
+    "criteria": {
+      "has_pink_tulip": "2023-07-15 00:26:32 -0500"
     },
     "done": true
   },
