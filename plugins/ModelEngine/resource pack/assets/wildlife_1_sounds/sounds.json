@@ -1,0 +1,32 @@
+{
+  "samus.crab_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/wildlife_1/crab_idle"
+    ]
+  },
+  "samus.crocodile_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/wildlife_1/crocodile_idle"
+    ]
+  },
+  "samus.duck_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/wildlife_1/duck_idle"
+    ]
+  },
+  "samus.rat_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/wildlife_1/rat_idle"
+    ]
+  },
+  "samus.squirrel_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/wildlife_1/squirrel_idle"
+    ]
+  }
+}

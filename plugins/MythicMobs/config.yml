@@ -1,6 +1,6 @@
 # For more information, check out the plugin manual or join us on Discord:
 # http://www.mythiccraft.io
-#  
+#
 Configuration:
   Version: 5.2
   General:
@@ -76,7 +76,7 @@ Configuration:
       Power: 0
   RandomSpawning:
     DisableVanillaSpawns: false
-    GenerateSpawnPoints: false
+    GenerateSpawnPoints: true
     MaxMobsMultiplier: 1.0
     SpawnRadiusPerPlayerY: 32
     DespawnLazyRandomMobs: true

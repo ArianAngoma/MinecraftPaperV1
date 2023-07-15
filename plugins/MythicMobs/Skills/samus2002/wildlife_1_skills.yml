@@ -1,0 +1,2557 @@
+######## created by samus2002 #########
+
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+Animal_Leash_PULL_OWNER:
+  Skills:
+  - skill{s=Animal_Leash_PULL2} @owner
+  
+Animal_Leash_PULL:
+  Skills:
+  - skill{s=Animal_Leash_PULL2} @target
+  
+Animal_Leash_PULL2:
+  Conditions:
+  - hasaura{n=leashed} true
+  TargetConditions:
+  - distance{d=<2} false
+  Skills:
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Animal_Sit_STUN:
+  Conditions:
+  - variableEquals{var=caster.sit;value="yes"} true
+  Skills:
+  - stun{d=25;f=false;noknockback=true;gravity=true;ai=true} @self
+  
+Animal_Sit:
+  Cooldown: 4
+  TriggerConditions:
+  - holding{m=STICK} true
+  - owner true
+  Conditions:
+  - variableEquals{var=caster.sit;value="no"} true
+  - inblock{m=WATER} castinstead Animal_Sit_Water
+  Skills:
+  - setvariable{var=caster.sit;value="yes";type=STRING;delay=1} @self
+  - state{s=stay;li=20;lo=20} @self
+  - setAI{ai=false} @self
+  - Aura{auraName=sit_aura;duration=20} @self
+
+Animal_Stand:
+  Cooldown: 4
+  TriggerConditions:
+  - holding{m=STICK} true
+  - owner true
+  Conditions:
+  - variableEquals{var=caster.sit;value="yes"} true
+  - hasaura{n=sit_aura} cancel
+  - inblock{m=WATER} castinstead Animal_Stand_Water
+  Skills:
+  - setvariable{var=caster.sit;value="no";type=STRING;delay=1} @self
+  - state{s=stay;remove=true;li=20;lo=20} @self
+  - delay 20
+  - setAI{ai=true} @self
+  
+Animal_Sit_Water:
+  Cooldown: 2
+  Skills:
+  - setvariable{var=caster.sit;value="yes";type=STRING;delay=1} @self
+  - setAI{ai=false} @self
+  - Aura{auraName=sit_aura;duration=20} @self
+  
+Animal_Stand_Water:
+  Cooldown: 2
+  Skills:
+  - setvariable{var=caster.sit;value="no";type=STRING;delay=1} @self
+  - setAI{ai=true} @self
+  
+Animal_Step:
+  Conditions:
+  - inblock{m=WATER} castinstead Animal_Step_Water
+  Skills:
+  - effect:sound{s=block.gravel.step;volume=0.1;pitch=1} @self
+  
+Animal_Step_Water:
+  Skills:
+  - effect:sound{s=entity.generic.splash;volume=0.1;pitch=1.2} @self
+  
+Teleport_To_Owner:
+  TargetConditions:
+  - distance{d=<20} false
+  Conditions:
+  - variableEquals{var=caster.sit;value="yes"} false
+  Skills:
+  - teleport{spreadh=0;spreadv=0}
+  
+# Bear #
+
+Bear_Combat_Mode:
+  Cooldown: 99999
+  Conditions:
+  - incombat true
+  Skills:
+  - setSkillCooldown{skill=Bear_Normal_Mode;seconds=0} @self
+  - defaultstate{t=walk;s=run} @self
+  - setspeed{speed=1.4;type=walking} @self
+  
+Bear_Normal_Mode:
+  Cooldown: 99999
+  Conditions:
+  - incombat false
+  Skills:
+  - setSkillCooldown{skill=Bear_Combat_Mode;seconds=0} @self
+  - defaultstate{t=walk;s=walk} @self
+  - setspeed{speed=1;type=walking} @self
+  
+Bear_Attack:
+  Cooldown: 2
+  Conditions:
+  - offgcd
+  - incombat true
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=50}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=50} @self
+  - state{s=attack;li=2;lo=3} @self
+  - effect:sound{s=entity.polar_bear.warning;volume=1;pitch=1;delay=17} @self
+  - delay 27
+  - totem{md=2;c=1;oH=Bear_Attack_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6}
+  
+Bear_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=4;pkb=false;hnp=true;hp=true}
+  
+  
+Bear_Catch_Salmon:
+  Cooldown: 35
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Water;duration=200} @self
+  - skill{s=Bear_Catch_Salmon_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=float} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Water} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Bear_Catch_Salmon_SUMMON2:
+  Skills:
+  - skill{s=Bear_Catch_Salmon_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Bear_Catch_Salmon_SUMMON:
+  TargetConditions:
+  - blocktype{type=WATER} true
+  Skills:
+  - summon{type=Bear_Water;amount=1;radius=0;yRadius=0;onSurface=false} @TargetedLocation{limit=1;sort=NEAREST}
+  
+  
+Bear_Look_Water:
+  Conditions:
+  - hasaura{n=Finding_Water} true
+  Skills:
+  - skill{s=Bear_Look_Water_T} @Child{target=armorstands}
+  
+Bear_Look_Water_T:
+  TargetConditions:
+  - distance{d=<1.6} castinstead Bear_Found_Water
+  Skills:
+  - look
+  
+Bear_Found_Water:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Finding_Water} true
+  Skills:
+  - gcd{ticks=49}
+  - auraremove{aura=Finding_Water;delay=10} @self
+  - potion{type=SLOW;duration=49;level=50;hasParticles=false} @self
+  - state{s=look_for_fish} @self
+  - partvisibility{p=fish;v=true;delay=33} @self
+  
+  - effect:sound{s=entity.generic.splash;volume=1;pitch=1.1;delay=13} @self
+  - effect:particles{particle=water_splash;amount=20;hS=0.2;vS=0.4;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=13} @ModelPart{p=left_hand}
+  
+  - effect:sound{s=entity.generic.splash;volume=1;pitch=1.1;delay=28} @self
+  - effect:particles{particle=water_splash;amount=20;hS=0.2;vS=0.4;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=28} @ModelPart{p=left_hand}
+  
+  - delay 2
+  - remove @Child
+  - delay 47
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - skill{s=Bear_Found_Water_SUCCESS}
+  
+Bear_Eat_Sound:
+  Skills:
+  - effect:sound{s=entity.strider.eat;volume=1;pitch=0.9} @self
+  
+Bear_Found_Water_SUCCESS:
+  #Conditions:
+  #- offgcd
+  Skills:
+  - gcd{ticks=92}
+  - state{s=eat;lo=13} @self
+  - goto{speedModifier=1;sh=0;sv=0} @forward{f=0.1;y=0}
+  - delay 92
+  - state{s=eat;li=5;lo=5;remove=true} @self
+  - partvisibility{p=fish;v=false} @self
+  - heal{a=4} @self
+  
+  
+  
+  
+  
+Bear_Panda_Catch_Salmon:
+  Cooldown: 35
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Water;duration=200} @self
+  - skill{s=Bear_Panda_Catch_Salmon_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=float} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Water} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Bear_Panda_Catch_Salmon_SUMMON2:
+  Skills:
+  - skill{s=Bear_Panda_Catch_Salmon_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Bear_Panda_Catch_Salmon_SUMMON:
+  TargetConditions:
+  - blocktype{type=BAMBOO} true
+  Skills:
+  - summon{type=Bear_Water;amount=1;radius=0;yRadius=0;onSurface=false} @TargetedLocation{limit=1;sort=NEAREST}
+  
+  
+Bear_Panda_Look_Water:
+  Conditions:
+  - hasaura{n=Finding_Water} true
+  Skills:
+  - skill{s=Bear_Panda_Look_Water_T} @Child{target=armorstands}
+  
+Bear_Panda_Look_Water_T:
+  TargetConditions:
+  - distance{d=<1.9} castinstead Bear_Panda_Found_Water
+  Skills:
+  - look
+  
+Bear_Panda_Found_Water:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Finding_Water} true
+  Skills:
+  - gcd{ticks=49}
+  - auraremove{aura=Finding_Water;delay=10} @self
+  - potion{type=SLOW;duration=49;level=50;hasParticles=false} @self
+  - state{s=look_for_fish} @self
+  - partvisibility{p=bamboo;v=true;delay=33} @self
+  
+  - effect:sound{s=block.bamboo.break;volume=1;pitch=1;delay=13} @self
+  - effect:particles{particle=block_crack;m=BAMBOO;amount=20;hS=0.2;vS=0.4;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=13} @ModelPart{p=left_hand}
+  
+  - effect:sound{s=block.bamboo.break;volume=1;pitch=1;delay=28} @self
+  - effect:particles{particle=block_crack;m=BAMBOO;amount=20;hS=0.2;vS=0.4;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=28} @ModelPart{p=left_hand}
+  
+  - delay 2
+  - remove @Child
+  - delay 47
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - skill{s=Bear_Panda_Found_Water_SUCCESS}
+
+Bear_Panda_Found_Water_SUCCESS:
+  #Conditions:
+  #- offgcd
+  Skills:
+  - gcd{ticks=92}
+  - state{s=eat;lo=13} @self
+  - goto{speedModifier=1;sh=0;sv=0} @forward{f=0.1;y=0}
+  - delay 92
+  - state{s=eat;li=5;lo=5;remove=true} @self
+  - partvisibility{p=bamboo;v=false} @self
+  - heal{a=4} @self
+  
+  
+  
+  
+Bear_Brown_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=bear_brown;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Brown_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=bear_brown;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Black_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=bear_black;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Black_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=bear_black;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Polar_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=bear_polar;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Polar_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=bear_polar;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Panda_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=bear_panda;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Panda_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=bear_panda;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Bear_Panda_Follow_1:
+  TargetConditions:
+  - holding{m=BAMBOO} true
+  Conditions:
+  - offgcd
+  - hasaura{n=Finding_Water} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Bear_Follow_1:
+  TargetConditions:
+  - holding{m=SALMON} true
+  Conditions:
+  - offgcd
+  - hasaura{n=Finding_Water} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Bear_Follow_2:
+  TargetConditions:
+  - holding{m=HONEYCOMB} true
+  Conditions:
+  - offgcd
+  - hasaura{n=Finding_Water} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+  
+  
+  
+Bear_Tame_Bamboo:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=BAMBOO} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=bamboo;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=bamboo;v=false} @self
+  - heal{a=4} @self
+
+Bear_Feed_Bamboo:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=BAMBOO} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=bamboo;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=bamboo;v=false} @self
+  - heal{a=4} @self
+  - effect:sound{s=entity.polar_bear.ambient;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  
+  
+Bear_Tame_Salmon:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=SALMON} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=fish;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - delay 40
+  - randomskill{skills=Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=fish;v=false} @self
+  - heal{a=4} @self
+  
+Bear_Tame_FAIL:
+  Skills:
+  - effect:sound{s=entity.polar_bear.ambient;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Bear_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=entity.polar_bear.ambient;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Bear_Tame_SUMMON;cat=true} @trigger
+  
+Bear_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Bear_Black} castinstead Bear_Black_Tame_SUMMON
+  - mythicmobtype{t=Bear_Polar} castinstead Bear_Polar_Tame_SUMMON
+  - mythicmobtype{t=Bear_Panda} castinstead Bear_Panda_Tame_SUMMON
+  Skills:
+  - summon{type=Bear_Brown_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Bear_Black_Tame_SUMMON:
+  Skills:
+  - summon{type=Bear_Black_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Bear_Polar_Tame_SUMMON:
+  Skills:
+  - summon{type=Bear_Polar_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Bear_Panda_Tame_SUMMON:
+  Skills:
+  - summon{type=Bear_Panda_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Bear_Tame_PV_Saddle:
+  Conditions:
+  - variableEquals{var=caster.saddled;value="no"} true
+  Skills:
+  - partvisibility{p=saddle;v=false;delay=1} @self
+  
+Bear_Tame_MOTION_FIX:
+  Skills:
+  - state{s=eat;remove=true;delay=1} @self
+  
+Bear_Feed_Salmon:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=SALMON} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=fish;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=fish;v=false} @self
+  - heal{a=4} @self
+  - effect:sound{s=entity.polar_bear.ambient;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  
+  
+Bear_Tame_Honeycomb:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=HONEYCOMB} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=honeycomb;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_FAIL,Bear_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=honeycomb;v=false} @self
+  - partvisibility{p=head;v=false} @self
+  - partvisibility{p=jaw;v=false} @self
+  - partvisibility{p=head_honey;v=true} @self
+  - partvisibility{p=jaw_honey;v=true} @self
+  - partvisibility{p=head;v=true;delay=160} @self
+  - partvisibility{p=jaw;v=true;delay=160} @self
+  - partvisibility{p=head_honey;v=false;delay=160} @self
+  - partvisibility{p=jaw_honey;v=false;delay=160} @self
+  - heal{a=5} @self
+
+  
+Bear_Feed_Honeycomb:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=HONEYCOMB} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=honeycomb;v=true} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=honeycomb;v=false} @self
+  - heal{a=5} @self
+  - partvisibility{p=head;v=false} @self
+  - partvisibility{p=jaw;v=false} @self
+  - partvisibility{p=head_honey;v=true} @self
+  - partvisibility{p=jaw_honey;v=true} @self
+  - partvisibility{p=head;v=true;delay=160} @self
+  - partvisibility{p=jaw;v=true;delay=160} @self
+  - partvisibility{p=head_honey;v=false;delay=160} @self
+  - partvisibility{p=jaw_honey;v=false;delay=160} @self
+  - effect:sound{s=entity.polar_bear.ambient;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  
+  
+  
+Bear_Saddle:
+  Cooldown: 0
+  TriggerConditions:
+  - holding{m=SADDLE} true
+  - owner true
+  Conditions:
+  - variableEquals{var=caster.saddled;value="no"} true
+  Skills:
+  - partvisibility{p=saddle;v=true} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - effect:sound{s=item.armor.equip_leather;volume=1;pitch=1} @self
+  - setvariable{var=caster.saddled;value="yes";type=STRING} @self
+  - Aura{auraName=mount_wait;duration=10} @self
+  
+Bear_Saddle_OFF:
+  Cooldown: 0
+  TriggerConditions:
+  - owner true
+  - crouching true
+  Conditions:
+  - variableEquals{var=caster.saddled;value="yes"} true
+  Skills:
+  - partvisibility{p=saddle;v=false} @self
+  - dropitem{i=SADDLE} @self
+  - effect:sound{s=item.armor.equip_leather;volume=1;pitch=1} @self
+  - setvariable{var=caster.saddled;value="no";type=STRING} @self
+  
+Bear_Mount:
+  Cooldown: 0
+  TriggerConditions:
+  - owner true
+  - holding{m=STICK} false
+  - holding{m=STRING} false
+  - holding{m=SALMON} false
+  - holding{m=HONEYCOMB} false
+  Conditions:
+  - variableEquals{var=caster.saddled;value="yes"} true
+  - variableEquals{var=caster.sit;value="yes"} false
+  - hasaura{n=leashed} false
+  - hasaura{n=mount_wait} cancel
+  Skills:
+  - mountmodel{mode=walking}
+  
+  
+Bear_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Bear_Mount_Normal_Mode;seconds=0} @self
+  - defaultstate{t=walk;s=run} @self
+  - setspeed{speed=1;type=walking} @self
+  
+Bear_Mount_Normal_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Bear_Mount_Mode;seconds=0} @self
+  - defaultstate{t=walk;s=walk} @self
+  - setspeed{speed=1;type=walking} @self
+  
+# Rat #
+  
+Rat_Attacked:
+  Conditions:
+  - offgcd
+  Skills:
+  - randomskill{skills=Rat_Flee,Rat_Flee,Rat_Flee,Rat_Combat}
+
+Rat_Flee:
+  Conditions:
+  - offgcd
+  Skills:
+  - Aura{auraName=flee;duration=100} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=float} @self
+  - delay 100
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Rat_Combat:
+  Conditions:
+  - offgcd
+  Skills:
+  - Aura{auraName=combat;duration=100} @self
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - delay 100
+  - runaitargetselector{target=clear} @self
+  - clearThreat{} @self
+  
+Rat_Bite:
+  Conditions:
+  - offgcd
+  - incombat true
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=23}
+  - potion{type=SLOW;duration=5;level=50;hasParticles=false} @self
+  - state{s=bite;li=2;lo=3} @self
+  - lunge{velocity=0.5;velocityY=0.3} @forward{f=1;y=2}
+  - effect:sound{s=wildlife_1_sounds:samus.rat_idle;volume=1;pitch=1.1;delay=5} @self
+  - delay 11
+  - totem{md=2;c=1;oH=Rat_Bite_Attack_DAMAGE;hnp=true;hp=true;hR=1.5;vR=1.5;i=1} @forward{f=0.6}
+  - delay 3
+  - potion{type=SLOW;duration=9;level=50;hasParticles=false} @self
+  
+Rat_Bite_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=1;pkb=false;hnp=true;hp=true}
+  
+Rat_Follow:
+  TargetConditions:
+  - holding{m=BREAD} true
+  Conditions:
+  - offgcd
+  - hasaura{n=flee} false
+  - hasaura{n=combat} false
+  - hasaura{n=lured} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Rat_Tame_Bread:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=BREAD} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  - hasaura{n=flee} false
+  - hasaura{n=combat} false
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=crumb;v=true;delay=15} @self
+  - partvisibility{p=crumb;v=false;delay=30} @self
+  - state{s=eat;li=5;lo=5} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Rat_Tame_FAIL,Rat_Tame_SUCCESS}
+  - state{s=eat;remove=true;li=5;lo=5} @self
+  - heal{a=3} @self
+  
+Rat_Tame_FAIL:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.rat_idle;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=6;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Rat_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.rat_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Rat_Tame_SUMMON;cat=true} @trigger
+  
+Rat_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Rat_Brown} castinstead Rat_Brown_Tame_SUMMON
+  - mythicmobtype{t=Rat_Gray} castinstead Rat_Gray_Tame_SUMMON
+  Skills:
+  - summon{type=Rat_Black_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Rat_Brown_Tame_SUMMON:
+  Skills:
+  - summon{type=Rat_Brown_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Rat_Gray_Tame_SUMMON:
+  Skills:
+  - summon{type=Rat_Gray_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Rat_Tame_MOTION_FIX:
+  Skills:
+  - state{s=eat;remove=true;delay=1} @self
+  
+Rat_Feed_Bread:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - hasaura{n=flee} false
+  - hasaura{n=combat} false
+  - variableEquals{var=caster.sit;value="no"} true
+  TriggerConditions:
+  - holding{m=BREAD} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=crumb;v=true;delay=15} @self
+  - partvisibility{p=crumb;v=false;delay=30} @self
+  - state{s=eat;li=5;lo=5} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true;li=5;lo=5} @self
+  - heal{a=4} @self
+  - effect:sound{s=wildlife_1_sounds:samus.rat_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Rat_Find_Food:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  - variableEquals{var=caster.sit;value="no"} true
+  Skills:
+  - randomskill{skills=Rat_Sniff,Rat_Sniff,Rat_Sniff,Rat_Sniff,Rat_Sniff_Bread}
+  
+Rat_Sniff:
+  Cooldown: 0
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=flee} false
+  - hasaura{n=combat} false
+  - hasaura{n=lured} false
+  Skills:
+  - gcd{ticks=34}
+  - potion{type=SLOW;duration=34;level=50;hasParticles=false} @self
+  - state{s=sniff;li=10;lo=10} @self
+  
+Rat_Sniff_Bread:
+  Cooldown: 0
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=flee} false
+  - hasaura{n=combat} false
+  Skills:
+  - gcd{ticks=34}
+  - potion{type=SLOW;duration=34;level=50;hasParticles=false} @self
+  - state{s=sniff;li=10;lo=10} @self
+  - delay 34
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=crumb;v=true;delay=15} @self
+  - partvisibility{p=crumb;v=false;delay=30} @self
+  - state{s=eat;li=5;lo=5} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true;li=5;lo=5} @self
+  - heal{a=4} @self
+  
+Rat_Eat_Sound:
+  Skills:
+  - effect:sound{s=entity.strider.eat;volume=0.5;pitch=1.3} @self
+  
+Rat_Black_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=rat_black;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Rat_Black_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=rat_black;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+
+Rat_Brown_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=rat_brown;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Rat_Brown_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=rat_brown;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Rat_Gray_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=rat_gray;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Rat_Gray_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=rat_gray;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+# Squirrel #
+  
+Squirrel_Follow:
+  TargetConditions:
+  - holding{m=SWEET_BERRIES} true
+  Conditions:
+  - offgcd
+  - hasaura{n=lured} false
+  - hasaura{n=Finding_Food} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Squirrel_Tame:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=SWEET_BERRIES} true
+  Conditions:
+  - offgcd
+  - hasowner false
+  - hasaura{n=Finding_Food} false
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=acorn;v=true;delay=10} @self
+  - partvisibility{p=acorn;v=false;delay=40} @self
+  - state{s=eat;li=10;lo=10} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Squirrel_Tame_FAIL,Squirrel_Tame_SUCCESS}
+  - state{s=eat;remove=true;li=10;lo=10} @self
+  - heal{a=3} @self
+  
+Squirrel_Tame_FAIL:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.squirrel_idle;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=6;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Squirrel_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.squirrel_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Squirrel_Tame_SUMMON;cat=true} @trigger
+  
+Squirrel_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Squirrel_Red} castinstead Squirrel_Red_Tame_SUMMON
+  - mythicmobtype{t=Squirrel_Gray} castinstead Squirrel_Gray_Tame_SUMMON
+  Skills:
+  - summon{type=Squirrel_Brown_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Squirrel_Red_Tame_SUMMON:
+  Skills:
+  - summon{type=Squirrel_Red_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Squirrel_Gray_Tame_SUMMON:
+  Skills:
+  - summon{type=Squirrel_Gray_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Squirrel_Tame_MOTION_FIX:
+  Skills:
+  - state{s=eat;remove=true;delay=1} @self
+  
+Squirrel_Feed:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - variableEquals{var=caster.sit;value="no"} true
+  - hasaura{n=Finding_Food} false
+  TriggerConditions:
+  - holding{m=SWEET_BERRIES} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=acorn;v=true;delay=10} @self
+  - partvisibility{p=acorn;v=false;delay=40} @self
+  - state{s=eat;li=10;lo=10} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true;li=10;lo=10} @self
+  - heal{a=3} @self
+  - effect:sound{s=wildlife_1_sounds:samus.squirrel_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Squirrel_Lookaround:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  - variableEquals{var=caster.sit;value="no"} true
+  - hasaura{n=lured} false
+  - hasaura{n=Finding_Food} false
+  Skills:
+  - gcd{ticks=44}
+  - potion{type=SLOW;duration=44;level=50;hasParticles=false} @self
+  - state{s=look_around;li=10;lo=10} @self
+  
+Squirrel_Brown_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=squirrel_brown;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Squirrel_Brown_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=squirrel_brown;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Squirrel_Red_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=squirrel_red;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Squirrel_Red_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=squirrel_red;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+ 
+Squirrel_Gray_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=squirrel_gray;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Squirrel_Gray_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=squirrel_gray;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Squirrel_Dig_Acorn:
+  Cooldown: 35
+  Conditions:
+  - offgcd
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Food;duration=200} @self
+  - skill{s=Squirrel_Dig_Acorn_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Food} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Squirrel_Dig_Acorn_SUMMON2:
+  Skills:
+  - skill{s=Squirrel_Dig_Acorn_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Squirrel_Dig_Acorn_SUMMON:
+  TargetConditions:
+  - blocktype{type=OAK_WOOD,BIRCH_WOOD,SPRUCE_WOOD,JUNGLE_WOOD,ACACIA_WOOD,DARK_OAK_WOOD,MANGROVE_WOOD,OAK_LOG,BIRCH_LOG,SPRUCE_LOG,JUNGLE_LOG,ACACIA_LOG,DARK_OAK_LOG,MANGROVE_LOG} true
+  Skills:
+  - summon{type=Squirrel_Log;amount=1;radius=0;yRadius=0;onSurface=true} @TargetedLocation{limit=1;sort=NEAREST}
+  
+  
+Squirrel_Look_Log:
+  Conditions:
+  - hasaura{n=Finding_Food} true
+  Skills:
+  - skill{s=Squirrel_Look_Log_T} @Child{target=armorstands}
+  
+Squirrel_Look_Log_T:
+  TargetConditions:
+  - distance{d=<1.4} castinstead Squirrel_Found_Log
+  Skills:
+  - look
+  
+Squirrel_Found_Log:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Finding_Food} true
+  Skills:
+  - gcd{ticks=28}
+  - auraremove{aura=Finding_Food;delay=10} @self
+  - potion{type=SLOW;duration=30;level=50;hasParticles=false} @self
+  - state{s=dig} @self
+  - partvisibility{p=acorn;v=true;delay=40} @self
+  
+  - delay 2
+  - remove @Child
+  - delay 28
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - skill{s=Squirrel_Found_Log_SUCCESS}
+
+Squirrel_Found_Log_SUCCESS:
+  #Conditions:
+  #- offgcd
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=acorn;v=false;delay=40} @self
+  - state{s=eat;li=10;lo=10} @self
+  - goto{speedModifier=1;sh=0;sv=0} @forward{f=0.1;y=0}
+  - delay 40
+  - state{s=eat;remove=true;li=10;lo=10} @self
+  - heal{a=3} @self
+  
+Squirrel_Dig_Left:
+  Skills:
+  - effect:sound{s=block.gravel.break;volume=0.4;pitch=1.5} @self
+  - effect:particles{particle=block_crack;m=OAK_LOG;amount=5;hS=0.2;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=left_arm}
+  
+Squirrel_Dig_Right:
+  Skills:
+  - effect:sound{s=block.gravel.break;volume=0.4;pitch=1.5} @self
+  - effect:particles{particle=block_crack;m=OAK_LOG;amount=5;hS=0.2;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=right_arm}
+  
+# Duck #
+  
+Duck_Follow:
+  TargetConditions:
+  - holding{m=BREAD} true
+  Conditions:
+  - offgcd
+  - hasaura{n=lured} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - look
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Duck_Tame:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=BREAD} true
+  Conditions:
+  - offgcd
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=crumb;v=true;delay=6} @self
+  - partvisibility{p=crumb;v=false;delay=40} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Duck_Tame_FAIL,Duck_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - heal{a=3} @self
+  
+Duck_Tame_FAIL:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.duck_idle;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=6;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Duck_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.duck_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=4;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Duck_Tame_SUMMON;cat=true} @trigger
+  
+Duck_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Duck_Mallard} castinstead Duck_Mallard_Tame_SUMMON
+  Skills:
+  - summon{type=Duck_White_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Duck_Mallard_Tame_SUMMON:
+  Skills:
+  - summon{type=Duck_Mallard_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Duck_Tame_MOTION_FIX:
+  Skills:
+  - state{s=eat;remove=true;delay=1} @self
+  
+Duck_Feed:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=BREAD} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - partvisibility{p=crumb;v=true;delay=6} @self
+  - partvisibility{p=crumb;v=false;delay=40} @self
+  - state{s=eat} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - heal{a=3} @self
+  - effect:sound{s=wildlife_1_sounds:samus.duck_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=4;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+
+Duck_White_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=duck_white;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Duck_White_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=duck_white;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Duck_Mallard_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=duck_mallard;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Duck_Mallard_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=duck_mallard;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Duck_Water_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} true
+  Skills:
+  - setSkillCooldown{skill=Duck_Ground_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle_water} @self
+  - defaultstate{t=walk;s=walk_water} @self
+  - setspeed{speed=2;type=walking} @self
+  
+Duck_Ground_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} false
+  Skills:
+  - setSkillCooldown{skill=Duck_Water_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle} @self
+  - defaultstate{t=walk;s=walk} @self
+  - setspeed{speed=1;type=walking} @self
+  
+Duck_GotoWater:
+  Cooldown: 20
+  Conditions:
+  - offgcd
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  - inblock{b=WATER} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Water;duration=200} @self
+  - skill{s=Duck_GotoWater_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Water} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Duck_GotoWater_SUMMON2:
+  Skills:
+  - skill{s=Duck_GotoWater_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Duck_GotoWater_SUMMON:
+  TargetConditions:
+  - blocktype{type=WATER} true
+  Skills:
+  - summon{type=Duck_Water;amount=1;radius=0;yRadius=0;onSurface=false} @TargetedLocation{limit=1}
+  
+Duck_GotoWater_MEET:
+  Conditions:
+  - children{a=1} true
+  TargetConditions:
+  - distance{d=<2} castinstead Duck_GotoWater_MEET_REMOVE
+  Skills:
+  - message{m="Dummy"}
+  
+Duck_GotoWater_MEET_REMOVE:
+  Skills:
+  - remove @Child{target=armorstands}
+  
+  
+# Crab #
+  
+Crab_Follow:
+  TargetConditions:
+  - holding{m=DRIED_KELP} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=lured} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Crab_Tame:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=DRIED_KELP} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  Skills:
+  - gcd{ticks=10}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - randomskill{skills=Crab_Tame_FAIL,Crab_Tame_SUCCESS}
+  - heal{a=2} @self
+  
+Crab_Tame_FAIL:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.crab_idle;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=4;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+  
+Crab_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.crab_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Crab_Tame_SUMMON;cat=true} @trigger
+  
+Crab_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Crab_Mudflat} castinstead Crab_Mudflat_Tame_SUMMON
+  - mythicmobtype{t=Crab_Hermit} castinstead Crab_Hermit_Tame_SUMMON
+  Skills:
+  - summon{type=Crab_Red_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Crab_Mudflat_Tame_SUMMON:
+  Skills:
+  - summon{type=Crab_Mudflat_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Crab_Hermit_Tame_SUMMON:
+  Skills:
+  - summon{type=Crab_Hermit_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Crab_Feed:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=DRIED_KELP} true
+  - owner true
+  Skills:
+  - gcd{ticks=10}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - heal{a=2} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crab_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=3;hS=0.2;vS=0.25;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+
+Crab_Red_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=crab_red;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crab_Red_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=crab_red;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - runaigoalselector{goal=moveToBlock{material=WATER;radius=25;radiusY=20;speed=1}} @self
+  
+Crab_Mudflat_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=crab_mudflat;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crab_Mudflat_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=crab_mudflat;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - runaigoalselector{goal=moveToBlock{material=WATER;radius=25;radiusY=20;speed=1}} @self
+  
+Crab_Hermit_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=crab_hermit;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crab_Hermit_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=crab_hermit;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - runaigoalselector{goal=moveToBlock{material=WATER;radius=25;radiusY=20;speed=1}} @self
+  
+Crab_GotoWater:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  - inblock{b=WATER} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Water;duration=200} @self
+  - skill{s=Crab_GotoWater_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Water} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Crab_GotoWater_SUMMON2:
+  Skills:
+  - skill{s=Crab_GotoWater_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Crab_GotoWater_SUMMON:
+  TargetConditions:
+  - blocktype{type=WATER} true
+  Skills:
+  - summon{type=Crab_Water;amount=1;radius=0;yRadius=0;onSurface=false} @TargetedLocation{limit=1}
+  
+Crab_GotoWater_MEET:
+  Conditions:
+  - children{a=1} true
+  TargetConditions:
+  - distance{d=<2} castinstead Crab_GotoWater_MEET_REMOVE
+  Skills:
+  - message{m="Dummy"}
+  
+Crab_GotoWater_MEET_REMOVE:
+  Skills:
+  - remove @Child{target=armorstands}
+  
+  
+  
+
+Crab_Combat:
+  Conditions:
+  - offgcd
+  Skills:
+  - Aura{auraName=combat;duration=100} @self
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=attacker} @self
+  - delay 100
+  - runaitargetselector{target=clear} @self
+  - clearThreat{} @self
+  
+Crab_Pinch:
+  Cooldown: 2
+  Conditions:
+  - offgcd
+  - incombat true
+  - targetwithin{d=2} true
+  Skills:
+  - gcd{ticks=20}
+  - state{s=attack;li=2;lo=3} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crab_idle;volume=1;pitch=1.1;delay=5} @self
+  - delay 11
+  - totem{md=2;c=1;oH=Crab_Bite_Attack_DAMAGE;hnp=true;hp=true;hR=1.5;vR=1.5;i=1} @forward{f=0.6}
+  
+Crab_Bite_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=1;pkb=false;hnp=true;hp=true}
+  
+Crab_Water_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} true
+  Skills:
+  - setSkillCooldown{skill=Crab_Ground_Mode;seconds=0} @self
+  - setspeed{speed=2.5;type=walking} @self
+  
+Crab_Ground_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} false
+  Skills:
+  - setSkillCooldown{skill=Crab_Water_Mode;seconds=0} @self
+  - setspeed{speed=1;type=walking} @self
+  
+Crab_Dig:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - outside true
+  - incombat false
+  - onblock{b=SAND} true
+  - variableEquals{var=caster.sit;value="yes"} false
+  - variableEquals{var=caster.leashed;value="yes"} false
+  - hasaura{n=Finding_Water} false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  - hasaura{n=dug} false
+  Skills:
+  - gcd{ticks=90}
+  - Aura{auraName=dug;duration=70;delay=30} @self
+  - state{s=dig} @self
+  - state{s=dig_stay;delay=30} @self
+  - model{mid=crab_red;n=false;step=1;delay=29;remove=true} @self
+  - model{mid=crab_red_underground;n=false;step=1;delay=29} @self
+  - skill{s=Crab_Dig_Sand;repeat=5;repeatinterval=4}
+  - onDamaged{auraName=suffocate_resist;d=100;cE=true;damageMods="SUFFOCATION 0"} @self
+  - delay 95
+  - skill{s=Crab_Dig_Sand;repeat=5;repeatinterval=4}
+  - skill{s=Crab_Dig_Out}
+
+Crab_Dig_Out:
+  Conditions:
+  - hasaura{n=dug} true
+  Skills:
+  - state{s=dig_stay;remove=true} @self
+  - state{s=dig_out;delay=2} @self
+  - model{mid=crab_red_underground;n=false;step=1;delay=1;remove=true} @self
+  - model{mid=crab_red;n=false;step=1;delay=1} @self
+  
+Crab_Dig_Sand:
+  Skills:
+  - effect:sound{s=block.gravel.break;volume=0.4;pitch=1.5} @self
+  - effect:particles{particle=block_crack;m=SAND;amount=5;hS=0.2;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Crab_Mudflat_Dig:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - outside true
+  - incombat false
+  - onblock{b=SAND} true
+  - variableEquals{var=caster.sit;value="yes"} false
+  - variableEquals{var=caster.leashed;value="yes"} false
+  - hasaura{n=Finding_Water} false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  - hasaura{n=dug} false
+  Skills:
+  - gcd{ticks=90}
+  - Aura{auraName=dug;duration=70;delay=30} @self
+  - state{s=dig} @self
+  - state{s=dig_stay;delay=30} @self
+  - model{mid=crab_mudflat;n=false;step=1;delay=29;remove=true} @self
+  - model{mid=crab_mudflat_underground;n=false;step=1;delay=29} @self
+  - skill{s=Crab_Dig_Sand;repeat=5;repeatinterval=4}
+  - onDamaged{auraName=suffocate_resist;d=100;cE=true;damageMods="SUFFOCATION 0"} @self
+  - delay 95
+  - skill{s=Crab_Mudflat_Dig_Sand;repeat=5;repeatinterval=4}
+  - skill{s=Crab_Mudflat_Dig_Out}
+
+Crab_Mudflat_Dig_Out:
+  Conditions:
+  - hasaura{n=dug} true
+  Skills:
+  - state{s=dig_stay;remove=true} @self
+  - state{s=dig_out;delay=2} @self
+  - model{mid=crab_mudflat_underground;n=false;step=1;delay=1;remove=true} @self
+  - model{mid=crab_mudflat;n=false;step=1;delay=1} @self
+  
+Crab_Mudflat_Dig_Sand:
+  Skills:
+  - effect:sound{s=block.gravel.break;volume=0.4;pitch=1.5} @self
+  - effect:particles{particle=block_crack;m=SAND;amount=5;hS=0.2;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+  
+Crab_Hermit_Hide:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - incombat false
+  - variableEquals{var=caster.sit;value="yes"} false
+  - variableEquals{var=caster.leashed;value="yes"} false
+  - hasaura{n=Finding_Water} false
+  - hasaura{n=leashed} false
+  - hasaura{n=lured} false
+  - hasaura{n=dug} false
+  Skills:
+  - gcd{ticks=140}
+  - Aura{auraName=dug;duration=130;delay=13} @self
+  - state{s=hide} @self
+  - state{s=hide_stay;delay=13} @self
+  - stun{d=140;f=true;ai=true;CancelOnTakeDamage=true} @self
+  - partvisibility{p=leg;em=false;v=false;delay=6} @self
+  - partvisibility{p=claw;em=false;v=false;delay=6} @self
+  - partvisibility{p=body;v=false;delay=6} @self
+  - delay 130
+  - skill{s=Crab_Hermit_Hide_OUT}
+  
+Crab_Hermit_Hide_OUT:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=dug} true
+  Skills:
+  - state{s=hide_stay;remove=true} @self
+  - state{s=hide_out} @self
+  - partvisibility{p=leg;em=false;v=true;delay=6} @self
+  - partvisibility{p=claw;em=false;v=true;delay=6} @self
+  - partvisibility{p=body;v=true;delay=6} @self
+  
+Crab_Hermit_Hide_Damaged:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=dug} true
+  Skills:
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  
+  - runaigoalselector{goal=clear;delay=60} @self
+  - runaigoalselector{goal=meleeattack;delay=60} @self
+  - runaigoalselector{goal=movetowardstarget;delay=60} @self
+  - runaigoalselector{goal=randomstroll;delay=60} @self
+  - runaigoalselector{goal=gotoowner;delay=60} @self
+  - runaigoalselector{goal=moveToBlock{material=WATER;radius=25;radiusY=20;speed=1};delay=60} @self
+  
+  - state{s=hide_stay;remove=true} @self
+  - state{s=hide_out} @self
+  - auraremove{aura=dug} @self
+  - partvisibility{p=leg;em=false;v=true;delay=6} @self
+  - partvisibility{p=claw;em=false;v=true;delay=6} @self
+  - partvisibility{p=body;v=true;delay=6} @self
+  
+# Crocodile #
+
+Crocodile_Attack:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - incombat true
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=30}
+  - state{s=attack;li=2;lo=3} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1;delay=4} @self
+  - delay 13
+  - effect:sound{s=entity.phantom.bite;volume=0.8;pitch=0.8} @self
+  - totem{md=2;c=1;oH=Crocodile_Attack_DAMAGE;hnp=true;hp=true;hR=2.5;vR=2;i=1} @forward{f=0}
+  
+Crocodile_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=5;pkb=false;hnp=true;hp=true}
+  - skill{s=Crocodile_Hold} 0.2
+  
+Crocodile_Hold:
+  Cooldown: 3
+  Skills:
+  - gcd{ticks=60}
+  - state{s=hold;li=2;lo=3} @self
+  - skill{s=Crocodile_Stuck} @targetedtarget
+  - skill{s=Crocodile_Stuck_DAMAGE;repeat=2;repeatinterval=20} @ModelPassengers{p=bite}
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1;delay=4} @self
+  - delay 60
+  - state{s=hold;li=2;lo=3;remove=true} @self
+  - dismountall{pbone=bite} @self
+  
+Crocodile_Stuck_DAMAGE:
+  Conditions:
+  - ModelHasPassenger{p=bite} true
+  Skills:
+  - damage{a=3;pkb=false;hnp=true;hp=true}
+  
+Crocodile_Stuck:
+  Conditions:
+  - ModelHasPassenger{p=bite} false
+  Skills:
+  - mountmodel{mid=crocodile_saltwater;driver=false;mode=force_walking;pbone=bite;damagemount=true}
+  
+  
+Crocodile_Saltwater_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=crocodile_saltwater;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crocodile_Saltwater_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=crocodile_saltwater;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=players} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  - runaitargetselector{target=SpecificFaction Prey} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crocodile_Cuban_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=crocodile_cuban;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crocodile_Cuban_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=crocodile_cuban;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=players} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  - runaitargetselector{target=SpecificFaction Prey} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Crocodile_Tame_Chicken:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=CHICKEN} true
+  Conditions:
+  - offgcd
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+  
+Crocodile_Tame_FAIL:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=0.9} @self
+  - effect:particles{particle=smoke;amount=15;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Crocodile_Tame_SUCCESS:
+  Skills:
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Crocodile_Tame_SUMMON;cat=true} @trigger
+  
+Crocodile_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Crocodile_Cuban} castinstead Crocodile_Cuban_Tame_SUMMON
+  Skills:
+  - summon{type=Crocodile_Saltwater_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Crocodile_Cuban_Tame_SUMMON:
+  Skills:
+  - summon{type=Crocodile_Cuban_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Crocodile_Tame_PV_Saddle:
+  Conditions:
+  - variableEquals{var=caster.saddled;value="no"} true
+  Skills:
+  - partvisibility{p=saddle;v=false;delay=1} @self
+  
+Crocodile_Tame_MOTION_FIX:
+  Skills:
+  - state{s=eat;remove=true;delay=1} @self
+  
+Crocodile_Feed_Chicken:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=CHICKEN} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  
+Crocodile_Tame_Beef:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=BEEF} true
+  Conditions:
+  - offgcd
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+
+Crocodile_Feed_Beef:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=BEEF} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+Crocodile_Tame_Pork:
+  Cooldown: 3
+  TriggerConditions:
+  - holding{m=PORKCHOP} true
+  Conditions:
+  - offgcd
+  - hasowner false
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - randomskill{skills=Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_FAIL,Crocodile_Tame_SUCCESS}
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+
+Crocodile_Feed_Pork:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=PORKCHOP} true
+  - owner true
+  Skills:
+  - gcd{ticks=40}
+  - partvisibility{p=meat;v=true} @self
+  - state{s=eat} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - delay 40
+  - state{s=eat;remove=true} @self
+  - partvisibility{p=meat;v=false} @self
+  - heal{a=5} @self
+  - effect:sound{s=wildlife_1_sounds:samus.crocodile_idle;volume=1;pitch=1.15} @self
+  - effect:particles{particle=heart;amount=8;hS=0.3;vS=0.35;y=0.9;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=head}
+  
+  
+  
+Crocodile_Saddle:
+  Cooldown: 0
+  TriggerConditions:
+  - holding{m=SADDLE} true
+  - owner true
+  Conditions:
+  - variableEquals{var=caster.saddled;value="no"} true
+  Skills:
+  - partvisibility{p=saddle;v=true} @self
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - effect:sound{s=item.armor.equip_leather;volume=1;pitch=1} @self
+  - setvariable{var=caster.saddled;value="yes";type=STRING} @self
+  - Aura{auraName=mount_wait;duration=10} @self
+  
+Crocodile_Saddle_OFF:
+  Cooldown: 0
+  TriggerConditions:
+  - owner true
+  - crouching true
+  Conditions:
+  - variableEquals{var=caster.saddled;value="yes"} true
+  Skills:
+  - partvisibility{p=saddle;v=false} @self
+  - dropitem{i=SADDLE} @self
+  - effect:sound{s=item.armor.equip_leather;volume=1;pitch=1} @self
+  - setvariable{var=caster.saddled;value="no";type=STRING} @self
+  
+Crocodile_Mount:
+  Cooldown: 0
+  TriggerConditions:
+  - owner true
+  - holding{m=STICK} false
+  - holding{m=STRING} false
+  - holding{m=PORKCHOP} false
+  - holding{m=BEEF} false
+  - holding{m=CHICKEN} false
+  Conditions:
+  - variableEquals{var=caster.saddled;value="yes"} true
+  - variableEquals{var=caster.sit;value="yes"} false
+  - hasaura{n=leashed} false
+  - hasaura{n=mount_wait} cancel
+  Skills:
+  - mountmodel{mode=walking}
+  
+Crocodile_Water_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} true
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Crocodile_Ground_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Ground_Mount_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Water_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle_water} @self
+  - defaultstate{t=walk;s=walk_water} @self
+  - setspeed{speed=0.3;type=walking} @self
+  
+Crocodile_Ground_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} false
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Crocodile_Water_Mount_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Water_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Ground_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle} @self
+  - defaultstate{t=walk;s=walk_mount} @self
+  - setspeed{speed=0.3;type=walking} @self
+  
+Crocodile_Water_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} true
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Crocodile_Ground_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Ground_Mount_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Water_Mount_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle_water} @self
+  - defaultstate{t=walk;s=walk_water} @self
+  - setspeed{speed=1;type=walking} @self
+
+Crocodile_Ground_Mode:
+  Cooldown: 99999
+  Conditions:
+  - inblock{m=WATER} false
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Crocodile_Water_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Ground_Mount_Mode;seconds=0} @self
+  - setSkillCooldown{skill=Crocodile_Water_Mount_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle} @self
+  - defaultstate{t=walk;s=walk} @self
+  - setspeed{speed=0.7;type=walking} @self
+
+Crocodile_Dash:
+  Conditions:
+  - inblock{b=WATER} true
+  - ModelHasDriver false
+  - targetwithin{d=15} true
+  Skills:
+  - lunge{velocity=0.2;velocityY=0;repeat=30;repeatinterval=1} @target
+  - effect:particles{particle=splash;amount=6;hS=0.3;vS=0.3;speed=0;y=0.3;repeat=7;repeatinterval=4} @ModelPart{mid=crocodile;p=left_arm}
+  - effect:particles{particle=splash;amount=6;hS=0.3;vS=0.3;speed=0;y=0.3;repeat=7;repeatinterval=4} @ModelPart{mid=crocodile;p=right_arm}
+  - effect:particles{particle=splash;amount=6;hS=0.3;vS=0.3;speed=0;y=0.3;repeat=7;repeatinterval=4} @ModelPart{mid=crocodile;p=left_leg}
+  - effect:particles{particle=splash;amount=6;hS=0.3;vS=0.3;speed=0;y=0.3;repeat=7;repeatinterval=4} @ModelPart{mid=crocodile;p=right_leg}
+  - effect:sound{s=entity.generic.splash;volume=0.2;pitch=1.1;repeat=7;repeatinterval=4} @self
+  
+Crocodile_Yawn:
+  Cooldown: 15
+  Conditions:
+  - offgcd
+  - incombat false
+  - ModelHasDriver false
+  - hasaura{n=Finding_Water} false
+  Skills:
+  - gcd{ticks=75}
+  - potion{type=SLOW;duration=75;level=50;hasParticles=false} @self
+  - state{s=yawn;li=3;lo=3} @self
+  
+Crocodile_GotoWater:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - incombat false
+  - ModelHasDriver false
+  - hasaura{n=leashed} false
+  - inblock{b=WATER} false
+  Skills:
+  - gcd{ticks=100}
+  - Aura{auraName=Finding_Water;duration=200} @self
+  - skill{s=Crocodile_GotoWater_SUMMON2} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=float} @self
+  - delay 2
+  - goto{speedModifier=1;sh=0;sv=0} @Child{target=armorstands}
+  - delay 200
+  #- auraremove{aura=Finding_Water} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - runaigoalselector{goal=randomstroll} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+  
+Crocodile_GotoWater_SUMMON2:
+  Skills:
+  - skill{s=Crocodile_GotoWater_SUMMON} @BlocksInRadius{radius=30;radiusy=30;noise=0;shape=sphere;onlyair=false;noair=true}
+  
+  
+Crocodile_GotoWater_SUMMON:
+  TargetConditions:
+  - blocktype{type=WATER} true
+  Skills:
+  - summon{type=Crocodile_Water;amount=1;radius=0;yRadius=0;onSurface=false} @TargetedLocation{limit=1}
+  
+Crocodile_GotoWater_MEET:
+  Conditions:
+  - children{a=1} true
+  TargetConditions:
+  - distance{d=<2} castinstead Crocodile_GotoWater_MEET_REMOVE
+  Skills:
+  - message{m="Dummy"}
+  
+Crocodile_GotoWater_MEET_REMOVE:
+  Skills:
+  - remove @Child{target=armorstands}
+  
+# Firefly #
+  
+Firefly_Follow:
+  TargetConditions:
+  - holding{m=HONEYCOMB} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasaura{n=lured} false
+  Skills:
+  - Aura{auraName=lured;duration=2} @self
+  - goto{speedModifier=1;sh=2;sv=0}
+  
+Firefly_Tame:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=HONEYCOMB} true
+  Conditions:
+  - offgcd
+  - incombat false
+  - hasowner false
+  Skills:
+  - gcd{ticks=10}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - randomskill{skills=Firefly_Tame_FAIL,Firefly_Tame_SUCCESS,Firefly_Tame_SUCCESS}
+  - heal{a=2} @self
+  
+Firefly_Tame_FAIL:
+  Skills:
+  - effect:particles{particle=smoke;amount=2;hS=0.05;vS=0.05;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+  
+Firefly_Tame_SUCCESS:
+  Skills:
+  - effect:particles{particle=heart;amount=1;hS=0;vS=0;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+  
+  - remove{delay=1} @self
+  - defaultstate{t=death;s=death2} @self
+  - sudoskill{s=Firefly_Tame_SUMMON;cat=true} @trigger
+  
+Firefly_Tame_SUMMON:
+  TriggerConditions:
+  - mythicmobtype{t=Firefly_Bunch} castinstead Firefly_Bunch_Tame_SUMMON
+  Skills:
+  - summon{type=Firefly_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Firefly_Bunch_Tame_SUMMON:
+  Skills:
+  - summon{type=Firefly_Bunch_Tamed;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+Firefly_Feed:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - holding{m=HONEYCOMB} true
+  - owner true
+  Skills:
+  - gcd{ticks=10}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - heal{a=2} @self
+  - effect:particles{particle=heart;amount=1;hS=0;vS=0;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=body}
+  
+Firefly_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=firefly;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomFly} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Firefly_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=firefly;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomFly} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - runaigoalselector{goal=float} @self
+  
+Firefly_Bunch_Leash:
+  TriggerConditions:
+  - holding{m=STRING} true
+  Conditions:
+  - hasaura{n=leashed} false
+  Skills:
+  - leash{model=firefly_bunch;p=leash}
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - Aura{auraName=leashed;duration=99999} @self
+  
+  - settarget @trigger
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomFly} @self
+  - runaigoalselector{goal=float} @self
+  - runaigoalselector{goal=gotoowner} @self
+  
+Firefly_Bunch_Leash_OFF:
+  TriggerConditions:
+  - holding{m=STRING} false
+  Conditions:
+  - hasaura{n=leashed} true
+  Skills:
+  - leash{model=firefly_bunch;p=leash;l=<caster.name>}
+  - giveitem{i=STRING} @trigger
+  - auraremove{aura=leashed} @self
+  
+  - runaitargetselector{target=clear} @self
+  
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=randomFly} @self
+  - runaigoalselector{goal=gotoowner} @self
+  - runaigoalselector{goal=float} @self
+  
+Firefly_Flying_Mode:
+  Cooldown: 99999
+  Conditions:
+  - onground false
+  Skills:
+  - setSkillCooldown{skill=Firefly_Ground_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle} @self
+  - defaultstate{t=walk;s=walk} @self
+  
+Firefly_Ground_Mode:
+  Cooldown: 99999
+  Conditions:
+  - onground true
+  Skills:
+  - setSkillCooldown{skill=Firefly_Flying_Mode;seconds=0} @self
+  - defaultstate{t=idle;s=idle_ground} @self
+  - defaultstate{t=walk;s=walk_ground} @self
